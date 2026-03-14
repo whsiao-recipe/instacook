@@ -1259,6 +1259,7 @@ function App() {
   const [timerInput, setTimerInput] = useState("");
   const timerRef = React.useRef(null);
   const [aiSuggestion, setAiSuggestion] = useState(null);
+  const [mobileTab, setMobileTab] = useState("pantry");
   const [aiLoading, setAiLoading] = useState(false);
 
   useEffect(() => {
@@ -1524,7 +1525,7 @@ function App() {
       </header>
 
       <div className="layout">
-        <aside className="sidebar">
+        <aside className={`sidebar ${mobileTab === "pantry" ? "mobile-active" : ""}`}>
           <div className="sidebar-header">
             <h2>My Pantry</h2>
             <div className="pantry-search">
@@ -1568,7 +1569,7 @@ function App() {
           })}
         </aside>
 
-        <main className="main">
+        <main className={`main ${mobileTab === "recipes" ? "mobile-active" : ""}`}>
           <div className="main-inner">
             <div className="cuisine-filter">
               {CUISINES.map(c => (
@@ -1602,7 +1603,7 @@ function App() {
                 <div className="section-label">ready to cook — {canMakeRecipes.length}</div>
                 <div className="recipes-grid">
                   {canMakeRecipes.map(recipe => (
-                    <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => setSelectedRecipe(recipe)}>
+                    <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => { setSelectedRecipe(recipe); setMobileTab("detail"); }}>
                       <span className="card-emoji">{recipe.emoji}</span>
                       <div className="card-name">{recipe.name}</div>
                       <div className="card-status ok">✓ All ingredients on hand</div>
@@ -1629,7 +1630,7 @@ function App() {
           </div>
         </main>
 
-        <aside className="right-panel">
+        <aside className={`right-panel ${mobileTab === "detail" || mobileTab === "grocery" ? "mobile-active" : ""}`}>
           <div className="detail-section">
             <h2>Recipe Detail</h2>
             {!selectedRecipe ? (
@@ -1700,6 +1701,24 @@ function App() {
             )}
           </div>
         </aside>
+      <nav className="mobile-tabs">
+          <button className={mobileTab === "pantry" ? "active" : ""} onClick={() => setMobileTab("pantry")}>
+            <span>🥫</span>
+            <span>Pantry</span>
+          </button>
+          <button className={mobileTab === "recipes" ? "active" : ""} onClick={() => setMobileTab("recipes")}>
+            <span>🍽️</span>
+            <span>Recipes</span>
+          </button>
+          <button className={mobileTab === "detail" ? "active" : ""} onClick={() => setMobileTab("detail")}>
+            <span>📋</span>
+            <span>Detail</span>
+          </button>
+          <button className={mobileTab === "grocery" ? "active" : ""} onClick={() => setMobileTab("grocery")}>
+            <span>🛒</span>
+            <span>Grocery</span>
+          </button>
+        </nav>
       </div>
       {cookMode && (
         <div className="cook-overlay" onClick={e => { if (e.target === e.currentTarget) closeCooking(); }}>

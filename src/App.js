@@ -5722,6 +5722,11 @@ function App() {
                 </div>
 
                 <button className="btn-cook" onClick={() => startCooking(selectedRecipe)}>▶ Start Cooking Mode</button>
+                {getRecipeAnalysis(selectedRecipe).missing.length > 0 && (
+                  <button className="btn-add-grocery" onClick={() => addMissingToGrocery(selectedRecipe)}>
+                    + Add Missing to Grocery List
+                  </button>
+                )}
               </>
             )}
           </div>

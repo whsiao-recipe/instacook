@@ -1142,7 +1142,7 @@ const RECIPE_LIBRARY = [
     name: "Bibimbap",
     emoji: "🍚",
     time: "35 min",
-    cuisine: "Asian",
+    cuisine: "Korean",
     baseServings: 2,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -1168,7 +1168,7 @@ const RECIPE_LIBRARY = [
     name: "Korean Fried Chicken",
     emoji: "🍗",
     time: "40 min",
-    cuisine: "Asian",
+    cuisine: "Korean",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Wings", amount: 2, unit: "lb" },
@@ -1194,7 +1194,7 @@ const RECIPE_LIBRARY = [
     name: "Japchae",
     emoji: "🍜",
     time: "30 min",
-    cuisine: "Asian",
+    cuisine: "Korean",
     baseServings: 4,
     ingredients: [
       { name: "Noodles", amount: 1, unit: "pack" },
@@ -1221,7 +1221,7 @@ const RECIPE_LIBRARY = [
     name: "Kimchi Fried Rice",
     emoji: "🍳",
     time: "15 min",
-    cuisine: "Asian",
+    cuisine: "Korean",
     baseServings: 2,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -1247,7 +1247,7 @@ const RECIPE_LIBRARY = [
     name: "Gamja Jorim",
     emoji: "🥔",
     time: "25 min",
-    cuisine: "Asian",
+    cuisine: "Korean",
     baseServings: 4,
     ingredients: [
       { name: "Potato", amount: 4, unit: "count" },
@@ -1272,7 +1272,7 @@ const RECIPE_LIBRARY = [
     name: "Char Siu Pork",
     emoji: "🥩",
     time: "1 hr",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 4,
     ingredients: [
       { name: "Ground Pork", amount: 1, unit: "lb" },
@@ -1297,7 +1297,7 @@ const RECIPE_LIBRARY = [
     name: "Egg Drop Soup",
     emoji: "🍲",
     time: "10 min",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 4,
     ingredients: [
       { name: "Egg", amount: 3, unit: "count" },
@@ -1321,7 +1321,7 @@ const RECIPE_LIBRARY = [
     name: "Red Braised Beef",
     emoji: "🥩",
     time: "2 hr",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 4,
     ingredients: [
       { name: "Beef Flank", amount: 2, unit: "lb" },
@@ -1347,7 +1347,7 @@ const RECIPE_LIBRARY = [
     name: "Steamed Ginger Fish",
     emoji: "🐟",
     time: "20 min",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 2,
     ingredients: [
       { name: "Tilapia", amount: 2, unit: "fillets" },
@@ -1370,7 +1370,7 @@ const RECIPE_LIBRARY = [
     name: "Dan Dan Noodles",
     emoji: "🍜",
     time: "25 min",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 2,
     ingredients: [
       { name: "Noodles", amount: 1, unit: "pack" },

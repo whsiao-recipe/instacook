@@ -38,7 +38,8 @@ const PANTRY_CATALOG = {
   ]
 };
 
-const CUISINES = ["All", "American", "Asian", "Italian", "Mexican", "Indian", "Middle Eastern", "French", "Greek", "Healthy", "Breakfast", "Dessert"];
+const CUISINES = ["All", "American", "Asian", "Italian", "Mexican", "Indian", "Middle Eastern", "Mediterranean", "French", "Healthy", "Breakfast", "Dessert"];
+const MEDITERRANEAN_SUBCUISINES = ["All Mediterranean", "Greek", "Turkish", "Lebanese", "Moroccan"];
 const ASIAN_SUBCUISINES = ["All Asian", "Japanese", "Thai", "Vietnamese", "Korean", "Chinese"];
 
 const RECIPE_LIBRARY = [
@@ -4536,6 +4537,450 @@ const RECIPE_LIBRARY = [
       "Pour into cups. Press cling film directly onto the surface. Refrigerate 1 hour. Serve chilled."
     ]
   }
+,
+  {
+    name: "Tzatziki Chicken",
+    emoji: "🍗",
+    time: "30 min",
+    cuisine: "Greek",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Greek Yogurt", amount: 1, unit: "cup" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Oregano", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix Greek yogurt, minced garlic, lemon juice, olive oil, cumin, oregano, and salt.",
+      "Coat chicken thighs thoroughly. Marinate at least 30 min.",
+      "Cook in a hot pan over medium-high heat 6-7 min per side until deeply golden.",
+      "Rest 5 min before serving.",
+      "Serve with warm pita and sliced tomatoes.",
+      "The yogurt marinade keeps the chicken incredibly juicy and tender."
+    ]
+  },
+  {
+    name: "Greek Lemon Potatoes",
+    emoji: "🥔",
+    time: "50 min",
+    cuisine: "Greek",
+    baseServings: 4,
+    ingredients: [
+      { name: "Potato", amount: 6, unit: "count" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Olive Oil", amount: 4, unit: "tbsp" },
+      { name: "Oregano", amount: 2, unit: "tsp" },
+      { name: "Chicken Broth", amount: 0.5, unit: "cup" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 400°F. Cut potatoes into wedges.",
+      "Mix olive oil, lemon juice, minced garlic, oregano, salt, and pepper.",
+      "Toss potatoes in the mixture and spread in a single layer in a roasting pan.",
+      "Pour chicken broth into the pan — this creates steam that makes the potatoes fluffy inside.",
+      "Roast 40-45 min, flipping halfway, until golden and caramelized.",
+      "The potatoes should be crispy outside and melt-in-your-mouth inside."
+    ]
+  },
+  {
+    name: "Greek Meatballs",
+    emoji: "🍢",
+    time: "30 min",
+    cuisine: "Greek",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Egg", amount: 1, unit: "count" },
+      { name: "Oregano", amount: 1, unit: "tsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Combine ground beef, grated onion, minced garlic, egg, oregano, cumin, cinnamon, and salt.",
+      "Mix well and roll into small balls.",
+      "Heat olive oil in a pan over medium-high heat.",
+      "Fry meatballs in batches, turning, until browned all over — about 8 min.",
+      "Serve with tzatziki, pita, and a simple tomato salad.",
+      "The cinnamon is the secret — it gives these an authentic Greek flavor."
+    ]
+  },
+  {
+    name: "Adana Kebab",
+    emoji: "🍢",
+    time: "25 min",
+    cuisine: "Turkish",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.5, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Olive Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Grate onion and squeeze out all moisture. Mince garlic finely.",
+      "Mix ground beef with onion, garlic, paprika, cumin, chili flakes, cinnamon, and salt.",
+      "Knead the mixture for 3-4 min until it becomes sticky — this is key for the kebabs to hold.",
+      "Divide into portions and shape around flat skewers into long sausage shapes.",
+      "Grill or pan fry over high heat 4-5 min per side until charred outside.",
+      "Serve with flatbread, tomatoes, and yogurt sauce."
+    ]
+  },
+  {
+    name: "Menemen",
+    emoji: "🍳",
+    time: "20 min",
+    cuisine: "Turkish",
+    baseServings: 2,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Tomato", amount: 3, unit: "count" },
+      { name: "Bell Pepper", amount: 1, unit: "count" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a pan over medium heat. Sauté diced onion and bell pepper 5 min.",
+      "Add diced tomatoes, cumin, and chili flakes. Cook 8 min until tomatoes break down into a sauce.",
+      "Make wells in the sauce. Crack eggs directly into the wells.",
+      "Cook covered 3-4 min until whites are set but yolks are still runny.",
+      "Season with salt.",
+      "Serve directly from the pan with crusty bread for dipping."
+    ]
+  },
+  {
+    name: "Turkish Red Lentil Soup",
+    emoji: "🍲",
+    time: "35 min",
+    cuisine: "Turkish",
+    baseServings: 4,
+    ingredients: [
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Tomato Paste", amount: 2, unit: "tbsp" },
+      { name: "Cumin", amount: 2, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a pot. Sauté diced onion 8 min until golden. Add garlic and cook 1 min.",
+      "Add tomato paste, cumin, and paprika. Stir 2 min until fragrant.",
+      "Pour in broth. Bring to a boil then simmer 20 min until everything is very soft.",
+      "Blend completely smooth with an immersion blender.",
+      "Season with salt and lemon juice.",
+      "For the finishing touch: melt butter with a pinch of paprika and chili flakes until sizzling. Swirl over each bowl."
+    ]
+  },
+  {
+    name: "Lahmacun",
+    emoji: "🫓",
+    time: "35 min",
+    cuisine: "Turkish",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Beef", amount: 0.5, unit: "lb" },
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Tomato", amount: 2, unit: "count" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Bell Pepper", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Make dough: mix flour with ½ tsp salt, 1 tbsp olive oil, and enough warm water to form a soft dough. Rest 20 min.",
+      "Blend tomatoes, onion, bell pepper, and garlic into a paste. Mix with ground beef, paprika, cumin, and salt.",
+      "Divide dough into balls. Roll each paper thin.",
+      "Spread a thin layer of meat mixture over each flatbread.",
+      "Bake at 475°F for 8-10 min until edges are crispy and meat is cooked.",
+      "Squeeze lemon over the top. Roll up and eat immediately."
+    ]
+  },
+  {
+    name: "Iskender Kebab",
+    emoji: "🥩",
+    time: "30 min",
+    cuisine: "Turkish",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Bread", amount: 4, unit: "slices" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Greek Yogurt", amount: 1, unit: "cup" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix ground beef with paprika, cumin, and salt. Shape into flat patties or long kebabs.",
+      "Grill or pan fry over high heat until cooked through and charred. Slice into strips.",
+      "Make tomato sauce: simmer canned tomatoes with garlic and a pinch of paprika 10 min.",
+      "Toast bread and cut into pieces. Arrange on plates.",
+      "Layer meat strips on top of bread. Pour tomato sauce over everything.",
+      "Melt butter with paprika until sizzling and pour over the top. Add a dollop of yogurt on the side."
+    ]
+  },
+  {
+    name: "Lebanese Garlic Chicken",
+    emoji: "🍗",
+    time: "35 min",
+    cuisine: "Lebanese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Garlic", amount: 6, unit: "cloves" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Olive Oil", amount: 4, unit: "tbsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix olive oil, lemon juice, minced garlic, cumin, coriander, turmeric, cinnamon, and salt.",
+      "Marinate chicken at least 30 min — overnight is best.",
+      "Roast at 425°F for 30-35 min until skin is deeply golden and crispy.",
+      "Baste with pan juices halfway through.",
+      "Rest 5 min before serving.",
+      "Serve with garlic sauce, warm pita, and a fresh salad."
+    ]
+  },
+  {
+    name: "Kibbeh",
+    emoji: "🍢",
+    time: "45 min",
+    cuisine: "Lebanese",
+    baseServings: 6,
+    ingredients: [
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Flour", amount: 0.5, unit: "cup" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Allspice", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mix ground beef with grated onion, cumin, cinnamon, allspice, salt, and pepper.",
+      "Add flour and mix until the mixture holds together.",
+      "Shape into oval torpedoes about 3 inches long.",
+      "Make a hole in each with your finger and stuff with a small amount of filling if desired.",
+      "Seal and smooth the outside.",
+      "Deep fry at 350°F for 5-6 min until deep brown and cooked through. Serve with yogurt."
+    ]
+  },
+  {
+    name: "Lebanese Rice Pilaf",
+    emoji: "🍚",
+    time: "30 min",
+    cuisine: "Lebanese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Rice", amount: 2, unit: "cups" },
+      { name: "Chicken Broth", amount: 3, unit: "cups" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Melt butter in a pot over medium heat. Sauté diced onion 5 min until golden.",
+      "Add rice and stir 2 min to toast the grains.",
+      "Add cinnamon and cumin. Stir 30 seconds until fragrant.",
+      "Pour in chicken broth. Bring to a boil.",
+      "Reduce heat to low. Cover and cook 18 min until rice is tender and broth absorbed.",
+      "Fluff with a fork. Serve topped with toasted nuts for an authentic touch."
+    ]
+  },
+  {
+    name: "Lebanese Lemon Garlic Shrimp",
+    emoji: "🍤",
+    time: "15 min",
+    cuisine: "Lebanese",
+    baseServings: 2,
+    ingredients: [
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Pat shrimp dry. Season with cumin, chili flakes, and salt.",
+      "Heat olive oil in a pan over high heat.",
+      "Add shrimp in a single layer. Cook 1 min without moving.",
+      "Flip shrimp. Add minced garlic and cook 30 seconds.",
+      "Squeeze lemon juice over everything and toss.",
+      "Serve immediately — these cook in minutes and taste incredible."
+    ]
+  },
+  {
+    name: "Chicken Tagine",
+    emoji: "🍲",
+    time: "1 hr",
+    cuisine: "Moroccan",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 1, unit: "cup" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Season chicken with cumin, coriander, cinnamon, turmeric, and salt.",
+      "Brown chicken on all sides in olive oil over high heat. Remove.",
+      "Sauté diced onion and garlic in the same pot 5 min.",
+      "Add canned tomatoes and broth. Return chicken.",
+      "Cover and simmer on low heat 40 min until chicken is fall-apart tender.",
+      "Serve over couscous with fresh herbs."
+    ]
+  },
+  {
+    name: "Harira Soup",
+    emoji: "🍲",
+    time: "50 min",
+    cuisine: "Moroccan",
+    baseServings: 6,
+    ingredients: [
+      { name: "Ground Beef", amount: 0.5, unit: "lb" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pot. Brown ground beef, breaking it up. Remove.",
+      "Sauté diced onion and garlic 5 min. Add all spices and stir 1 min.",
+      "Add canned tomatoes and broth. Bring to a boil.",
+      "Return beef. Simmer 25 min.",
+      "Squeeze in lemon juice. Season with salt.",
+      "This is Morocco's famous Ramadan soup — deeply warming and fragrant."
+    ]
+  },
+  {
+    name: "Moroccan Spiced Salmon",
+    emoji: "🐟",
+    time: "20 min",
+    cuisine: "Moroccan",
+    baseServings: 2,
+    ingredients: [
+      { name: "Salmon", amount: 2, unit: "fillets" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mix cumin, coriander, paprika, cinnamon, minced garlic, and salt into a spice paste with olive oil.",
+      "Coat salmon fillets generously on both sides.",
+      "Heat a pan over medium-high heat. Cook salmon 4 min per side until crust is golden.",
+      "The spice crust should be deeply fragrant and slightly caramelized.",
+      "Squeeze lemon over the top before serving.",
+      "Serve with couscous or roasted vegetables."
+    ]
+  },
+  {
+    name: "Couscous with Vegetables",
+    emoji: "🍚",
+    time: "25 min",
+    cuisine: "Moroccan",
+    baseServings: 4,
+    ingredients: [
+      { name: "Jasmine Rice", amount: 2, unit: "cups" },
+      { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Bell Pepper", amount: 1, unit: "count" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cook rice per package directions. Fluff and set aside.",
+      "Heat olive oil in a large pan. Sauté diced onion 5 min.",
+      "Add garlic, cumin, coriander, and turmeric. Stir 1 min.",
+      "Add broccoli florets and diced bell pepper. Cook 8 min until tender.",
+      "Add cooked rice and toss everything together.",
+      "Season with salt. Serve warm or at room temperature."
+    ]
+  },
+  {
+    name: "Moroccan Lamb Chops",
+    emoji: "🥩",
+    time: "25 min",
+    cuisine: "Moroccan",
+    baseServings: 2,
+    ingredients: [
+      { name: "Lamb Chops", amount: 4, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix cumin, coriander, paprika, cinnamon, minced garlic, olive oil, and salt into a marinade.",
+      "Coat lamb chops thoroughly. Marinate 20 min.",
+      "Heat a cast iron pan over high heat until smoking.",
+      "Sear chops 3 min per side for medium-rare.",
+      "Rest 5 min.",
+      "Squeeze lemon over the top. The Moroccan spice crust is incredible with lamb."
+    ]
+  }
 ];
 
 function findCategory(itemName) {
@@ -4660,6 +5105,7 @@ function App() {
   const timerRef = React.useRef(null);
   const [aiSuggestion, setAiSuggestion] = useState(null);
   const [asianSubFilter, setAsianSubFilter] = useState("All Asian");
+  const [medSubFilter, setMedSubFilter] = useState("All Mediterranean");
   const [mobileTab, setMobileTab] = useState("pantry");
   const [darkMode, setDarkMode] = useState(false);
   const [aiLoading, setAiLoading] = useState(false);
@@ -4762,11 +5208,16 @@ function App() {
           if (asianSubFilter === "All Asian") return asianCuisines.includes(r.cuisine);
           return r.cuisine === asianSubFilter;
         }
+        if (cuisineFilter === "Mediterranean") {
+          const medCuisines = ["Mediterranean", "Greek", "Turkish", "Lebanese", "Moroccan"];
+          if (medSubFilter === "All Mediterranean") return medCuisines.includes(r.cuisine);
+          return r.cuisine === medSubFilter;
+        }
         return r.cuisine === cuisineFilter;
       })
       .map(r => ({ ...r, analysis: getRecipeAnalysis(r) }))
       .sort((a, b) => b.analysis.matchPercent - a.analysis.matchPercent);
-  }, [searchTerm, cuisineFilter, asianSubFilter, servings, pantryState]);
+  }, [searchTerm, cuisineFilter, asianSubFilter, medSubFilter, servings, pantryState]);
 
   const canMakeRecipes = filteredRecipes.filter(r => r.analysis.canMake);
   const missingRecipes = filteredRecipes.filter(r => !r.analysis.canMake);
@@ -4989,7 +5440,7 @@ function App() {
                 <button
                   key={c}
                   className={`cuisine-btn ${cuisineFilter === c ? "active" : ""}`}
-                  onClick={() => { setCuisineFilter(c); setAsianSubFilter("All Asian"); }}
+                  onClick={() => { setCuisineFilter(c); setAsianSubFilter("All Asian"); setMedSubFilter("All Mediterranean"); }}
                 >
                   {c}
                 </button>
@@ -5003,6 +5454,19 @@ function App() {
                     key={s}
                     className={`cuisine-btn sub ${asianSubFilter === s ? "active" : ""}`}
                     onClick={() => setAsianSubFilter(s)}
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            )}
+            {cuisineFilter === "Mediterranean" && (
+              <div className="asian-subfilter">
+                {MEDITERRANEAN_SUBCUISINES.map(s => (
+                  <button
+                    key={s}
+                    className={`cuisine-btn sub ${medSubFilter === s ? "active" : ""}`}
+                    onClick={() => setMedSubFilter(s)}
                   >
                     {s}
                   </button>

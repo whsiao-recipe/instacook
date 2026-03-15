@@ -1142,7 +1142,7 @@ const RECIPE_LIBRARY = [
     name: "Bibimbap",
     emoji: "🍚",
     time: "35 min",
-    cuisine: "Korean"
+    cuisine: "Korean",
     baseServings: 2,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },

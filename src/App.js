@@ -1641,6 +1641,522 @@ const RECIPE_LIBRARY = [
       "Squeeze fresh lemon juice over the top and serve with steamed vegetables or salad."
     ]
   }
+,
+  {
+    name: "Coq au Vin",
+    emoji: "🍷",
+    time: "1.5 hr",
+    cuisine: "French",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Bacon", amount: 4, unit: "strips" },
+      { name: "Mushrooms", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Tomato Paste", amount: 1, unit: "tbsp" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Thyme", amount: 3, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cook bacon in a large Dutch oven until crispy. Remove and set aside, leaving the fat in the pot.",
+      "Season chicken thighs with salt and pepper. Brown on both sides in the bacon fat over high heat, about 4 min per side. Remove.",
+      "Sauté diced onion and mushrooms in the same pot 5 min. Add garlic and tomato paste, cook 1 min.",
+      "Return chicken and bacon. Add chicken broth, thyme, and bay leaves.",
+      "Bring to a boil, then reduce to a low simmer. Cover and cook 45 min until chicken is tender.",
+      "Uncover and simmer 10 more min to reduce the sauce. Remove bay leaves and thyme. Serve with crusty bread or mashed potatoes."
+    ]
+  },
+  {
+    name: "Vichyssoise",
+    emoji: "🥣",
+    time: "45 min",
+    cuisine: "French",
+    baseServings: 4,
+    ingredients: [
+      { name: "Potato", amount: 4, unit: "count" },
+      { name: "Onion", amount: 2, unit: "count" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Heavy Cream", amount: 0.5, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "White Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Melt butter in a large pot over medium heat. Sauté thinly sliced onions 10 min until very soft but not browned.",
+      "Add peeled, cubed potatoes and chicken broth. Bring to a boil.",
+      "Reduce heat and simmer 20 min until potatoes are completely tender.",
+      "Blend until completely smooth using an immersion blender.",
+      "Stir in heavy cream. Season with salt and white pepper.",
+      "Serve hot or refrigerate and serve chilled — vichyssoise is classically a cold soup. Drizzle with cream to serve."
+    ]
+  },
+  {
+    name: "Beef Bourguignon",
+    emoji: "🥩",
+    time: "3 hr",
+    cuisine: "French",
+    baseServings: 6,
+    ingredients: [
+      { name: "Beef Flank", amount: 2, unit: "lb" },
+      { name: "Bacon", amount: 4, unit: "strips" },
+      { name: "Mushrooms", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Tomato Paste", amount: 2, unit: "tbsp" },
+      { name: "Beef Broth", amount: 2, unit: "cups" },
+      { name: "Thyme", amount: 3, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cut beef into large chunks. Pat dry and season generously with salt and pepper.",
+      "Cook bacon in a Dutch oven until crispy. Remove. Brown beef in batches in the bacon fat. Remove.",
+      "Sauté onions and garlic in the same pot 5 min. Add tomato paste and cook 2 min.",
+      "Return beef and bacon. Add broth, thyme, and bay leaves. Bring to a boil.",
+      "Cover and cook in a 325°F oven for 2.5 hours until beef is melt-in-your-mouth tender.",
+      "Sauté mushrooms separately until golden. Add to the pot in the last 30 min. Remove bay leaves before serving."
+    ]
+  },
+  {
+    name: "Ratatouille",
+    emoji: "🍆",
+    time: "1 hr",
+    cuisine: "French",
+    baseServings: 4,
+    ingredients: [
+      { name: "Tomato", amount: 4, unit: "count" },
+      { name: "Bell Pepper", amount: 2, unit: "count" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Olive Oil", amount: 4, unit: "tbsp" },
+      { name: "Thyme", amount: 3, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Dice onion and bell peppers. Sauté in olive oil over medium heat 8 min until softened. Add garlic and cook 1 min.",
+      "Add canned tomatoes, thyme, bay leaves, and Italian seasoning. Simmer 10 min to make a sauce base.",
+      "Slice tomatoes into thin rounds.",
+      "Spread the sauce in a baking dish. Arrange sliced tomatoes and bell peppers in overlapping circles on top.",
+      "Drizzle with olive oil. Cover with foil and bake at 375°F for 30 min.",
+      "Uncover and bake 15 more min until vegetables are tender and edges are caramelized. Remove bay leaves before serving."
+    ]
+  },
+  {
+    name: "Soupe à l'Oignon",
+    emoji: "🧅",
+    time: "1.5 hr",
+    cuisine: "French",
+    baseServings: 4,
+    ingredients: [
+      { name: "Onion", amount: 6, unit: "count" },
+      { name: "Beef Broth", amount: 4, unit: "cups" },
+      { name: "Butter", amount: 4, unit: "tbsp" },
+      { name: "Olive Oil", amount: 1, unit: "tbsp" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Thyme", amount: 2, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 1, unit: "count" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Bread", amount: 4, unit: "slices" },
+      { name: "Mozzarella", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Thinly slice all onions. Melt butter with olive oil in a heavy pot over medium-low heat.",
+      "Add onions and a pinch of salt. Cook 50-60 min stirring occasionally until deeply caramelized and golden brown. Add sugar halfway to help browning.",
+      "Add minced garlic, thyme, and bay leaf. Cook 2 min.",
+      "Pour in beef broth. Simmer 20 min. Season to taste. Remove bay leaf and thyme.",
+      "Toast bread slices until golden. Ladle soup into oven-safe bowls. Top with toasted bread and a generous pile of mozzarella.",
+      "Broil 4-5 min until cheese is bubbling and golden. Serve immediately."
+    ]
+  },
+  {
+    name: "Salade Niçoise",
+    emoji: "🥗",
+    time: "25 min",
+    cuisine: "French",
+    baseServings: 2,
+    ingredients: [
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Salmon", amount: 2, unit: "fillets" },
+      { name: "Potato", amount: 2, unit: "count" },
+      { name: "Tomato", amount: 2, unit: "count" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Dijon Mustard", amount: 1, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Boil potatoes until tender, about 15 min. Hard boil eggs 10 min. Cool both in cold water.",
+      "Season salmon with salt and pepper. Sear in olive oil 3-4 min per side until golden. Flake into chunks.",
+      "Make dressing: whisk together olive oil, dijon mustard, lemon juice, salt and pepper.",
+      "Slice potatoes, halve eggs and tomatoes.",
+      "Arrange everything on a platter — potatoes, eggs, tomatoes, and flaked salmon.",
+      "Drizzle dressing over everything and serve immediately."
+    ]
+  },
+  {
+    name: "Poulet Rôti",
+    emoji: "🍗",
+    time: "1.5 hr",
+    cuisine: "French",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken", amount: 1, unit: "whole" },
+      { name: "Butter", amount: 4, unit: "tbsp" },
+      { name: "Garlic", amount: 6, unit: "cloves" },
+      { name: "Thyme", amount: 4, unit: "sprigs" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 2, unit: "tsp" },
+      { name: "Pepper", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 425°F. Pat chicken completely dry inside and out — this is essential for crispy skin.",
+      "Mix softened butter with minced garlic, thyme leaves, salt, and pepper.",
+      "Loosen the skin over the breast and push herb butter directly underneath onto the meat.",
+      "Rub remaining butter all over the outside. Stuff cavity with halved lemon and remaining thyme.",
+      "Tie legs together. Place breast-side up in a roasting pan. Drizzle with olive oil.",
+      "Roast 60-75 min until skin is deep golden and juices run clear. Rest 15 min before carving."
+    ]
+  },
+  {
+    name: "Tarte Flambée",
+    emoji: "🫓",
+    time: "30 min",
+    cuisine: "French",
+    baseServings: 2,
+    ingredients: [
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Cream Cheese", amount: 0.5, unit: "cup" },
+      { name: "Sour Cream", amount: 0.25, unit: "cup" },
+      { name: "Bacon", amount: 4, unit: "strips" },
+      { name: "Onion", amount: 2, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mix flour, olive oil, a pinch of salt, and enough water to form a smooth dough. Rest 10 min.",
+      "Mix cream cheese and sour cream together. Season with salt and pepper.",
+      "Slice onions thinly. Cut bacon into small pieces.",
+      "Roll dough as thin as possible into a rectangle on a floured surface.",
+      "Spread cream mixture over the dough. Top with onions and bacon.",
+      "Bake at 475°F for 10-12 min until edges are crispy and topping is golden. Slice and serve immediately."
+    ]
+  },
+  {
+    name: "Bouillabaisse",
+    emoji: "🦞",
+    time: "1 hr",
+    cuisine: "French",
+    baseServings: 4,
+    ingredients: [
+      { name: "Shrimp", amount: 1, unit: "lb" },
+      { name: "Salmon", amount: 2, unit: "fillets" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Fennel Seeds", amount: 1, unit: "tsp" },
+      { name: "Saffron", amount: 1, unit: "pinch" },
+      { name: "Chicken Broth", amount: 3, unit: "cups" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Thyme", amount: 2, unit: "sprigs" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pot. Sauté diced onion 5 min. Add garlic and fennel seeds, cook 1 min.",
+      "Add canned tomatoes and thyme. Cook 10 min until thickened.",
+      "Pour in chicken broth. Add saffron. Bring to a simmer and cook 15 min.",
+      "Cut salmon into chunks. Add salmon and shrimp to the broth.",
+      "Simmer gently 8-10 min until seafood is just cooked through — do not overcook.",
+      "Season with salt. Ladle into deep bowls and serve with crusty bread for dipping."
+    ]
+  },
+  {
+    name: "Quiche Lorraine",
+    emoji: "🥧",
+    time: "55 min",
+    cuisine: "French",
+    baseServings: 6,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Heavy Cream", amount: 1, unit: "cup" },
+      { name: "Bacon", amount: 4, unit: "strips" },
+      { name: "Mozzarella", amount: 1, unit: "cup" },
+      { name: "Flour", amount: 1.5, unit: "cups" },
+      { name: "Butter", amount: 6, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Make pastry: mix flour and cold cubed butter until crumbly. Add cold water 1 tbsp at a time until dough forms. Chill 20 min.",
+      "Roll dough and press into a 9-inch tart pan. Prick the base with a fork. Blind bake at 375°F for 15 min.",
+      "Cook bacon until crispy. Crumble and set aside.",
+      "Whisk eggs and heavy cream together. Season with salt and pepper.",
+      "Scatter bacon and cheese over the pastry base. Pour egg mixture over the top.",
+      "Bake 30-35 min until filling is just set with a slight wobble in the center. Cool 10 min before slicing."
+    ]
+  },
+  {
+    name: "Hummus",
+    emoji: "🫙",
+    time: "10 min",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Paprika", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Drain and rinse canned chickpeas. Reserve the liquid from the can.",
+      "Add chickpeas, minced garlic, lemon juice, cumin, and salt to a blender.",
+      "Blend until smooth, adding the reserved chickpea liquid a tablespoon at a time until creamy.",
+      "With the blender running, drizzle in 2 tbsp olive oil until silky.",
+      "Taste and adjust salt and lemon juice.",
+      "Spread in a bowl. Drizzle with remaining olive oil and dust with paprika. Serve with pita or vegetables."
+    ]
+  },
+  {
+    name: "Falafel",
+    emoji: "🧆",
+    time: "30 min",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 0.25, unit: "cup" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Baking Powder", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Combine onion, garlic, cumin, coriander, salt, and flour in a food processor. Pulse until a coarse paste forms — do not over-blend.",
+      "Add baking powder and pulse 2-3 more times.",
+      "Refrigerate the mixture 30 min — this helps them hold together when frying.",
+      "Heat oil to 350°F. Shape mixture into small balls or patties.",
+      "Fry in batches 3-4 min until deep golden brown on all sides.",
+      "Drain on paper towels. Serve in pita with tahini, tomatoes, and pickles."
+    ]
+  },
+  {
+    name: "Kofta",
+    emoji: "🍢",
+    time: "25 min",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Olive Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Grate onion finely. Squeeze out excess moisture with a paper towel.",
+      "Combine ground beef, grated onion, minced garlic, and all spices. Mix well with your hands.",
+      "Divide into equal portions. Shape each into a long oval around a skewer or into patties.",
+      "Refrigerate 15 min to firm up.",
+      "Grill or pan-fry over medium-high heat 4-5 min per side until charred outside and cooked through.",
+      "Serve with warm pita, yogurt sauce, and fresh tomatoes."
+    ]
+  },
+  {
+    name: "Fattoush",
+    emoji: "🥗",
+    time: "15 min",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Tomato", amount: 3, unit: "count" },
+      { name: "Bell Pepper", amount: 1, unit: "count" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Bread", amount: 2, unit: "slices" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Sumac", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Toast bread until crispy then break into chunks. Alternatively fry in olive oil until golden.",
+      "Chop tomatoes, bell pepper, and red onion into bite-sized pieces.",
+      "Make dressing: whisk lemon juice, olive oil, cumin, and salt together.",
+      "Combine all vegetables in a large bowl.",
+      "Pour dressing over and toss well.",
+      "Add toasted bread chunks right before serving so they stay slightly crispy. Dust with sumac."
+    ]
+  },
+  {
+    name: "Mujaddara",
+    emoji: "🍚",
+    time: "45 min",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Rice", amount: 1, unit: "cups" },
+      { name: "Onion", amount: 3, unit: "count" },
+      { name: "Cumin", amount: 2, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Olive Oil", amount: 4, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Thinly slice onions. Heat olive oil in a large pan over medium heat.",
+      "Cook onions 30-35 min stirring occasionally until deeply caramelized and almost crispy. Remove half and set aside for topping.",
+      "Add cumin and coriander to the remaining onions. Stir 1 min.",
+      "Add rice and 2 cups water. Season with salt. Bring to a boil.",
+      "Reduce heat to low. Cover and cook 18 min until rice is tender.",
+      "Fluff with a fork. Top with the reserved crispy caramelized onions. Serve with yogurt."
+    ]
+  },
+  {
+    name: "Baba Ganoush",
+    emoji: "🍆",
+    time: "40 min",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Paprika", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Char eggplants directly over a gas flame or under the broiler, turning occasionally, until completely blackened and collapsed — about 20-25 min.",
+      "Place in a bowl and cover with plastic wrap. Let steam 10 min.",
+      "Peel off the charred skin. The flesh should be silky and smoky.",
+      "Mash the eggplant flesh with a fork — leave it slightly chunky.",
+      "Mix in minced garlic, lemon juice, olive oil, cumin, and salt.",
+      "Spread in a bowl. Drizzle with olive oil and dust with paprika. Serve with pita bread."
+    ]
+  },
+  {
+    name: "Lentil Soup",
+    emoji: "🍲",
+    time: "40 min",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Tomato", amount: 2, unit: "count" },
+      { name: "Cumin", amount: 2, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pot. Sauté diced onion 8 min until golden.",
+      "Add minced garlic, cumin, turmeric, and coriander. Stir 1 min until fragrant.",
+      "Add diced tomatoes and cook 5 min until broken down.",
+      "Pour in chicken broth. Bring to a boil then reduce to a simmer.",
+      "Cook 25 min until everything is very soft. Blend partially for a creamy but textured soup.",
+      "Squeeze in lemon juice. Season with salt. Serve with crusty bread and a drizzle of olive oil."
+    ]
+  },
+  {
+    name: "Mansaf",
+    emoji: "🍖",
+    time: "2 hr",
+    cuisine: "Middle Eastern",
+    baseServings: 6,
+    ingredients: [
+      { name: "Lamb Chops", amount: 4, unit: "count" },
+      { name: "Rice", amount: 2, unit: "cups" },
+      { name: "Greek Yogurt", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Season lamb with cumin, coriander, turmeric, and salt.",
+      "Brown lamb on all sides in butter over high heat. Remove.",
+      "Sauté onion and garlic in the same pot 5 min. Return lamb.",
+      "Add chicken broth. Bring to a boil then simmer covered 1.5 hours until lamb is very tender.",
+      "Remove lamb. Cook rice in the lamb broth until tender.",
+      "Stir Greek yogurt into the remaining broth over low heat — do not boil or it will curdle. Serve lamb over rice, drizzled with the yogurt sauce."
+    ]
+  },
+  {
+    name: "Tabbouleh",
+    emoji: "🥗",
+    time: "20 min",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Tomato", amount: 3, unit: "count" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Finely dice tomatoes and red onion. Place in a large bowl.",
+      "Chop parsley very finely — tabbouleh is mostly parsley, not grain.",
+      "Add parsley to the bowl with tomatoes and onion.",
+      "Whisk together lemon juice, olive oil, salt, and pepper.",
+      "Pour dressing over the salad and toss well.",
+      "Let sit 10 min before serving so flavors meld. Serve chilled with pita bread."
+    ]
+  },
+  {
+    name: "Musakhan",
+    emoji: "🍗",
+    time: "1 hr",
+    cuisine: "Middle Eastern",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Onion", amount: 3, unit: "count" },
+      { name: "Olive Oil", amount: 4, unit: "tbsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Bread", amount: 4, unit: "slices" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Season chicken with cumin, coriander, turmeric, cinnamon, and salt.",
+      "Heat olive oil in a pan. Brown chicken 5 min per side. Remove.",
+      "In the same pan, cook thinly sliced onions over medium heat 25-30 min until deeply caramelized.",
+      "Return chicken to the pan on top of the onions. Cover and cook 20 min until chicken is cooked through.",
+      "Toast bread until golden.",
+      "Lay toasted bread on a platter. Top with caramelized onions then chicken. Drizzle with olive oil and serve."
+    ]
+  }
 ];
 
 function findCategory(itemName) {

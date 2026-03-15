@@ -5742,10 +5742,15 @@ function App() {
                           <input type="checkbox" checked={item.checked} readOnly />
                           <span>{item.name}</span>
                         </div>
+                        <button className="btn-del" onClick={() => removeGroceryItem(item.name)}>×</button>
                       </div>
                     ))}
                   </div>
                 ))}
+              <div className="grocery-actions">
+                  <button className="btn-clear-done" onClick={clearDone}>Clear Done</button>
+                  <button className="btn-clear-all" onClick={clearAll}>Clear All</button>
+                </div>
               </>
             )}
           </div>

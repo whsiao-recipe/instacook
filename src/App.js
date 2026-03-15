@@ -1260,6 +1260,7 @@ function App() {
   const timerRef = React.useRef(null);
   const [aiSuggestion, setAiSuggestion] = useState(null);
   const [mobileTab, setMobileTab] = useState("pantry");
+  const [darkMode, setDarkMode] = useState(false);
   const [aiLoading, setAiLoading] = useState(false);
 
   useEffect(() => {
@@ -1491,7 +1492,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className={`app ${darkMode ? "dark" : ""}`}>
       <header className="topbar">
         <div className="logo">
           <svg className="logo-emblem" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1518,6 +1519,9 @@ function App() {
           </div>
         </div>
         <div className="topbar-right">
+          <button className="btn-darkmode" onClick={() => setDarkMode(d => !d)}>
+            {darkMode ? "☀️" : "🌙"}
+          </button>
           <button className="btn-surprise" onClick={getSurprise} disabled={aiLoading}>
             {aiLoading ? "Thinking..." : "✦ Surprise Me"}
           </button>

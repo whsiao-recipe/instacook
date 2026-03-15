@@ -21,7 +21,7 @@ const PANTRY_CATALOG = {
     "Avocado Oil", "Baking Powder", "Beef Broth", "Bread", "Canned Tomatoes",
     "Chicken Broth", "Coconut Milk", "Corn Starch", "Flour", "Honey",
     "Jasmine Rice", "Noodles", "Oil", "Olive Oil", "Panko Breadcrumbs",
-    "Pasta", "Pineapple Chunks", "Rice", "Tortillas"
+    "Pasta", "Pineapple Chunks", "Pita Bread", "Rice", "Tortillas"
   ],
   "Spices & Seasonings": [
     "Adobo", "Bay Leaf", "Chicken Powder", "Chili Flakes", "Cinnamon",
@@ -5007,7 +5007,7 @@ const RECIPE_LIBRARY = [
     ]
   },
   {
-    name: "Gyros",
+    name: "Chicken Gyros",
     emoji: "🥙",
     time: "30 min",
     cuisine: "Greek",
@@ -5021,7 +5021,7 @@ const RECIPE_LIBRARY = [
       { name: "Cumin", amount: 1, unit: "tsp" },
       { name: "Paprika", amount: 1, unit: "tsp" },
       { name: "Oregano", amount: 1, unit: "tsp" },
-      { name: "Tortillas", amount: 4, unit: "count" },
+      { name: "Pita Bread", amount: 4, unit: "count" },
       { name: "Salt", amount: 1, unit: "tsp" }
     ],
     steps: [
@@ -5029,8 +5029,8 @@ const RECIPE_LIBRARY = [
       "Coat chicken thoroughly. Marinate at least 30 min.",
       "Cook in a hot pan over medium-high heat 6-7 min per side until deeply golden and cooked through.",
       "Rest 5 min then slice thinly.",
-      "Warm pitas in the same pan.",
-      "Fill pitas with sliced chicken, tomatoes, and a generous drizzle of tzatziki."
+      "Warm pita bread in the same pan.",
+      "Fill pita with sliced chicken, tomatoes, and a generous drizzle of tzatziki."
     ]
   },
   {

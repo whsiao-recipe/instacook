@@ -309,7 +309,7 @@ const RECIPE_LIBRARY = [
     name: "Chicken Fried Rice",
     emoji: "🍳",
     time: "25 min",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -633,7 +633,7 @@ const RECIPE_LIBRARY = [
     name: "Egg Fried Rice",
     emoji: "🍳",
     time: "15 min",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 2,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -957,7 +957,7 @@ const RECIPE_LIBRARY = [
     name: "Beef Bulgogi",
     emoji: "🥩",
     time: "30 min",
-    cuisine: "Asian",
+    cuisine: "Korean",
     baseServings: 4,
     ingredients: [
       { name: "Beef Flank", amount: 1.5, unit: "lb" },
@@ -3052,7 +3052,7 @@ const RECIPE_LIBRARY = [
     name: "Spring Rolls",
     emoji: "🥢",
     time: "30 min",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 4,
     ingredients: [
       { name: "Ground Pork", amount: 0.5, unit: "lb" },
@@ -3078,7 +3078,7 @@ const RECIPE_LIBRARY = [
     name: "Dumplings",
     emoji: "🥟",
     time: "45 min",
-    cuisine: "Asian",
+    cuisine: "Chinese",
     baseServings: 4,
     ingredients: [
       { name: "Ground Pork", amount: 0.5, unit: "lb" },

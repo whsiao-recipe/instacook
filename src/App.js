@@ -38,7 +38,8 @@ const PANTRY_CATALOG = {
   ]
 };
 
-const CUISINES = ["All", "American", "Asian", "Italian", "Mexican", "Indian", "Middle Eastern", "French", "Healthy", "Breakfast", "Dessert", "Greek", "Japanese", "Thai", "Vietnamese"];
+const CUISINES = ["All", "American", "Asian", "Italian", "Mexican", "Indian", "Middle Eastern", "French", "Greek", "Healthy", "Breakfast", "Dessert"];
+const ASIAN_SUBCUISINES = ["All Asian", "Japanese", "Thai", "Vietnamese", "Korean", "Chinese"];
 
 const RECIPE_LIBRARY = [
   {
@@ -4247,6 +4248,7 @@ function App() {
   const [timerInput, setTimerInput] = useState("");
   const timerRef = React.useRef(null);
   const [aiSuggestion, setAiSuggestion] = useState(null);
+  const [asianSubFilter, setAsianSubFilter] = useState("All Asian");
   const [mobileTab, setMobileTab] = useState("pantry");
   const [darkMode, setDarkMode] = useState(false);
   const [aiLoading, setAiLoading] = useState(false);
@@ -4342,10 +4344,18 @@ function App() {
   const filteredRecipes = useMemo(() => {
     return RECIPE_LIBRARY
       .filter(r => r.name.toLowerCase().includes(searchTerm.toLowerCase()))
-      .filter(r => cuisineFilter === "All" || r.cuisine === cuisineFilter)
+      .filter(r => {
+        if (cuisineFilter === "All") return true;
+        if (cuisineFilter === "Asian") {
+          const asianCuisines = ["Asian", "Japanese", "Thai", "Vietnamese", "Korean", "Chinese"];
+          if (asianSubFilter === "All Asian") return asianCuisines.includes(r.cuisine);
+          return r.cuisine === asianSubFilter;
+        }
+        return r.cuisine === cuisineFilter;
+      })
       .map(r => ({ ...r, analysis: getRecipeAnalysis(r) }))
       .sort((a, b) => b.analysis.matchPercent - a.analysis.matchPercent);
-  }, [searchTerm, cuisineFilter, servings, pantryState]);
+  }, [searchTerm, cuisineFilter, asianSubFilter, servings, pantryState]);
 
   const canMakeRecipes = filteredRecipes.filter(r => r.analysis.canMake);
   const missingRecipes = filteredRecipes.filter(r => !r.analysis.canMake);
@@ -4568,7 +4578,7 @@ function App() {
                 <button
                   key={c}
                   className={`cuisine-btn ${cuisineFilter === c ? "active" : ""}`}
-                  onClick={() => setCuisineFilter(c)}
+                  onClick={() => { setCuisineFilter(c); setAsianSubFilter("All Asian"); }}
                 >
                   {c}
                 </button>

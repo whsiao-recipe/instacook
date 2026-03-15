@@ -39,7 +39,7 @@ const PANTRY_CATALOG = {
 };
 
 const CUISINES = ["All", "American", "Asian", "Italian", "Mexican", "Indian", "Middle Eastern", "French", "Greek", "Healthy", "Breakfast", "Dessert"];
-const ASIAN_SUBCUISINES = ["All Asian", "Japanese", "Thai", "Vietnamese"];
+const ASIAN_SUBCUISINES = ["All Asian", "Japanese", "Thai", "Vietnamese", "Korean", "Chinese"];
 
 const RECIPE_LIBRARY = [
   {
@@ -4488,6 +4488,666 @@ const RECIPE_LIBRARY = [
       "Add lemon juice. Simmer 2 min until slightly syrupy.",
       "Add folded crepes to the pan. Spoon sauce over them.",
       "Serve immediately — the butter sauce caramelizes the crepes beautifully."
+    ]
+  },
+  {
+    name: "Butter Cookies",
+    emoji: "🍪",
+    time: "25 min",
+    cuisine: "Dessert",
+    baseServings: 24,
+    ingredients: [
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Butter", amount: 1, unit: "cup" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Egg", amount: 1, unit: "count" },
+      { name: "Salt", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 350°F. Beat softened butter and sugar until pale and fluffy.",
+      "Add egg and beat until combined.",
+      "Mix in flour and salt until a soft dough forms.",
+      "Roll into small balls or pipe into rosettes on a lined baking sheet.",
+      "Bake 12-14 min until edges are just golden — centers will look underdone.",
+      "Cool on the tray. They firm up beautifully as they cool."
+    ]
+  },
+  {
+    name: "Muhallebi",
+    emoji: "🥛",
+    time: "20 min",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Milk", amount: 3, unit: "cups" },
+      { name: "Sugar", amount: 0.25, unit: "cup" },
+      { name: "Corn Starch", amount: 4, unit: "tbsp" },
+      { name: "Honey", amount: 2, unit: "tbsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Whisk corn starch with ½ cup cold milk until completely smooth.",
+      "Heat remaining milk and sugar in a pot over medium heat stirring until sugar dissolves.",
+      "Pour in the cornstarch mixture while whisking constantly.",
+      "Cook 8-10 min stirring until mixture thickens to a pudding consistency.",
+      "Pour into small bowls or glasses.",
+      "Refrigerate 2 hours until set. Drizzle with honey and dust with cinnamon before serving."
+    ]
+  },
+  {
+    name: "Vanilla Cream Cups",
+    emoji: "🍮",
+    time: "15 min",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Heavy Cream", amount: 1.5, unit: "cups" },
+      { name: "Milk", amount: 0.5, unit: "cup" },
+      { name: "Sugar", amount: 3, unit: "tbsp" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Corn Starch", amount: 2, unit: "tbsp" },
+      { name: "Butter", amount: 1, unit: "tbsp" },
+      { name: "Honey", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Whisk egg yolks, sugar, and corn starch together in a bowl.",
+      "Heat milk and heavy cream until simmering.",
+      "Slowly pour hot cream into egg mixture while whisking constantly.",
+      "Return to pot over medium heat. Cook stirring constantly until thick.",
+      "Remove from heat. Stir in butter and honey.",
+      "Pour into cups. Press cling film directly onto the surface. Refrigerate 1 hour. Serve chilled."
+    ]
+  }
+,
+  {
+    name: "Stuffed Bell Peppers",
+    emoji: "🫑",
+    time: "45 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Bell Pepper", amount: 4, unit: "count" },
+      { name: "Ground Beef", amount: 0.5, unit: "lb" },
+      { name: "Rice", amount: 0.5, unit: "cups" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Mozzarella", amount: 0.5, unit: "cup" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 375°F. Cook rice and set aside.",
+      "Cut tops off bell peppers and remove seeds. Place in a baking dish.",
+      "Brown ground beef with onion and garlic. Add canned tomatoes. Simmer 5 min.",
+      "Mix beef with cooked rice. Season with salt.",
+      "Stuff each pepper generously with the beef mixture.",
+      "Top with mozzarella. Bake 30 min until peppers are tender and cheese is golden."
+    ]
+  },
+  {
+    name: "Egg White Omelette",
+    emoji: "🍳",
+    time: "10 min",
+    cuisine: "Healthy",
+    baseServings: 1,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Spinach", amount: 1, unit: "cups" },
+      { name: "Mushrooms", amount: 0.5, unit: "cup" },
+      { name: "Onion", amount: 0.25, unit: "count" },
+      { name: "Olive Oil", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Separate eggs. Whisk whites vigorously with salt and pepper until slightly frothy.",
+      "Sauté mushrooms and onion in olive oil over medium heat 3 min.",
+      "Add spinach and cook until wilted. Remove and set aside.",
+      "Pour egg whites into the same pan over medium heat.",
+      "When edges set, add vegetables to one half. Fold over.",
+      "Cook 1 more min. Slide onto a plate. High protein, low calorie."
+    ]
+  },
+  {
+    name: "Chicken Lettuce Wraps",
+    emoji: "🥬",
+    time: "20 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Chicken", amount: 1, unit: "lb" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Hoisin Sauce", amount: 2, unit: "tbsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Heat oil in a wok over high heat. Cook ground chicken breaking it up until no longer pink.",
+      "Add minced garlic and ginger. Cook 1 min.",
+      "Add diced mushrooms. Cook 3 min until tender.",
+      "Add soy sauce, hoisin, and sesame oil. Toss everything together.",
+      "Cook 2 more min until sauce coats everything and caramelizes slightly.",
+      "Spoon into lettuce cups or spinach leaves. Serve immediately."
+    ]
+  },
+  {
+    name: "Poached Salmon & Spinach",
+    emoji: "🐟",
+    time: "20 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Salmon", amount: 2, unit: "fillets" },
+      { name: "Spinach", amount: 3, unit: "cups" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Olive Oil", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Bring chicken broth to a gentle simmer in a wide pan. Season with salt.",
+      "Add salmon fillets. Poach 8-10 min until just cooked through.",
+      "Meanwhile sauté minced garlic in olive oil 1 min.",
+      "Add spinach and toss until wilted. Season with salt and pepper.",
+      "Remove salmon carefully with a slotted spatula.",
+      "Serve salmon on bed of spinach. Squeeze fresh lemon over the top."
+    ]
+  },
+  {
+    name: "Chicken Meatballs",
+    emoji: "🍗",
+    time: "30 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Chicken", amount: 1, unit: "lb" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Onion", amount: 0.25, unit: "count" },
+      { name: "Panko Breadcrumbs", amount: 0.25, unit: "cup" },
+      { name: "Egg", amount: 1, unit: "count" },
+      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Combine ground chicken, minced garlic, grated onion, panko, egg, Italian seasoning, and salt.",
+      "Mix gently — overworking makes tough meatballs.",
+      "Roll into golf ball-sized portions.",
+      "Heat olive oil in an oven-safe pan over medium-high heat.",
+      "Brown meatballs on all sides, about 4 min total.",
+      "Transfer to oven at 400°F for 10-12 min until cooked through."
+    ]
+  },
+  {
+    name: "Sweet Potato Buddha Bowl",
+    emoji: "🍠",
+    time: "35 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Sweet Potato", amount: 2, unit: "count" },
+      { name: "Spinach", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Paprika", amount: 0.5, unit: "tsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Cube sweet potatoes. Toss with olive oil, cumin, paprika, and salt.",
+      "Roast at 425°F for 25 min until golden and caramelized.",
+      "Sauté minced garlic in olive oil. Add spinach and wilt 2 min.",
+      "Fry eggs sunny side up.",
+      "Build bowls: roasted sweet potato, wilted spinach, fried egg on top.",
+      "Squeeze lemon over everything and drizzle with olive oil."
+    ]
+  },
+  {
+    name: "Spinach & Mushroom Sauté",
+    emoji: "🍄",
+    time: "15 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Spinach", amount: 4, unit: "cups" },
+      { name: "Mushrooms", amount: 2, unit: "cups" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Lemon", amount: 0.5, unit: "count" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pan over high heat.",
+      "Add sliced mushrooms in a single layer. Do not stir for 2 min — let them brown.",
+      "Toss and cook 2 more min until golden on all sides.",
+      "Add minced garlic. Cook 30 seconds.",
+      "Add spinach and toss until just wilted, about 1-2 min.",
+      "Season with salt, pepper, and lemon juice. Serve as a side or over rice."
+    ]
+  },
+  {
+    name: "Baked Chicken & Broccoli",
+    emoji: "🥦",
+    time: "35 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 425°F.",
+      "Cut broccoli into florets. Toss with 2 tbsp olive oil, salt, and pepper.",
+      "Rub chicken with remaining olive oil, minced garlic, Italian seasoning, salt, and pepper.",
+      "Place chicken and broccoli on a large baking sheet — don't overlap.",
+      "Bake 25-30 min until chicken is golden and broccoli edges are crispy.",
+      "Squeeze lemon over everything before serving."
+    ]
+  },
+  {
+    name: "Shrimp Avocado Bowl",
+    emoji: "🍤",
+    time: "20 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Rice", amount: 1, unit: "cups" },
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Cook rice and set aside.",
+      "Pat shrimp dry. Season with cumin, chili flakes, and salt.",
+      "Heat olive oil in a pan over high heat. Cook shrimp 1-2 min per side until pink and slightly charred.",
+      "Add minced garlic in the last 30 seconds.",
+      "Squeeze lime over the shrimp.",
+      "Serve shrimp over rice with extra lime wedges."
+    ]
+  },
+  {
+    name: "Vegetable Omelette",
+    emoji: "🍳",
+    time: "15 min",
+    cuisine: "Healthy",
+    baseServings: 1,
+    ingredients: [
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Bell Pepper", amount: 0.5, unit: "count" },
+      { name: "Mushrooms", amount: 0.5, unit: "cup" },
+      { name: "Onion", amount: 0.25, unit: "count" },
+      { name: "Spinach", amount: 1, unit: "cups" },
+      { name: "Olive Oil", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Dice bell pepper, mushrooms, and onion finely.",
+      "Sauté vegetables in olive oil over medium heat 4 min until soft. Add spinach until wilted.",
+      "Whisk eggs with salt and pepper.",
+      "Push vegetables to the side. Pour eggs into the pan.",
+      "Cook until edges set. Add vegetables to one half.",
+      "Fold over and slide onto a plate."
+    ]
+  },
+  {
+    name: "Rice Pudding",
+    emoji: "🍚",
+    time: "35 min",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Rice", amount: 0.5, unit: "cups" },
+      { name: "Milk", amount: 3, unit: "cups" },
+      { name: "Sugar", amount: 0.25, unit: "cup" },
+      { name: "Butter", amount: 1, unit: "tbsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Combine rice, milk, sugar, and a pinch of salt in a heavy pot.",
+      "Bring to a gentle simmer over medium heat stirring frequently.",
+      "Reduce heat to low. Cook 25-30 min stirring every few minutes until rice is tender and mixture is thick and creamy.",
+      "Remove from heat. Stir in butter.",
+      "Pour into bowls. Dust with cinnamon.",
+      "Serve warm or refrigerate and serve cold."
+    ]
+  },
+  {
+    name: "Bread Pudding",
+    emoji: "🍞",
+    time: "55 min",
+    cuisine: "Dessert",
+    baseServings: 6,
+    ingredients: [
+      { name: "Bread", amount: 1, unit: "loaf" },
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Milk", amount: 2, unit: "cups" },
+      { name: "Heavy Cream", amount: 0.5, unit: "cup" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Cinnamon", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Cut bread into cubes. Spread on a baking sheet and let dry out 30 min or toast lightly.",
+      "Whisk eggs, milk, heavy cream, sugar, cinnamon, and salt together.",
+      "Place bread in a buttered baking dish. Pour custard over the top.",
+      "Press bread down gently. Let soak 15 min.",
+      "Bake at 350°F for 40-45 min until top is golden and custard is just set.",
+      "Serve warm with a drizzle of honey or cream."
+    ]
+  },
+  {
+    name: "Churros",
+    emoji: "🍩",
+    time: "30 min",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 1, unit: "cup" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Cinnamon", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Bring 1 cup water, butter, and a pinch of salt to a boil. Add flour all at once and stir vigorously until dough pulls away from the sides.",
+      "Cool 5 min. Beat in eggs one at a time until smooth and glossy.",
+      "Transfer to a piping bag with a star tip.",
+      "Heat oil to 375°F. Pipe 4-inch strips directly into the oil. Cut with scissors.",
+      "Fry 3-4 min until deep golden. Drain on paper towels.",
+      "Mix sugar and cinnamon. Roll hot churros in the mixture immediately."
+    ]
+  },
+  {
+    name: "Panna Cotta",
+    emoji: "🍮",
+    time: "20 min",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Heavy Cream", amount: 2, unit: "cups" },
+      { name: "Milk", amount: 0.5, unit: "cup" },
+      { name: "Sugar", amount: 0.25, unit: "cup" },
+      { name: "Honey", amount: 2, unit: "tbsp" }
+    ],
+    steps: [
+      "Combine heavy cream, milk, and sugar in a pot over medium heat. Stir until sugar dissolves.",
+      "Bring just to a simmer — do not boil.",
+      "Remove from heat. Stir in honey.",
+      "Pour into ramekins or glasses.",
+      "Refrigerate at least 4 hours until set — overnight is best.",
+      "Serve chilled. Drizzle with honey or top with fresh fruit."
+    ]
+  },
+  {
+    name: "Crème Brûlée",
+    emoji: "🍮",
+    time: "1 hr",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Heavy Cream", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 5, unit: "count" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Preheat oven to 325°F. Heat cream until just simmering.",
+      "Whisk egg yolks with ¼ cup sugar and a pinch of salt until pale.",
+      "Slowly pour warm cream into eggs while whisking constantly.",
+      "Strain through a sieve into ramekins.",
+      "Place in a baking dish filled with hot water halfway up the ramekins. Bake 35-40 min until barely set.",
+      "Cool then refrigerate 2 hours. Before serving sprinkle with sugar and torch until caramelized."
+    ]
+  },
+  {
+    name: "Tiramisu",
+    emoji: "☕",
+    time: "30 min",
+    cuisine: "Dessert",
+    baseServings: 6,
+    ingredients: [
+      { name: "Heavy Cream", amount: 1, unit: "cup" },
+      { name: "Cream Cheese", amount: 1, unit: "cup" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Bread", amount: 1, unit: "loaf" },
+      { name: "Honey", amount: 2, unit: "tbsp" }
+    ],
+    steps: [
+      "Whip heavy cream to stiff peaks. Set aside.",
+      "Beat cream cheese with sugar and honey until smooth.",
+      "Separate eggs. Whisk yolks into the cream cheese mixture.",
+      "Fold in whipped cream gently.",
+      "Slice bread thin and dip briefly in strong coffee or milk.",
+      "Layer soaked bread and cream mixture in a dish. Refrigerate overnight. Dust with cinnamon before serving."
+    ]
+  },
+  {
+    name: "Mango Sticky Rice",
+    emoji: "🥭",
+    time: "35 min",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Jasmine Rice", amount: 1, unit: "cups" },
+      { name: "Coconut Milk", amount: 1, unit: "can" },
+      { name: "Sugar", amount: 0.25, unit: "cup" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Honey", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Cook jasmine rice with coconut milk instead of water — use the same ratio.",
+      "While hot, stir in sugar and a pinch of salt until dissolved.",
+      "Cover and let the rice steam and absorb for 10 min.",
+      "Heat remaining coconut milk with honey and a pinch of salt for the sauce.",
+      "Plate the sticky rice. Pour warm coconut sauce over the top.",
+      "Serve with sliced fresh fruit on the side."
+    ]
+  },
+  {
+    name: "Coconut Pudding",
+    emoji: "🥥",
+    time: "20 min",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Coconut Milk", amount: 1, unit: "can" },
+      { name: "Milk", amount: 1, unit: "cup" },
+      { name: "Sugar", amount: 0.25, unit: "cup" },
+      { name: "Corn Starch", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Whisk corn starch with ¼ cup cold milk until smooth.",
+      "Combine coconut milk, remaining milk, sugar, and salt in a pot.",
+      "Bring to a gentle simmer over medium heat.",
+      "Pour in the cornstarch mixture while whisking constantly.",
+      "Cook 5-7 min stirring until thick enough to coat the back of a spoon.",
+      "Pour into cups. Refrigerate 2 hours until set. Serve chilled."
+    ]
+  },
+  {
+    name: "Tres Leches Cake",
+    emoji: "🎂",
+    time: "1 hr",
+    cuisine: "Dessert",
+    baseServings: 8,
+    ingredients: [
+      { name: "Flour", amount: 1, unit: "cup" },
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Sugar", amount: 1, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Baking Powder", amount: 1, unit: "tsp" },
+      { name: "Milk", amount: 1, unit: "cup" },
+      { name: "Heavy Cream", amount: 1, unit: "cup" },
+      { name: "Coconut Milk", amount: 0.5, unit: "cup" }
+    ],
+    steps: [
+      "Beat eggs and sugar until pale and thick, about 5 min.",
+      "Fold in flour and baking powder gently.",
+      "Pour into a greased baking dish. Bake at 350°F for 25 min until golden.",
+      "Mix milk, heavy cream, and coconut milk together.",
+      "While cake is still hot, poke all over with a fork. Pour the milk mixture slowly over the top — it will absorb completely.",
+      "Refrigerate 4 hours. Serve chilled topped with whipped cream."
+    ]
+  },
+  {
+    name: "Egg Custard",
+    emoji: "🍮",
+    time: "40 min",
+    cuisine: "Dessert",
+    baseServings: 4,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Milk", amount: 2, unit: "cups" },
+      { name: "Sugar", amount: 0.25, unit: "cup" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Preheat oven to 325°F. Warm milk until steaming — do not boil.",
+      "Whisk eggs, sugar, and a pinch of salt until combined.",
+      "Slowly pour warm milk into eggs while whisking.",
+      "Strain through a sieve into ramekins. Dust with cinnamon.",
+      "Place in a baking dish filled with hot water halfway up the sides.",
+      "Bake 35-40 min until just set with a slight wobble. Serve warm or chilled."
+    ]
+  },
+  {
+    name: "Honey Cake",
+    emoji: "🍯",
+    time: "45 min",
+    cuisine: "Dessert",
+    baseServings: 8,
+    ingredients: [
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Honey", amount: 0.5, unit: "cup" },
+      { name: "Sugar", amount: 0.25, unit: "cup" },
+      { name: "Butter", amount: 0.5, unit: "cup" },
+      { name: "Milk", amount: 0.5, unit: "cup" },
+      { name: "Baking Powder", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 350°F. Melt butter and let cool slightly.",
+      "Whisk eggs, honey, sugar, and melted butter until smooth.",
+      "Mix flour, baking powder, and cinnamon. Fold into the wet ingredients alternating with milk.",
+      "Pour into a greased loaf pan.",
+      "Bake 40-45 min until a skewer comes out clean.",
+      "Cool 10 min before slicing. Drizzle with extra honey to serve."
+    ]
+  },
+  {
+    name: "Profiteroles",
+    emoji: "🍡",
+    time: "45 min",
+    cuisine: "Dessert",
+    baseServings: 6,
+    ingredients: [
+      { name: "Flour", amount: 0.5, unit: "cup" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Butter", amount: 0.25, unit: "cup" },
+      { name: "Milk", amount: 0.25, unit: "cup" },
+      { name: "Heavy Cream", amount: 1, unit: "cup" },
+      { name: "Sugar", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Bring ½ cup water, milk, butter, and salt to a boil. Add flour all at once and stir hard until dough forms a ball.",
+      "Cool 5 min. Beat in eggs one at a time until smooth and shiny.",
+      "Pipe or spoon golf ball-sized mounds onto a lined baking sheet.",
+      "Bake at 400°F for 25-30 min until puffed and golden. Do not open the oven early.",
+      "Cool completely. Whip heavy cream with sugar to stiff peaks.",
+      "Cut each puff in half. Fill with whipped cream. Drizzle with honey and serve."
+    ]
+  },
+  {
+    name: "Caramel Flan",
+    emoji: "🍮",
+    time: "1 hr",
+    cuisine: "Dessert",
+    baseServings: 6,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Milk", amount: 1, unit: "cup" },
+      { name: "Heavy Cream", amount: 1, unit: "cup" },
+      { name: "Sugar", amount: 0.75, unit: "cup" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Make caramel: cook ½ cup sugar in a pan over medium heat without stirring until amber. Quickly pour into a round baking dish.",
+      "Whisk eggs, remaining sugar, and a pinch of salt until combined.",
+      "Warm milk and cream until steaming. Slowly pour into egg mixture whisking constantly.",
+      "Pour custard over the caramel.",
+      "Bake in a water bath at 325°F for 45-50 min until barely set.",
+      "Refrigerate overnight. Run a knife around the edge, invert onto a plate — the caramel flows over the top."
+    ]
+  },
+  {
+    name: "Coconut Macaroons",
+    emoji: "🍪",
+    time: "25 min",
+    cuisine: "Dessert",
+    baseServings: 12,
+    ingredients: [
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Coconut Milk", amount: 0.5, unit: "cup" },
+      { name: "Flour", amount: 0.25, unit: "cup" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Preheat oven to 375°F. Line a baking sheet with parchment.",
+      "Whisk egg whites with a pinch of salt until frothy.",
+      "Mix in sugar, coconut milk, and flour until a sticky dough forms.",
+      "Drop rounded tablespoons onto the baking sheet spacing 2 inches apart.",
+      "Bake 15-18 min until edges are golden and tops are lightly browned.",
+      "Cool on the tray — they firm up as they cool."
+    ]
+  },
+  {
+    name: "Honey Yogurt Parfait",
+    emoji: "🍯",
+    time: "5 min",
+    cuisine: "Dessert",
+    baseServings: 2,
+    ingredients: [
+      { name: "Greek Yogurt", amount: 1, unit: "cup" },
+      { name: "Honey", amount: 3, unit: "tbsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Butter", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Toast a handful of whatever nuts or oats you have in butter until golden.",
+      "Layer Greek yogurt in glasses.",
+      "Drizzle honey generously over the yogurt.",
+      "Sprinkle with cinnamon.",
+      "Top with the toasted butter mixture for crunch.",
+      "Serve immediately."
     ]
   },
   {

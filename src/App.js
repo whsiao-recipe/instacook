@@ -3874,6 +3874,256 @@ const RECIPE_LIBRARY = [
       "Dust generously with chili flakes and squeeze fresh lime over the top."
     ]
   }
+,
+  {
+    name: "Stuffed Bell Peppers",
+    emoji: "🫑",
+    time: "45 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Bell Pepper", amount: 4, unit: "count" },
+      { name: "Ground Beef", amount: 0.5, unit: "lb" },
+      { name: "Rice", amount: 0.5, unit: "cups" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Mozzarella", amount: 0.5, unit: "cup" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 375°F. Cook rice and set aside.",
+      "Cut tops off bell peppers and remove seeds. Place in a baking dish.",
+      "Brown ground beef with onion and garlic. Add canned tomatoes. Simmer 5 min.",
+      "Mix beef with cooked rice. Season with salt.",
+      "Stuff each pepper generously with the beef mixture.",
+      "Top with mozzarella. Bake 30 min until peppers are tender and cheese is golden."
+    ]
+  },
+  {
+    name: "Egg White Omelette",
+    emoji: "🍳",
+    time: "10 min",
+    cuisine: "Healthy",
+    baseServings: 1,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Spinach", amount: 1, unit: "cups" },
+      { name: "Mushrooms", amount: 0.5, unit: "cup" },
+      { name: "Onion", amount: 0.25, unit: "count" },
+      { name: "Olive Oil", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Separate eggs. Whisk whites vigorously with salt and pepper until slightly frothy.",
+      "Sauté mushrooms and onion in olive oil over medium heat 3 min.",
+      "Add spinach and cook until wilted. Remove and set aside.",
+      "Pour egg whites into the same pan over medium heat.",
+      "When edges set, add vegetables to one half. Fold over.",
+      "Cook 1 more min. Slide onto a plate. High protein, low calorie."
+    ]
+  },
+  {
+    name: "Chicken Lettuce Wraps",
+    emoji: "🥬",
+    time: "20 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Chicken", amount: 1, unit: "lb" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Hoisin Sauce", amount: 2, unit: "tbsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Heat oil in a wok over high heat. Cook ground chicken breaking it up until no longer pink.",
+      "Add minced garlic and ginger. Cook 1 min.",
+      "Add diced mushrooms. Cook 3 min until tender.",
+      "Add soy sauce, hoisin, and sesame oil. Toss everything together.",
+      "Cook 2 more min until sauce coats everything and caramelizes slightly.",
+      "Spoon into lettuce cups or spinach leaves. Serve immediately."
+    ]
+  },
+  {
+    name: "Poached Salmon & Spinach",
+    emoji: "🐟",
+    time: "20 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Salmon", amount: 2, unit: "fillets" },
+      { name: "Spinach", amount: 3, unit: "cups" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Olive Oil", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Bring chicken broth to a gentle simmer in a wide pan. Season with salt.",
+      "Add salmon fillets. Poach 8-10 min until just cooked through.",
+      "Meanwhile sauté minced garlic in olive oil 1 min.",
+      "Add spinach and toss until wilted. Season with salt and pepper.",
+      "Remove salmon carefully with a slotted spatula.",
+      "Serve salmon on bed of spinach. Squeeze fresh lemon over the top."
+    ]
+  },
+  {
+    name: "Chicken Meatballs",
+    emoji: "🍗",
+    time: "30 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Chicken", amount: 1, unit: "lb" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Onion", amount: 0.25, unit: "count" },
+      { name: "Panko Breadcrumbs", amount: 0.25, unit: "cup" },
+      { name: "Egg", amount: 1, unit: "count" },
+      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Combine ground chicken, minced garlic, grated onion, panko, egg, Italian seasoning, and salt.",
+      "Mix gently — overworking makes tough meatballs.",
+      "Roll into golf ball-sized portions.",
+      "Heat olive oil in an oven-safe pan over medium-high heat.",
+      "Brown meatballs on all sides, about 4 min total.",
+      "Transfer to oven at 400°F for 10-12 min until cooked through."
+    ]
+  },
+  {
+    name: "Sweet Potato Buddha Bowl",
+    emoji: "🍠",
+    time: "35 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Sweet Potato", amount: 2, unit: "count" },
+      { name: "Spinach", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Paprika", amount: 0.5, unit: "tsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Cube sweet potatoes. Toss with olive oil, cumin, paprika, and salt.",
+      "Roast at 425°F for 25 min until golden and caramelized.",
+      "Sauté minced garlic in olive oil. Add spinach and wilt 2 min.",
+      "Fry eggs sunny side up.",
+      "Build bowls: roasted sweet potato, wilted spinach, fried egg on top.",
+      "Squeeze lemon over everything and drizzle with olive oil."
+    ]
+  },
+  {
+    name: "Spinach & Mushroom Sauté",
+    emoji: "🍄",
+    time: "15 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Spinach", amount: 4, unit: "cups" },
+      { name: "Mushrooms", amount: 2, unit: "cups" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Lemon", amount: 0.5, unit: "count" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pan over high heat.",
+      "Add sliced mushrooms in a single layer. Do not stir for 2 min — let them brown.",
+      "Toss and cook 2 more min until golden on all sides.",
+      "Add minced garlic. Cook 30 seconds.",
+      "Add spinach and toss until just wilted, about 1-2 min.",
+      "Season with salt, pepper, and lemon juice."
+    ]
+  },
+  {
+    name: "Baked Chicken & Broccoli",
+    emoji: "🥦",
+    time: "35 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 425°F.",
+      "Cut broccoli into florets. Toss with 2 tbsp olive oil, salt, and pepper.",
+      "Rub chicken with remaining olive oil, minced garlic, Italian seasoning, salt, and pepper.",
+      "Place chicken and broccoli on a large baking sheet — don't overlap.",
+      "Bake 25-30 min until chicken is golden and broccoli edges are crispy.",
+      "Squeeze lemon over everything before serving."
+    ]
+  },
+  {
+    name: "Shrimp Avocado Bowl",
+    emoji: "🍤",
+    time: "20 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Rice", amount: 1, unit: "cups" },
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Cook rice and set aside.",
+      "Pat shrimp dry. Season with cumin, chili flakes, and salt.",
+      "Heat olive oil in a pan over high heat. Cook shrimp 1-2 min per side until pink and slightly charred.",
+      "Add minced garlic in the last 30 seconds.",
+      "Squeeze lime over the shrimp.",
+      "Serve shrimp over rice with extra lime wedges."
+    ]
+  },
+  {
+    name: "Vegetable Omelette",
+    emoji: "🍳",
+    time: "15 min",
+    cuisine: "Healthy",
+    baseServings: 1,
+    ingredients: [
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Bell Pepper", amount: 0.5, unit: "count" },
+      { name: "Mushrooms", amount: 0.5, unit: "cup" },
+      { name: "Onion", amount: 0.25, unit: "count" },
+      { name: "Spinach", amount: 1, unit: "cups" },
+      { name: "Olive Oil", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Dice bell pepper, mushrooms, and onion finely.",
+      "Sauté vegetables in olive oil over medium heat 4 min until soft. Add spinach until wilted.",
+      "Whisk eggs with salt and pepper.",
+      "Push vegetables to the side. Pour eggs into the pan.",
+      "Cook until edges set. Add vegetables to one half.",
+      "Fold over and slide onto a plate."
+    ]
+  }
 ];
 
 function findCategory(itemName) {

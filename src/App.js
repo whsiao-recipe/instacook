@@ -3269,6 +3269,611 @@ const RECIPE_LIBRARY = [
       "Serve as a side or over rice."
     ]
   }
+,
+  {
+    name: "Gyoza",
+    emoji: "🥟",
+    time: "30 min",
+    cuisine: "Japanese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 0.5, unit: "lb" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 2, unit: "count" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mix flour with ½ cup boiling water. Knead until smooth. Rest 20 min.",
+      "Combine ground pork, minced garlic, ginger, soy sauce, sesame oil, and sliced green onions.",
+      "Roll dough thin. Cut into 3-inch circles.",
+      "Place 1 tsp filling in center. Fold and pleat edges tightly to seal.",
+      "Heat oil in a pan over medium-high. Place gyoza flat-side down. Cook 2 min until golden.",
+      "Add ¼ cup water. Cover and steam 5 min until water evaporates. Serve with soy sauce and vinegar."
+    ]
+  },
+  {
+    name: "Teriyaki Salmon",
+    emoji: "🐟",
+    time: "20 min",
+    cuisine: "Japanese",
+    baseServings: 2,
+    ingredients: [
+      { name: "Salmon", amount: 2, unit: "fillets" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Honey", amount: 2, unit: "tbsp" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Mix soy sauce, honey, minced garlic, ginger, and sesame oil into a marinade.",
+      "Pat salmon dry. Marinate 15 min.",
+      "Heat oil in an oven-safe pan over medium-high heat.",
+      "Sear salmon skin-side up 3 min until golden. Flip.",
+      "Pour remaining marinade over the top. It will bubble and thicken.",
+      "Baste continuously 2-3 min until salmon is cooked and glazed. Serve over rice."
+    ]
+  },
+  {
+    name: "Katsu Curry",
+    emoji: "🍛",
+    time: "45 min",
+    cuisine: "Japanese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Panko Breadcrumbs", amount: 1, unit: "cup" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Flour", amount: 0.5, unit: "cup" },
+      { name: "Curry Powder", amount: 2, unit: "tsp" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Pound chicken thighs flat. Season with salt.",
+      "Set up three bowls: flour, beaten eggs, and panko breadcrumbs.",
+      "Coat chicken in flour, then egg, then panko pressing firmly.",
+      "Fry in oil at 350°F for 5-6 min per side until golden and cooked through. Drain.",
+      "Make curry sauce: sauté onion and garlic, add curry powder, then broth. Simmer 10 min and blend smooth.",
+      "Slice chicken into strips. Serve over rice with curry sauce poured over."
+    ]
+  },
+  {
+    name: "Okonomiyaki",
+    emoji: "🥞",
+    time: "25 min",
+    cuisine: "Japanese",
+    baseServings: 2,
+    ingredients: [
+      { name: "Flour", amount: 1, unit: "cup" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Bacon", amount: 4, unit: "strips" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Onion", amount: 2, unit: "count" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mix flour, eggs, soy sauce, and ½ cup water into a batter.",
+      "Fold in sliced mushrooms and green onions.",
+      "Heat oil in a pan over medium heat. Pour in half the batter to form a thick round pancake.",
+      "Lay bacon strips on top.",
+      "Cook 4-5 min until bottom is set and golden. Flip carefully.",
+      "Cook 4 more min until bacon is crispy. Drizzle with ketchup and mayonnaise to serve."
+    ]
+  },
+  {
+    name: "Miso Glazed Cod",
+    emoji: "🐟",
+    time: "25 min",
+    cuisine: "Japanese",
+    baseServings: 2,
+    ingredients: [
+      { name: "Tilapia", amount: 2, unit: "fillets" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Honey", amount: 2, unit: "tbsp" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Garlic", amount: 1, unit: "cloves" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Mix soy sauce, honey, minced garlic, ginger, and sesame oil into a glaze.",
+      "Pat fish dry. Brush generously with glaze on both sides.",
+      "Marinate 15 min.",
+      "Heat oil in an oven-safe pan over high heat. Sear fish 2 min until caramelized.",
+      "Flip carefully. Brush with more glaze.",
+      "Broil 3-4 min until glaze is sticky and fish flakes easily. Serve with steamed rice."
+    ]
+  },
+  {
+    name: "Pad Thai",
+    emoji: "🍜",
+    time: "25 min",
+    cuisine: "Thai",
+    baseServings: 2,
+    ingredients: [
+      { name: "Noodles", amount: 1, unit: "pack" },
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Fish Sauce", amount: 2, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Lime", amount: 1, unit: "count" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Chili Flakes", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Soak rice noodles in warm water 20 min until pliable. Drain.",
+      "Mix fish sauce, soy sauce, and sugar into a sauce.",
+      "Heat oil in a wok over high heat. Cook shrimp 1 min per side. Push to the side.",
+      "Add garlic. Scramble eggs in the center until just set.",
+      "Add noodles and sauce. Toss everything together over high heat 2-3 min.",
+      "Add chili flakes. Serve with lime wedges and crushed peanuts."
+    ]
+  },
+  {
+    name: "Green Curry",
+    emoji: "🍛",
+    time: "30 min",
+    cuisine: "Thai",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Coconut Milk", amount: 1, unit: "can" },
+      { name: "Bell Pepper", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Fish Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Curry Powder", amount: 2, unit: "tsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" },
+      { name: "Basil", amount: 1, unit: "bunch" }
+    ],
+    steps: [
+      "Heat oil in a wok over medium heat. Add minced garlic and ginger. Cook 1 min.",
+      "Add curry powder and stir 30 seconds until fragrant.",
+      "Add sliced chicken. Cook 5-6 min until browned.",
+      "Pour in coconut milk. Bring to a simmer.",
+      "Add sliced bell pepper. Cook 10 min until sauce thickens and chicken is cooked through.",
+      "Season with fish sauce and sugar. Fold in basil. Serve over jasmine rice."
+    ]
+  },
+  {
+    name: "Massaman Curry",
+    emoji: "🍲",
+    time: "1 hr",
+    cuisine: "Thai",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Potato", amount: 2, unit: "count" },
+      { name: "Coconut Milk", amount: 1, unit: "can" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Curry Powder", amount: 2, unit: "tsp" },
+      { name: "Cinnamon", amount: 1, unit: "stick" },
+      { name: "Fish Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" }
+    ],
+    steps: [
+      "Heat oil in a pot. Brown chicken on all sides over high heat. Remove.",
+      "Sauté diced onion, garlic, and ginger 5 min. Add curry powder and cinnamon. Stir 1 min.",
+      "Return chicken. Pour in coconut milk. Bring to a simmer.",
+      "Add cubed potatoes. Cover and cook 30 min until potatoes are tender.",
+      "Season with fish sauce and sugar. The curry should be rich, slightly sweet, and aromatic.",
+      "Serve over jasmine rice."
+    ]
+  },
+  {
+    name: "Pad See Ew",
+    emoji: "🍜",
+    time: "20 min",
+    cuisine: "Thai",
+    baseServings: 2,
+    ingredients: [
+      { name: "Noodles", amount: 1, unit: "pack" },
+      { name: "Chicken", amount: 0.5, unit: "lb" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Dark Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Oil", amount: 2, unit: "tbsp" }
+    ],
+    steps: [
+      "Soak wide rice noodles in warm water 20 min. Drain.",
+      "Mix dark soy sauce, soy sauce, and sugar into a sauce.",
+      "Heat oil in a wok over high heat. Cook sliced chicken until golden. Push aside.",
+      "Add garlic. Crack eggs in center and scramble until just set.",
+      "Add broccoli florets and cook 2 min.",
+      "Add noodles and sauce. Toss everything over high heat until noodles are caramelized and dark. Serve immediately."
+    ]
+  },
+  {
+    name: "Tom Kha",
+    emoji: "🥥",
+    time: "25 min",
+    cuisine: "Thai",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken", amount: 1, unit: "lb" },
+      { name: "Coconut Milk", amount: 1, unit: "can" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Ginger", amount: 2, unit: "tbsp" },
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Fish Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Bring chicken broth to a simmer. Add sliced ginger and cook 5 min to infuse.",
+      "Add coconut milk. Bring back to a gentle simmer — do not boil or coconut milk will split.",
+      "Add sliced chicken and mushrooms. Cook 10 min until chicken is cooked through.",
+      "Season with fish sauce, lime juice, and sugar.",
+      "Taste — it should be creamy, sour, and gently spiced.",
+      "Add chili flakes to taste. Serve immediately."
+    ]
+  },
+  {
+    name: "Banh Mi",
+    emoji: "🥖",
+    time: "20 min",
+    cuisine: "Vietnamese",
+    baseServings: 2,
+    ingredients: [
+      { name: "Chicken", amount: 0.5, unit: "lb" },
+      { name: "Bread", amount: 1, unit: "loaf" },
+      { name: "Pickles", amount: 0.25, unit: "cup" },
+      { name: "Cucumber", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Honey", amount: 1, unit: "tbsp" },
+      { name: "Lime", amount: 1, unit: "count" },
+      { name: "Hot Sauce", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Marinate sliced chicken in soy sauce, honey, minced garlic, and lime juice for 15 min.",
+      "Cook chicken in hot oil over medium-high heat until caramelized and cooked through.",
+      "Slice bread lengthwise. Toast until crispy.",
+      "Spread hot sauce on the bread.",
+      "Layer chicken, pickles, and sliced cucumber.",
+      "Close the sandwich and press firmly. The contrast of crispy bread, savory chicken, and pickles is everything."
+    ]
+  },
+  {
+    name: "Pho Bo",
+    emoji: "🍜",
+    time: "45 min",
+    cuisine: "Vietnamese",
+    baseServings: 2,
+    ingredients: [
+      { name: "Beef Flank", amount: 0.5, unit: "lb" },
+      { name: "Beef Broth", amount: 4, unit: "cups" },
+      { name: "Noodles", amount: 1, unit: "pack" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Ginger", amount: 2, unit: "tbsp" },
+      { name: "Star Anise", amount: 3, unit: "pods" },
+      { name: "Fish Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Lime", amount: 1, unit: "count" },
+      { name: "Basil", amount: 1, unit: "bunch" }
+    ],
+    steps: [
+      "Char halved onion and sliced ginger directly over a flame or under the broiler until blackened.",
+      "Bring beef broth to a boil. Add charred onion, ginger, and star anise. Simmer 30 min.",
+      "Strain broth. Season with fish sauce and sugar.",
+      "Slice beef paper-thin against the grain.",
+      "Cook noodles per package. Divide into deep bowls with raw beef on top.",
+      "Ladle boiling broth over — it cooks the beef instantly. Serve with lime and basil."
+    ]
+  },
+  {
+    name: "Vietnamese Lemongrass Chicken",
+    emoji: "🍗",
+    time: "30 min",
+    cuisine: "Vietnamese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Fish Sauce", amount: 3, unit: "tbsp" },
+      { name: "Sugar", amount: 2, unit: "tbsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Lime", amount: 1, unit: "count" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Onion", amount: 1, unit: "count" }
+    ],
+    steps: [
+      "Mix fish sauce, sugar, minced garlic, ginger, and chili flakes into a marinade.",
+      "Coat chicken thighs thoroughly. Marinate 20 min.",
+      "Heat oil in a pan over medium-high heat.",
+      "Cook chicken 6-7 min per side until deeply caramelized and cooked through.",
+      "Add sliced onion in the last 3 min.",
+      "Squeeze lime over the top. Serve over rice with the caramelized pan juices."
+    ]
+  },
+  {
+    name: "Vietnamese Caramel Pork",
+    emoji: "🍖",
+    time: "35 min",
+    cuisine: "Vietnamese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 1, unit: "lb" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Fish Sauce", amount: 3, unit: "tbsp" },
+      { name: "Sugar", amount: 3, unit: "tbsp" },
+      { name: "Coconut Milk", amount: 0.5, unit: "cup" },
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Hard boil eggs 10 min. Peel and set aside.",
+      "Cook sugar in a pot over medium heat until it turns amber caramel — do not stir.",
+      "Add pork and stir to coat in the caramel. Cook until browned.",
+      "Add minced garlic, ginger, fish sauce, and coconut milk.",
+      "Add whole peeled eggs. Simmer 20 min until sauce is thick and deeply flavored.",
+      "Season with pepper. Serve over rice — the eggs absorb the caramel sauce beautifully."
+    ]
+  },
+  {
+    name: "Vietnamese Shrimp Rice Paper Rolls",
+    emoji: "🍤",
+    time: "30 min",
+    cuisine: "Vietnamese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Rice", amount: 1, unit: "cups" },
+      { name: "Cucumber", amount: 1, unit: "count" },
+      { name: "Lime", amount: 1, unit: "count" },
+      { name: "Fish Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Garlic", amount: 1, unit: "cloves" },
+      { name: "Chili Flakes", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Cook shrimp in boiling water 2 min until pink. Cool and halve lengthwise.",
+      "Cook rice noodles per package. Rinse cold.",
+      "Make dipping sauce: mix fish sauce, lime juice, sugar, minced garlic, and chili flakes with 2 tbsp water.",
+      "Dip rice paper briefly in warm water until pliable.",
+      "Layer shrimp, noodles, and julienned cucumber on the lower third.",
+      "Fold sides in and roll tightly. Serve immediately with dipping sauce."
+    ]
+  },
+  {
+    name: "Moussaka",
+    emoji: "🍆",
+    time: "1.5 hr",
+    cuisine: "Greek",
+    baseServings: 6,
+    ingredients: [
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Potato", amount: 3, unit: "count" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Milk", amount: 2, unit: "cups" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Flour", amount: 3, unit: "tbsp" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Slice potatoes thin. Roast at 400°F 20 min until golden.",
+      "Brown ground beef with onion and garlic. Add canned tomatoes and cinnamon. Simmer 15 min.",
+      "Make béchamel: melt butter, whisk in flour, gradually add milk. Simmer until thick. Cool slightly and whisk in eggs.",
+      "Layer potato slices in a baking dish. Top with meat sauce.",
+      "Pour béchamel over the top.",
+      "Bake at 375°F for 45 min until golden and set. Rest 15 min before slicing."
+    ]
+  },
+  {
+    name: "Souvlaki",
+    emoji: "🍢",
+    time: "30 min",
+    cuisine: "Greek",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Oregano", amount: 2, unit: "tsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" },
+      { name: "Tortillas", amount: 4, unit: "count" }
+    ],
+    steps: [
+      "Cut chicken into chunks. Mix olive oil, lemon juice, minced garlic, oregano, cumin, salt, and pepper.",
+      "Marinate chicken at least 30 min — overnight is best.",
+      "Thread onto skewers.",
+      "Grill or pan-fry over high heat 4-5 min per side until charred and cooked through.",
+      "Warm pitas in the same pan.",
+      "Serve chicken in pitas with tzatziki, tomatoes, and red onion."
+    ]
+  },
+  {
+    name: "Spanakopita",
+    emoji: "🥧",
+    time: "50 min",
+    cuisine: "Greek",
+    baseServings: 6,
+    ingredients: [
+      { name: "Spinach", amount: 4, unit: "cups" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Mozzarella", amount: 1, unit: "cup" },
+      { name: "Cream Cheese", amount: 0.5, unit: "cup" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Flour", amount: 1.5, unit: "cups" },
+      { name: "Butter", amount: 4, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Make pastry: mix flour, cold butter, and salt. Add cold water until dough forms. Chill 20 min.",
+      "Sauté onion and garlic in olive oil. Add spinach and cook until wilted. Cool completely.",
+      "Squeeze out all excess moisture from spinach — this is crucial.",
+      "Mix spinach with eggs, mozzarella, and cream cheese. Season well.",
+      "Line a baking dish with half the pastry. Add filling. Cover with remaining pastry and crimp edges.",
+      "Brush with egg wash. Bake at 375°F for 35-40 min until deep golden."
+    ]
+  },
+  {
+    name: "Pastitsio",
+    emoji: "🍝",
+    time: "1.5 hr",
+    cuisine: "Greek",
+    baseServings: 6,
+    ingredients: [
+      { name: "Pasta", amount: 300, unit: "g" },
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Milk", amount: 2, unit: "cups" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Flour", amount: 3, unit: "tbsp" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Parmesan", amount: 0.5, unit: "cup" }
+    ],
+    steps: [
+      "Cook pasta until al dente. Drain.",
+      "Brown beef with onion and garlic. Add canned tomatoes and cinnamon. Simmer 15 min.",
+      "Make béchamel: melt butter, whisk in flour, gradually add milk. Simmer until thick. Cool and whisk in eggs.",
+      "Layer half the pasta in a baking dish. Add all the meat sauce. Top with remaining pasta.",
+      "Pour béchamel over the top. Sprinkle with parmesan.",
+      "Bake at 375°F for 45 min until golden and set. Rest 15 min before slicing."
+    ]
+  },
+  {
+    name: "Enchiladas",
+    emoji: "🌮",
+    time: "45 min",
+    cuisine: "Mexican",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken", amount: 1, unit: "lb" },
+      { name: "Tortillas", amount: 8, unit: "count" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.5, unit: "tsp" },
+      { name: "Mozzarella", amount: 1.5, unit: "cups" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cook chicken in seasoned water 20 min. Shred.",
+      "Make sauce: blend canned tomatoes, onion, garlic, cumin, chili flakes, and salt.",
+      "Simmer sauce in olive oil 10 min until thickened.",
+      "Dip each tortilla briefly in sauce. Fill with shredded chicken and cheese. Roll tightly.",
+      "Place seam-side down in a baking dish. Pour remaining sauce over. Top with cheese.",
+      "Bake at 375°F for 20 min until bubbly and golden."
+    ]
+  },
+  {
+    name: "Pozole",
+    emoji: "🍲",
+    time: "1.5 hr",
+    cuisine: "Mexican",
+    baseServings: 6,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Chicken Broth", amount: 6, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Oregano", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Add chicken, broth, halved onion, garlic, cumin, and oregano to a large pot.",
+      "Bring to a boil then simmer 30 min until chicken is cooked through.",
+      "Remove chicken and shred. Return to the pot.",
+      "Add chili flakes. Simmer 20 more min until broth is rich and flavored.",
+      "Season with salt and lime juice.",
+      "Serve topped with shredded cabbage, radishes, and lime wedges."
+    ]
+  },
+  {
+    name: "Chiles Rellenos",
+    emoji: "🌶️",
+    time: "45 min",
+    cuisine: "Mexican",
+    baseServings: 4,
+    ingredients: [
+      { name: "Bell Pepper", amount: 4, unit: "count" },
+      { name: "Ground Beef", amount: 0.5, unit: "lb" },
+      { name: "Mozzarella", amount: 1, unit: "cup" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Flour", amount: 0.25, unit: "cup" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Roast bell peppers under the broiler turning until charred all over. Steam in a covered bowl 10 min. Peel and make a slit to remove seeds.",
+      "Cook ground beef with onion, garlic, and cumin. Season with salt.",
+      "Stuff each pepper with beef and cheese. Secure with a toothpick.",
+      "Separate eggs. Beat whites to stiff peaks. Fold in yolks to make a batter.",
+      "Dust stuffed peppers in flour then dip in egg batter.",
+      "Fry in oil at 350°F until golden on all sides. Drain and serve with tomato sauce."
+    ]
+  },
+  {
+    name: "Elote",
+    emoji: "🌽",
+    time: "20 min",
+    cuisine: "Mexican",
+    baseServings: 4,
+    ingredients: [
+      { name: "Sour Cream", amount: 0.25, unit: "cup" },
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Parmesan", amount: 0.5, unit: "cup" },
+      { name: "Garlic Powder", amount: 0.5, unit: "tsp" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Grill corn directly over a gas flame or in a hot pan turning until charred on all sides.",
+      "Mix sour cream with garlic powder and a pinch of salt.",
+      "Brush hot corn with butter.",
+      "Spread sour cream mixture all over the corn.",
+      "Roll in grated parmesan until fully coated.",
+      "Dust generously with chili flakes and squeeze fresh lime over the top."
+    ]
+  }
 ];
 
 function findCategory(itemName) {

@@ -2157,6 +2157,660 @@ const RECIPE_LIBRARY = [
       "Lay toasted bread on a platter. Top with caramelized onions then chicken. Drizzle with olive oil and serve."
     ]
   }
+,
+  {
+    name: "Scrambled Eggs",
+    emoji: "🍳",
+    time: "10 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Butter", amount: 1, unit: "tbsp" },
+      { name: "Milk", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Crack eggs into a bowl. Add milk, salt, and pepper. Whisk until fully combined.",
+      "Melt butter in a non-stick pan over medium-low heat.",
+      "Pour in egg mixture. Let sit 20 seconds until edges begin to set.",
+      "Using a spatula, gently push eggs from the edges toward the center in slow large folds.",
+      "Remove from heat while eggs still look slightly underdone — carry-over heat will finish them.",
+      "Serve immediately. Perfect scrambled eggs should be soft, creamy, and barely set."
+    ]
+  },
+  {
+    name: "French Toast",
+    emoji: "🍞",
+    time: "15 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Bread", amount: 4, unit: "slices" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Milk", amount: 0.25, unit: "cup" },
+      { name: "Butter", amount: 1, unit: "tbsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Whisk together eggs, milk, cinnamon, sugar, and a pinch of salt in a shallow bowl.",
+      "Melt butter in a pan over medium heat.",
+      "Dip each bread slice in the egg mixture, letting it soak 10 seconds per side.",
+      "Cook in the pan 2-3 min per side until deeply golden.",
+      "Work in batches, adding more butter as needed.",
+      "Serve with honey or powdered sugar."
+    ]
+  },
+  {
+    name: "Pancakes",
+    emoji: "🥞",
+    time: "20 min",
+    cuisine: "Breakfast",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 1.5, unit: "cups" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Milk", amount: 1, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Baking Powder", amount: 2, unit: "tsp" },
+      { name: "Sugar", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mix flour, baking powder, sugar, and salt in a bowl.",
+      "In another bowl whisk eggs, milk, and melted butter.",
+      "Pour wet into dry. Stir until just combined — lumps are fine. Do not overmix.",
+      "Let batter rest 5 min — this makes fluffier pancakes.",
+      "Heat a pan over medium heat. Lightly butter. Pour ¼ cup batter per pancake.",
+      "Cook until bubbles form on top, about 2 min. Flip and cook 1-2 min more. Serve with honey."
+    ]
+  },
+  {
+    name: "Classic Omelette",
+    emoji: "🍳",
+    time: "10 min",
+    cuisine: "Breakfast",
+    baseServings: 1,
+    ingredients: [
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Butter", amount: 1, unit: "tbsp" },
+      { name: "Cheese", amount: 0.25, unit: "cup" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Crack eggs into a bowl. Season with salt and pepper. Whisk vigorously until completely uniform.",
+      "Melt butter in a non-stick pan over medium-high heat until foaming.",
+      "Pour in eggs. Immediately start shaking the pan while stirring with a spatula.",
+      "When eggs are just set but still slightly wet on top, stop stirring.",
+      "Add cheese along the center. Tilt the pan and fold the omelette onto itself.",
+      "Slide onto a plate. The outside should be smooth and pale, the inside creamy."
+    ]
+  },
+  {
+    name: "Breakfast Burrito",
+    emoji: "🌯",
+    time: "20 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Tortillas", amount: 2, unit: "count" },
+      { name: "Bacon", amount: 3, unit: "strips" },
+      { name: "Bell Pepper", amount: 0.5, unit: "count" },
+      { name: "Onion", amount: 0.25, unit: "count" },
+      { name: "Cheese", amount: 0.5, unit: "cup" },
+      { name: "Oil", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Cook bacon until crispy. Remove and crumble. Keep 1 tbsp bacon fat in the pan.",
+      "Sauté diced bell pepper and onion in the fat 3 min until softened.",
+      "Whisk eggs with salt. Add to the pan and scramble until just set.",
+      "Warm tortillas in a dry pan or microwave.",
+      "Layer eggs, bacon, and cheese in the center of each tortilla.",
+      "Fold in the sides then roll tightly. Optional: toast seam-side down in the pan for 1 min."
+    ]
+  },
+  {
+    name: "Bacon & Eggs",
+    emoji: "🥓",
+    time: "15 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Bacon", amount: 4, unit: "strips" },
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Butter", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Cook bacon in a cold pan over medium heat — starting cold renders more fat and keeps it flat.",
+      "Cook 4-5 min per side until crispy. Drain on paper towels.",
+      "Pour off most bacon fat. Add butter to the pan.",
+      "Crack eggs into the pan over medium-low heat.",
+      "For sunny side up: cook 3 min without flipping. For over easy: flip gently after 2 min.",
+      "Season with salt and pepper. Serve with toast."
+    ]
+  },
+  {
+    name: "Egg Muffins",
+    emoji: "🧁",
+    time: "25 min",
+    cuisine: "Breakfast",
+    baseServings: 6,
+    ingredients: [
+      { name: "Egg", amount: 6, unit: "count" },
+      { name: "Bacon", amount: 3, unit: "strips" },
+      { name: "Bell Pepper", amount: 0.5, unit: "count" },
+      { name: "Cheese", amount: 0.5, unit: "cup" },
+      { name: "Milk", amount: 0.25, unit: "cup" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 375°F. Grease a muffin tin well.",
+      "Cook bacon until crispy. Crumble. Dice bell pepper finely.",
+      "Whisk eggs with milk, salt, and pepper until combined.",
+      "Divide bacon and bell pepper evenly among muffin cups.",
+      "Pour egg mixture over the top. Sprinkle with cheese.",
+      "Bake 15-18 min until puffed and set. Store refrigerated up to 4 days."
+    ]
+  },
+  {
+    name: "Congee",
+    emoji: "🍚",
+    time: "45 min",
+    cuisine: "Breakfast",
+    baseServings: 4,
+    ingredients: [
+      { name: "Rice", amount: 0.5, unit: "cups" },
+      { name: "Chicken Broth", amount: 6, unit: "cups" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Rinse rice well. Combine with chicken broth in a large pot.",
+      "Add sliced ginger and minced garlic. Bring to a boil.",
+      "Reduce to a low simmer. Cook 35-40 min stirring occasionally until rice has completely broken down into a thick porridge.",
+      "Add more broth if too thick — congee should flow slowly off a spoon.",
+      "Season with soy sauce and salt.",
+      "Ladle into bowls. Drizzle with sesame oil. Top with a soft boiled egg."
+    ]
+  },
+  {
+    name: "Crepes",
+    emoji: "🫓",
+    time: "20 min",
+    cuisine: "Breakfast",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 1, unit: "cup" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Milk", amount: 1, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "pinch" }
+    ],
+    steps: [
+      "Blend flour, eggs, milk, melted butter, sugar, and salt until smooth. Rest 15 min.",
+      "Heat a non-stick pan over medium heat. Lightly butter.",
+      "Pour ¼ cup batter into the pan. Immediately tilt and swirl to spread into a thin circle.",
+      "Cook 1-2 min until edges are set and bottom is pale golden. Flip.",
+      "Cook 30 seconds more. Slide onto a plate.",
+      "Fill with honey and cream cheese, or fold and dust with powdered sugar."
+    ]
+  },
+  {
+    name: "Waffles",
+    emoji: "🧇",
+    time: "25 min",
+    cuisine: "Breakfast",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Milk", amount: 1.5, unit: "cups" },
+      { name: "Butter", amount: 4, unit: "tbsp" },
+      { name: "Baking Powder", amount: 1, unit: "tsp" },
+      { name: "Sugar", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Separate eggs. Whisk yolks with milk and melted butter.",
+      "Mix flour, baking powder, sugar, and salt in a separate bowl.",
+      "Combine wet and dry ingredients until just mixed.",
+      "Beat egg whites to stiff peaks. Fold gently into the batter — this is what makes waffles light.",
+      "Pour batter into a preheated greased waffle iron. Cook until golden and crispy.",
+      "Serve immediately with honey or cream. Waffles lose their crunch fast."
+    ]
+  },
+  {
+    name: "Huevos Rancheros",
+    emoji: "🌮",
+    time: "20 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Tortillas", amount: 2, unit: "count" },
+      { name: "Tomato", amount: 2, unit: "count" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.25, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Make salsa: dice tomatoes, onion, and garlic. Simmer in olive oil with cumin, chili flakes, and salt for 10 min.",
+      "Warm tortillas in a dry pan until lightly charred.",
+      "In the same pan with a little olive oil, fry eggs sunny-side up.",
+      "Lay warm tortillas on plates. Spoon salsa generously over each.",
+      "Top with fried eggs.",
+      "Serve immediately with sour cream and cheese if desired."
+    ]
+  },
+  {
+    name: "Breakfast Fried Rice",
+    emoji: "🍳",
+    time: "15 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Rice", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Bacon", amount: 3, unit: "strips" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Use cold day-old rice — fresh rice makes mushy fried rice.",
+      "Cook bacon until crispy in a wok. Remove and crumble. Keep the fat.",
+      "Sauté diced onion 2 min over high heat.",
+      "Push to the side. Scramble eggs in the center until just set.",
+      "Add rice. Toss everything together over high heat pressing rice against the wok for slight char.",
+      "Add soy sauce and sesame oil. Top with crumbled bacon. Serve immediately."
+    ]
+  },
+  {
+    name: "Turkish Eggs",
+    emoji: "🍳",
+    time: "15 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Greek Yogurt", amount: 1, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Garlic", amount: 1, unit: "cloves" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.5, unit: "tsp" },
+      { name: "Vinegar", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mix Greek yogurt with minced garlic and a pinch of salt. Spread across two plates.",
+      "Bring a pot of water to a gentle simmer. Add vinegar.",
+      "Crack each egg into a small cup. Swirl the water and slide eggs in one at a time.",
+      "Poach 3-4 min until whites are set but yolks are still runny. Remove with a slotted spoon.",
+      "Melt butter in a small pan. Add paprika and chili flakes. Sizzle 30 seconds.",
+      "Place poached eggs on the yogurt. Drizzle the red butter over the top. Serve with bread."
+    ]
+  },
+  {
+    name: "Potato Hash",
+    emoji: "🥔",
+    time: "25 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Potato", amount: 3, unit: "count" },
+      { name: "Bacon", amount: 3, unit: "strips" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Bell Pepper", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Smoked Paprika", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Dice potatoes into small cubes. Microwave 4 min to par-cook.",
+      "Cook bacon until crispy. Remove and crumble.",
+      "In the same pan with bacon fat fry potatoes over medium-high heat. Don't stir for 3-4 min — let them crust.",
+      "Add diced onion, bell pepper, and garlic. Cook 5 min stirring occasionally.",
+      "Season with smoked paprika, salt, and pepper.",
+      "Top with crumbled bacon. Serve with fried eggs."
+    ]
+  },
+  {
+    name: "Egg & Cheese Sandwich",
+    emoji: "🥪",
+    time: "10 min",
+    cuisine: "Breakfast",
+    baseServings: 1,
+    ingredients: [
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Bread", amount: 2, unit: "slices" },
+      { name: "American Cheese", amount: 1, unit: "slices" },
+      { name: "Butter", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Toast bread until golden.",
+      "Melt butter in a non-stick pan over medium heat.",
+      "Crack eggs into the pan. Break yolks and let cook flat like a patty, about 2 min.",
+      "Season with salt and pepper. Flip and cook 1 more min.",
+      "Place cheese on top and let melt.",
+      "Stack on toasted bread and serve immediately."
+    ]
+  },
+  {
+    name: "Spanish Tortilla",
+    emoji: "🍳",
+    time: "35 min",
+    cuisine: "Breakfast",
+    baseServings: 4,
+    ingredients: [
+      { name: "Egg", amount: 6, unit: "count" },
+      { name: "Potato", amount: 3, unit: "count" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 0.5, unit: "cup" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Thinly slice potatoes and onion. Heat olive oil in a pan over medium heat.",
+      "Add potato and onion. Cook 20 min until potatoes are tender but not browned. Drain excess oil.",
+      "Whisk eggs with salt. Add potato mixture to the eggs. Let sit 5 min.",
+      "Heat 1 tbsp oil in the pan. Pour in egg and potato mixture.",
+      "Cook until edges are set, about 5 min. Flip using a large plate.",
+      "Slide back into the pan. Cook 3-5 more min. Serve warm or at room temperature."
+    ]
+  },
+  {
+    name: "Soft Boiled Eggs & Toast",
+    emoji: "🥚",
+    time: "10 min",
+    cuisine: "Breakfast",
+    baseServings: 2,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Bread", amount: 4, unit: "slices" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Bring a pot of water to a full boil.",
+      "Gently lower eggs in using a spoon.",
+      "Cook exactly 6 minutes for runny yolk, 7 minutes for jammy.",
+      "Transfer immediately to ice water for 1 minute.",
+      "Toast bread and butter generously. Cut into long soldiers for dipping.",
+      "Tap the top of each egg, peel away, and season. Dip your soldiers."
+    ]
+  },
+  {
+    name: "Caesar Salad",
+    emoji: "🥗",
+    time: "15 min",
+    cuisine: "American",
+    baseServings: 4,
+    ingredients: [
+      { name: "Spinach", amount: 4, unit: "cups" },
+      { name: "Parmesan", amount: 0.5, unit: "cup" },
+      { name: "Bread", amount: 2, unit: "slices" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Dijon Mustard", amount: 1, unit: "tsp" },
+      { name: "Worcestershire Sauce", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Make croutons: cube bread, toss with olive oil and a pinch of garlic, toast in oven at 375°F for 10 min.",
+      "Make dressing: whisk lemon juice, dijon mustard, worcestershire, minced garlic, salt, and pepper. Drizzle in olive oil while whisking.",
+      "Toss spinach with dressing until well coated.",
+      "Add half the parmesan and toss again.",
+      "Top with croutons and remaining parmesan.",
+      "Serve immediately — dressed salad wilts quickly."
+    ]
+  },
+  {
+    name: "Greek Salad",
+    emoji: "🥗",
+    time: "10 min",
+    cuisine: "Greek",
+    baseServings: 4,
+    ingredients: [
+      { name: "Tomato", amount: 3, unit: "count" },
+      { name: "Bell Pepper", amount: 1, unit: "count" },
+      { name: "Red Onion", amount: 0.5, unit: "count" },
+      { name: "Mozzarella", amount: 1, unit: "cup" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Oregano", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Chop tomatoes into large chunks. Dice bell pepper and red onion.",
+      "Combine vegetables in a large bowl.",
+      "Add mozzarella cubes on top.",
+      "Drizzle with olive oil and lemon juice.",
+      "Season with oregano, salt, and pepper.",
+      "Toss gently and serve immediately."
+    ]
+  },
+  {
+    name: "Caprese Salad",
+    emoji: "🍅",
+    time: "10 min",
+    cuisine: "Italian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Tomato", amount: 4, unit: "count" },
+      { name: "Mozzarella", amount: 1.5, unit: "cups" },
+      { name: "Basil", amount: 1, unit: "bunch" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Slice tomatoes and mozzarella into even rounds about ¼ inch thick.",
+      "Arrange alternating slices on a platter.",
+      "Tuck fresh basil leaves between the slices.",
+      "Drizzle generously with olive oil.",
+      "Season with salt and black pepper.",
+      "Serve at room temperature — never refrigerate a caprese."
+    ]
+  },
+  {
+    name: "Pasta Salad",
+    emoji: "🍝",
+    time: "20 min",
+    cuisine: "Italian",
+    baseServings: 6,
+    ingredients: [
+      { name: "Pasta", amount: 300, unit: "g" },
+      { name: "Tomato", amount: 2, unit: "count" },
+      { name: "Bell Pepper", amount: 1, unit: "count" },
+      { name: "Red Onion", amount: 0.5, unit: "count" },
+      { name: "Olive Oil", amount: 4, unit: "tbsp" },
+      { name: "Vinegar", amount: 2, unit: "tbsp" },
+      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
+      { name: "Parmesan", amount: 0.5, unit: "cup" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cook pasta until al dente. Rinse under cold water. Drain well.",
+      "Dice tomatoes, bell pepper, and red onion into small pieces.",
+      "Whisk olive oil, vinegar, Italian seasoning, salt, and pepper to make the dressing.",
+      "Combine cooled pasta with all vegetables.",
+      "Pour dressing over and toss well.",
+      "Add parmesan and toss again. Refrigerate 30 min before serving."
+    ]
+  },
+  {
+    name: "Potato Salad",
+    emoji: "🥔",
+    time: "30 min",
+    cuisine: "American",
+    baseServings: 6,
+    ingredients: [
+      { name: "Potato", amount: 6, unit: "count" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Red Onion", amount: 0.5, unit: "count" },
+      { name: "Dijon Mustard", amount: 2, unit: "tbsp" },
+      { name: "Sour Cream", amount: 0.5, unit: "cup" },
+      { name: "Vinegar", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Boil potatoes until just tender about 15-20 min. Cool completely.",
+      "Hard boil eggs 10 min. Cool in ice water, peel, and chop.",
+      "Peel and cube cooled potatoes.",
+      "Make dressing: mix sour cream, dijon mustard, vinegar, salt, and pepper.",
+      "Combine potatoes, eggs, and diced red onion.",
+      "Fold in dressing gently. Refrigerate at least 1 hour before serving."
+    ]
+  },
+  {
+    name: "Spinach Bacon Salad",
+    emoji: "🥗",
+    time: "15 min",
+    cuisine: "American",
+    baseServings: 4,
+    ingredients: [
+      { name: "Spinach", amount: 4, unit: "cups" },
+      { name: "Bacon", amount: 4, unit: "strips" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Red Onion", amount: 0.25, unit: "count" },
+      { name: "Vinegar", amount: 2, unit: "tbsp" },
+      { name: "Dijon Mustard", amount: 1, unit: "tsp" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Hard boil eggs 10 min. Cool, peel, and slice.",
+      "Cook bacon until crispy. Remove and crumble. Keep 1 tbsp drippings.",
+      "Make warm dressing: add vinegar and dijon to the bacon drippings. Whisk in olive oil.",
+      "Place spinach in a large bowl. Thinly slice red onion and add.",
+      "Pour warm dressing over spinach — it will wilt slightly.",
+      "Top with sliced eggs and crumbled bacon. Serve immediately."
+    ]
+  },
+  {
+    name: "Thai Beef Salad",
+    emoji: "🥗",
+    time: "20 min",
+    cuisine: "Asian",
+    baseServings: 2,
+    ingredients: [
+      { name: "Beef Flank", amount: 0.5, unit: "lb" },
+      { name: "Red Onion", amount: 0.5, unit: "count" },
+      { name: "Tomato", amount: 1, unit: "count" },
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Fish Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.5, unit: "tsp" },
+      { name: "Garlic", amount: 1, unit: "cloves" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Season beef with salt. Sear in a hot pan over high heat 3-4 min per side for medium-rare.",
+      "Rest 5 min then slice thinly against the grain.",
+      "Make dressing: whisk lime juice, fish sauce, sugar, minced garlic, and chili flakes.",
+      "Thinly slice red onion and tomato.",
+      "Combine sliced beef, onion, and tomato.",
+      "Pour dressing over and toss. Drizzle with sesame oil. Serve immediately."
+    ]
+  },
+  {
+    name: "Egg Salad",
+    emoji: "🥚",
+    time: "15 min",
+    cuisine: "American",
+    baseServings: 4,
+    ingredients: [
+      { name: "Egg", amount: 6, unit: "count" },
+      { name: "Dijon Mustard", amount: 1, unit: "tbsp" },
+      { name: "Sour Cream", amount: 3, unit: "tbsp" },
+      { name: "Red Onion", amount: 0.25, unit: "count" },
+      { name: "Lemon", amount: 0.5, unit: "count" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Hard boil eggs 10-12 min. Transfer to ice water, peel, and chop roughly.",
+      "Finely dice red onion.",
+      "Mix dijon mustard, sour cream, lemon juice, salt, and pepper.",
+      "Fold eggs and onion into the dressing gently.",
+      "Taste and adjust seasoning.",
+      "Serve on toast or in a sandwich. Refrigerate up to 3 days."
+    ]
+  },
+  {
+    name: "Tomato Basil Salad",
+    emoji: "🍅",
+    time: "10 min",
+    cuisine: "Italian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Tomato", amount: 4, unit: "count" },
+      { name: "Basil", amount: 1, unit: "bunch" },
+      { name: "Garlic", amount: 1, unit: "cloves" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Vinegar", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Slice tomatoes into thick rounds or wedges.",
+      "Arrange on a platter.",
+      "Mince garlic and scatter over the tomatoes.",
+      "Drizzle with olive oil and vinegar.",
+      "Season with salt and pepper.",
+      "Tear basil leaves and scatter over the top. Let sit 5 min — the salt draws out the juices."
+    ]
+  },
+  {
+    name: "Mushroom Spinach Salad",
+    emoji: "🍄",
+    time: "15 min",
+    cuisine: "American",
+    baseServings: 4,
+    ingredients: [
+      { name: "Spinach", amount: 4, unit: "cups" },
+      { name: "Mushrooms", amount: 2, unit: "cups" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Parmesan", amount: 0.25, unit: "cup" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Sauté sliced mushrooms in 2 tbsp olive oil over high heat until golden, about 5 min. Season and set aside.",
+      "Add garlic to the pan. Cook 30 seconds.",
+      "Whisk remaining olive oil with lemon juice, salt, and pepper for the dressing.",
+      "Place spinach in a large bowl.",
+      "Add warm mushrooms on top — the heat gently wilts the spinach.",
+      "Pour dressing over and toss. Top with parmesan and serve immediately."
+    ]
+  }
 ];
 
 function findCategory(itemName) {

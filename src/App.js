@@ -3874,739 +3874,6 @@ const RECIPE_LIBRARY = [
       "Dust generously with chili flakes and squeeze fresh lime over the top."
     ]
   }
-,
-  {
-    name: "Stuffed Bell Peppers",
-    emoji: "🫑",
-    time: "45 min",
-    cuisine: "Healthy",
-    baseServings: 4,
-    ingredients: [
-      { name: "Bell Pepper", amount: 4, unit: "count" },
-      { name: "Ground Beef", amount: 0.5, unit: "lb" },
-      { name: "Rice", amount: 0.5, unit: "cups" },
-      { name: "Onion", amount: 0.5, unit: "count" },
-      { name: "Garlic", amount: 2, unit: "cloves" },
-      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
-      { name: "Mozzarella", amount: 0.5, unit: "cup" },
-      { name: "Salt", amount: 0.5, unit: "tsp" }
-    ],
-    steps: [
-      "Preheat oven to 375°F. Cook rice and set aside.",
-      "Cut tops off bell peppers and remove seeds. Place in a baking dish.",
-      "Brown ground beef with onion and garlic. Add canned tomatoes. Simmer 5 min.",
-      "Mix beef with cooked rice. Season with salt.",
-      "Stuff each pepper generously with the beef mixture.",
-      "Top with mozzarella. Bake 30 min until peppers are tender and cheese is golden."
-    ]
-  },
-  {
-    name: "Egg White Omelette",
-    emoji: "🍳",
-    time: "10 min",
-    cuisine: "Healthy",
-    baseServings: 1,
-    ingredients: [
-      { name: "Egg", amount: 4, unit: "count" },
-      { name: "Spinach", amount: 1, unit: "cups" },
-      { name: "Mushrooms", amount: 0.5, unit: "cup" },
-      { name: "Onion", amount: 0.25, unit: "count" },
-      { name: "Olive Oil", amount: 1, unit: "tsp" },
-      { name: "Salt", amount: 0.25, unit: "tsp" },
-      { name: "Pepper", amount: 0.25, unit: "tsp" }
-    ],
-    steps: [
-      "Separate eggs. Whisk whites vigorously with salt and pepper until slightly frothy.",
-      "Sauté mushrooms and onion in olive oil over medium heat 3 min.",
-      "Add spinach and cook until wilted. Remove and set aside.",
-      "Pour egg whites into the same pan over medium heat.",
-      "When edges set, add vegetables to one half. Fold over.",
-      "Cook 1 more min. Slide onto a plate. High protein, low calorie."
-    ]
-  },
-  {
-    name: "Chicken Lettuce Wraps",
-    emoji: "🥬",
-    time: "20 min",
-    cuisine: "Healthy",
-    baseServings: 4,
-    ingredients: [
-      { name: "Ground Chicken", amount: 1, unit: "lb" },
-      { name: "Mushrooms", amount: 1, unit: "cup" },
-      { name: "Garlic", amount: 3, unit: "cloves" },
-      { name: "Ginger", amount: 1, unit: "tsp" },
-      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
-      { name: "Sesame Oil", amount: 1, unit: "tsp" },
-      { name: "Hoisin Sauce", amount: 2, unit: "tbsp" },
-      { name: "Oil", amount: 1, unit: "tbsp" }
-    ],
-    steps: [
-      "Heat oil in a wok over high heat. Cook ground chicken breaking it up until no longer pink.",
-      "Add minced garlic and ginger. Cook 1 min.",
-      "Add diced mushrooms. Cook 3 min until tender.",
-      "Add soy sauce, hoisin, and sesame oil. Toss everything together.",
-      "Cook 2 more min until sauce coats everything and caramelizes slightly.",
-      "Spoon into lettuce cups or spinach leaves. Serve immediately."
-    ]
-  },
-  {
-    name: "Poached Salmon & Spinach",
-    emoji: "🐟",
-    time: "20 min",
-    cuisine: "Healthy",
-    baseServings: 2,
-    ingredients: [
-      { name: "Salmon", amount: 2, unit: "fillets" },
-      { name: "Spinach", amount: 3, unit: "cups" },
-      { name: "Garlic", amount: 2, unit: "cloves" },
-      { name: "Lemon", amount: 1, unit: "count" },
-      { name: "Chicken Broth", amount: 2, unit: "cups" },
-      { name: "Olive Oil", amount: 1, unit: "tbsp" },
-      { name: "Salt", amount: 0.5, unit: "tsp" },
-      { name: "Pepper", amount: 0.25, unit: "tsp" }
-    ],
-    steps: [
-      "Bring chicken broth to a gentle simmer in a wide pan. Season with salt.",
-      "Add salmon fillets. Poach 8-10 min until just cooked through — the flesh should flake easily.",
-      "Meanwhile sauté minced garlic in olive oil 1 min.",
-      "Add spinach and toss until wilted. Season with salt and pepper.",
-      "Remove salmon carefully with a slotted spatula.",
-      "Serve salmon on bed of spinach. Squeeze fresh lemon over the top."
-    ]
-  },
-  {
-    name: "Chicken Meatballs",
-    emoji: "🍗",
-    time: "30 min",
-    cuisine: "Healthy",
-    baseServings: 4,
-    ingredients: [
-      { name: "Ground Chicken", amount: 1, unit: "lb" },
-      { name: "Garlic", amount: 3, unit: "cloves" },
-      { name: "Onion", amount: 0.25, unit: "count" },
-      { name: "Panko Breadcrumbs", amount: 0.25, unit: "cup" },
-      { name: "Egg", amount: 1, unit: "count" },
-      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
-      { name: "Olive Oil", amount: 2, unit: "tbsp" },
-      { name: "Salt", amount: 0.5, unit: "tsp" }
-    ],
-    steps: [
-      "Combine ground chicken, minced garlic, grated onion, panko, egg, Italian seasoning, and salt.",
-      "Mix gently — overworking makes tough meatballs.",
-      "Roll into golf ball-sized portions.",
-      "Heat olive oil in an oven-safe pan over medium-high heat.",
-      "Brown meatballs on all sides, about 4 min total.",
-      "Transfer to oven at 400°F for 10-12 min until cooked through. Serve with marinara or over zucchini noodles."
-    ]
-  },
-  {
-    name: "Sweet Potato Buddha Bowl",
-    emoji: "🍠",
-    time: "35 min",
-    cuisine: "Healthy",
-    baseServings: 2,
-    ingredients: [
-      { name: "Sweet Potato", amount: 2, unit: "count" },
-      { name: "Spinach", amount: 2, unit: "cups" },
-      { name: "Egg", amount: 2, unit: "count" },
-      { name: "Garlic", amount: 2, unit: "cloves" },
-      { name: "Olive Oil", amount: 2, unit: "tbsp" },
-      { name: "Cumin", amount: 0.5, unit: "tsp" },
-      { name: "Paprika", amount: 0.5, unit: "tsp" },
-      { name: "Lemon", amount: 1, unit: "count" },
-      { name: "Salt", amount: 0.5, unit: "tsp" }
-    ],
-    steps: [
-      "Cube sweet potatoes. Toss with olive oil, cumin, paprika, and salt.",
-      "Roast at 425°F for 25 min until golden and caramelized.",
-      "Sauté minced garlic in olive oil. Add spinach and wilt 2 min.",
-      "Fry eggs sunny side up.",
-      "Build bowls: roasted sweet potato, wilted spinach, fried egg on top.",
-      "Squeeze lemon over everything and drizzle with olive oil."
-    ]
-  },
-  {
-    name: "Spinach & Mushroom Sauté",
-    emoji: "🍄",
-    time: "15 min",
-    cuisine: "Healthy",
-    baseServings: 2,
-    ingredients: [
-      { name: "Spinach", amount: 4, unit: "cups" },
-      { name: "Mushrooms", amount: 2, unit: "cups" },
-      { name: "Garlic", amount: 3, unit: "cloves" },
-      { name: "Olive Oil", amount: 2, unit: "tbsp" },
-      { name: "Lemon", amount: 0.5, unit: "count" },
-      { name: "Salt", amount: 0.5, unit: "tsp" },
-      { name: "Pepper", amount: 0.25, unit: "tsp" }
-    ],
-    steps: [
-      "Heat olive oil in a large pan over high heat.",
-      "Add sliced mushrooms in a single layer. Do not stir for 2 min — let them brown.",
-      "Toss and cook 2 more min until golden on all sides.",
-      "Add minced garlic. Cook 30 seconds.",
-      "Add spinach and toss until just wilted, about 1-2 min.",
-      "Season with salt, pepper, and lemon juice. Serve as a side or over rice."
-    ]
-  },
-  {
-    name: "Baked Chicken & Broccoli",
-    emoji: "🥦",
-    time: "35 min",
-    cuisine: "Healthy",
-    baseServings: 4,
-    ingredients: [
-      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
-      { name: "Broccoli", amount: 1, unit: "head" },
-      { name: "Garlic", amount: 3, unit: "cloves" },
-      { name: "Olive Oil", amount: 3, unit: "tbsp" },
-      { name: "Lemon", amount: 1, unit: "count" },
-      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
-      { name: "Salt", amount: 1, unit: "tsp" },
-      { name: "Pepper", amount: 0.5, unit: "tsp" }
-    ],
-    steps: [
-      "Preheat oven to 425°F.",
-      "Cut broccoli into florets. Toss with 2 tbsp olive oil, salt, and pepper.",
-      "Rub chicken with remaining olive oil, minced garlic, Italian seasoning, salt, and pepper.",
-      "Place chicken and broccoli on a large baking sheet — don't overlap.",
-      "Bake 25-30 min until chicken is golden and broccoli edges are crispy.",
-      "Squeeze lemon over everything before serving."
-    ]
-  },
-  {
-    name: "Shrimp Avocado Bowl",
-    emoji: "🍤",
-    time: "20 min",
-    cuisine: "Healthy",
-    baseServings: 2,
-    ingredients: [
-      { name: "Shrimp", amount: 0.5, unit: "lb" },
-      { name: "Rice", amount: 1, unit: "cups" },
-      { name: "Lime", amount: 2, unit: "count" },
-      { name: "Garlic", amount: 2, unit: "cloves" },
-      { name: "Olive Oil", amount: 2, unit: "tbsp" },
-      { name: "Cumin", amount: 0.5, unit: "tsp" },
-      { name: "Chili Flakes", amount: 0.25, unit: "tsp" },
-      { name: "Salt", amount: 0.5, unit: "tsp" }
-    ],
-    steps: [
-      "Cook rice and set aside.",
-      "Pat shrimp dry. Season with cumin, chili flakes, and salt.",
-      "Heat olive oil in a pan over high heat. Cook shrimp 1-2 min per side until pink and slightly charred.",
-      "Add minced garlic in the last 30 seconds.",
-      "Squeeze lime over the shrimp.",
-      "Serve shrimp over rice with extra lime wedges."
-    ]
-  },
-  {
-    name: "Vegetable Omelette",
-    emoji: "🍳",
-    time: "15 min",
-    cuisine: "Healthy",
-    baseServings: 1,
-    ingredients: [
-      { name: "Egg", amount: 3, unit: "count" },
-      { name: "Bell Pepper", amount: 0.5, unit: "count" },
-      { name: "Mushrooms", amount: 0.5, unit: "cup" },
-      { name: "Onion", amount: 0.25, unit: "count" },
-      { name: "Spinach", amount: 1, unit: "cups" },
-      { name: "Olive Oil", amount: 1, unit: "tbsp" },
-      { name: "Salt", amount: 0.25, unit: "tsp" },
-      { name: "Pepper", amount: 0.25, unit: "tsp" }
-    ],
-    steps: [
-      "Dice bell pepper, mushrooms, and onion finely.",
-      "Sauté vegetables in olive oil over medium heat 4 min until soft. Add spinach until wilted.",
-      "Whisk eggs with salt and pepper.",
-      "Push vegetables to the side. Pour eggs into the pan.",
-      "Cook until edges set. Add vegetables to one half.",
-      "Fold over and slide onto a plate. Simple, nutritious, and endlessly customizable."
-    ]
-  },
-  {
-    name: "Rice Pudding",
-    emoji: "🍚",
-    time: "35 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Rice", amount: 0.5, unit: "cups" },
-      { name: "Milk", amount: 3, unit: "cups" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Butter", amount: 1, unit: "tbsp" },
-      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Combine rice, milk, sugar, and a pinch of salt in a heavy pot.",
-      "Bring to a gentle simmer over medium heat stirring frequently.",
-      "Reduce heat to low. Cook 25-30 min stirring every few minutes until rice is tender and mixture is thick and creamy.",
-      "Remove from heat. Stir in butter.",
-      "Pour into bowls. Dust with cinnamon.",
-      "Serve warm or refrigerate and serve cold. Keeps for 3 days."
-    ]
-  },
-  {
-    name: "Bread Pudding",
-    emoji: "🍞",
-    time: "55 min",
-    cuisine: "Dessert",
-    baseServings: 6,
-    ingredients: [
-      { name: "Bread", amount: 1, unit: "loaf" },
-      { name: "Egg", amount: 4, unit: "count" },
-      { name: "Milk", amount: 2, unit: "cups" },
-      { name: "Heavy Cream", amount: 0.5, unit: "cup" },
-      { name: "Sugar", amount: 0.5, unit: "cup" },
-      { name: "Butter", amount: 2, unit: "tbsp" },
-      { name: "Cinnamon", amount: 1, unit: "tsp" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Cut bread into cubes. Spread on a baking sheet and let dry out 30 min or toast lightly.",
-      "Whisk eggs, milk, heavy cream, sugar, cinnamon, and salt together.",
-      "Place bread in a buttered baking dish. Pour custard over the top.",
-      "Press bread down gently. Let soak 15 min.",
-      "Bake at 350°F for 40-45 min until top is golden and custard is just set.",
-      "Serve warm with a drizzle of honey or cream."
-    ]
-  },
-  {
-    name: "Churros",
-    emoji: "🍩",
-    time: "30 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Flour", amount: 1, unit: "cup" },
-      { name: "Egg", amount: 2, unit: "count" },
-      { name: "Butter", amount: 2, unit: "tbsp" },
-      { name: "Sugar", amount: 0.5, unit: "cup" },
-      { name: "Cinnamon", amount: 1, unit: "tsp" },
-      { name: "Oil", amount: 2, unit: "cups" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Bring 1 cup water, butter, and a pinch of salt to a boil. Add flour all at once and stir vigorously until dough pulls away from the sides.",
-      "Cool 5 min. Beat in eggs one at a time until smooth and glossy.",
-      "Transfer to a piping bag with a star tip.",
-      "Heat oil to 375°F. Pipe 4-inch strips directly into the oil. Cut with scissors.",
-      "Fry 3-4 min until deep golden. Drain on paper towels.",
-      "Mix sugar and cinnamon. Roll hot churros in the mixture immediately. Serve with honey for dipping."
-    ]
-  },
-  {
-    name: "Panna Cotta",
-    emoji: "🍮",
-    time: "20 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Heavy Cream", amount: 2, unit: "cups" },
-      { name: "Milk", amount: 0.5, unit: "cup" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Honey", amount: 2, unit: "tbsp" }
-    ],
-    steps: [
-      "Combine heavy cream, milk, and sugar in a pot over medium heat. Stir until sugar dissolves.",
-      "Bring just to a simmer — do not boil.",
-      "Remove from heat. Stir in honey.",
-      "Pour into ramekins or glasses.",
-      "Refrigerate at least 4 hours until set — overnight is best.",
-      "Serve chilled. Drizzle with honey or top with fresh fruit."
-    ]
-  },
-  {
-    name: "Crème Brûlée",
-    emoji: "🍮",
-    time: "1 hr",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Heavy Cream", amount: 2, unit: "cups" },
-      { name: "Egg", amount: 5, unit: "count" },
-      { name: "Sugar", amount: 0.5, unit: "cup" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Preheat oven to 325°F. Heat cream until just simmering.",
-      "Whisk egg yolks with ¼ cup sugar and a pinch of salt until pale.",
-      "Slowly pour warm cream into eggs while whisking constantly.",
-      "Strain through a sieve into ramekins.",
-      "Place in a baking dish filled with hot water halfway up the ramekins. Bake 35-40 min until barely set.",
-      "Cool then refrigerate 2 hours. Before serving sprinkle with sugar and torch until caramelized."
-    ]
-  },
-  {
-    name: "Tiramisu",
-    emoji: "☕",
-    time: "30 min",
-    cuisine: "Dessert",
-    baseServings: 6,
-    ingredients: [
-      { name: "Heavy Cream", amount: 1, unit: "cup" },
-      { name: "Cream Cheese", amount: 1, unit: "cup" },
-      { name: "Egg", amount: 3, unit: "count" },
-      { name: "Sugar", amount: 0.5, unit: "cup" },
-      { name: "Bread", amount: 1, unit: "loaf" },
-      { name: "Honey", amount: 2, unit: "tbsp" }
-    ],
-    steps: [
-      "Whip heavy cream to stiff peaks. Set aside.",
-      "Beat cream cheese with sugar and honey until smooth.",
-      "Separate eggs. Whisk yolks into the cream cheese mixture.",
-      "Fold in whipped cream gently.",
-      "Slice bread thin and dip briefly in strong coffee or milk.",
-      "Layer soaked bread and cream mixture in a dish. Refrigerate overnight. Dust with cinnamon before serving."
-    ]
-  },
-  {
-    name: "Mango Sticky Rice",
-    emoji: "🥭",
-    time: "35 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Jasmine Rice", amount: 1, unit: "cups" },
-      { name: "Coconut Milk", amount: 1, unit: "can" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Salt", amount: 0.25, unit: "tsp" },
-      { name: "Honey", amount: 1, unit: "tbsp" }
-    ],
-    steps: [
-      "Cook jasmine rice with coconut milk instead of water — use the same ratio.",
-      "While hot, stir in sugar and a pinch of salt until dissolved.",
-      "Cover and let the rice steam and absorb for 10 min.",
-      "Heat remaining coconut milk with honey and a pinch of salt for the sauce.",
-      "Plate the sticky rice. Pour warm coconut sauce over the top.",
-      "Serve with sliced fresh fruit on the side."
-    ]
-  },
-  {
-    name: "Coconut Pudding",
-    emoji: "🥥",
-    time: "20 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Coconut Milk", amount: 1, unit: "can" },
-      { name: "Milk", amount: 1, unit: "cup" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Corn Starch", amount: 3, unit: "tbsp" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Whisk corn starch with ¼ cup cold milk until smooth.",
-      "Combine coconut milk, remaining milk, sugar, and salt in a pot.",
-      "Bring to a gentle simmer over medium heat.",
-      "Pour in the cornstarch mixture while whisking constantly.",
-      "Cook 5-7 min stirring until thick enough to coat the back of a spoon.",
-      "Pour into cups. Refrigerate 2 hours until set. Serve chilled."
-    ]
-  },
-  {
-    name: "Tres Leches Cake",
-    emoji: "🎂",
-    time: "1 hr",
-    cuisine: "Dessert",
-    baseServings: 8,
-    ingredients: [
-      { name: "Flour", amount: 1, unit: "cup" },
-      { name: "Egg", amount: 4, unit: "count" },
-      { name: "Sugar", amount: 1, unit: "cup" },
-      { name: "Butter", amount: 2, unit: "tbsp" },
-      { name: "Baking Powder", amount: 1, unit: "tsp" },
-      { name: "Milk", amount: 1, unit: "cup" },
-      { name: "Heavy Cream", amount: 1, unit: "cup" },
-      { name: "Coconut Milk", amount: 0.5, unit: "cup" }
-    ],
-    steps: [
-      "Beat eggs and sugar until pale and thick, about 5 min.",
-      "Fold in flour and baking powder gently.",
-      "Pour into a greased baking dish. Bake at 350°F for 25 min until golden.",
-      "Mix milk, heavy cream, and coconut milk together.",
-      "While cake is still hot, poke all over with a fork. Pour the milk mixture slowly over the top — it will absorb completely.",
-      "Refrigerate 4 hours. Serve chilled topped with whipped cream."
-    ]
-  },
-  {
-    name: "Egg Custard",
-    emoji: "🍮",
-    time: "40 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Egg", amount: 4, unit: "count" },
-      { name: "Milk", amount: 2, unit: "cups" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Preheat oven to 325°F. Warm milk until steaming — do not boil.",
-      "Whisk eggs, sugar, and a pinch of salt until combined.",
-      "Slowly pour warm milk into eggs while whisking.",
-      "Strain through a sieve into ramekins. Dust with cinnamon.",
-      "Place in a baking dish filled with hot water halfway up the sides.",
-      "Bake 35-40 min until just set with a slight wobble. Serve warm or chilled."
-    ]
-  },
-  {
-    name: "Honey Cake",
-    emoji: "🍯",
-    time: "45 min",
-    cuisine: "Dessert",
-    baseServings: 8,
-    ingredients: [
-      { name: "Flour", amount: 2, unit: "cups" },
-      { name: "Egg", amount: 3, unit: "count" },
-      { name: "Honey", amount: 0.5, unit: "cup" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Butter", amount: 0.5, unit: "cup" },
-      { name: "Milk", amount: 0.5, unit: "cup" },
-      { name: "Baking Powder", amount: 1, unit: "tsp" },
-      { name: "Cinnamon", amount: 1, unit: "tsp" }
-    ],
-    steps: [
-      "Preheat oven to 350°F. Melt butter and let cool slightly.",
-      "Whisk eggs, honey, sugar, and melted butter until smooth.",
-      "Mix flour, baking powder, and cinnamon. Fold into the wet ingredients alternating with milk.",
-      "Pour into a greased loaf pan.",
-      "Bake 40-45 min until a skewer comes out clean.",
-      "Cool 10 min before slicing. Drizzle with extra honey to serve."
-    ]
-  },
-  {
-    name: "Profiteroles",
-    emoji: "🍡",
-    time: "45 min",
-    cuisine: "Dessert",
-    baseServings: 6,
-    ingredients: [
-      { name: "Flour", amount: 0.5, unit: "cup" },
-      { name: "Egg", amount: 3, unit: "count" },
-      { name: "Butter", amount: 0.25, unit: "cup" },
-      { name: "Milk", amount: 0.25, unit: "cup" },
-      { name: "Heavy Cream", amount: 1, unit: "cup" },
-      { name: "Sugar", amount: 2, unit: "tbsp" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Bring ½ cup water, milk, butter, and salt to a boil. Add flour all at once and stir hard until dough forms a ball.",
-      "Cool 5 min. Beat in eggs one at a time until smooth and shiny.",
-      "Pipe or spoon golf ball-sized mounds onto a lined baking sheet.",
-      "Bake at 400°F for 25-30 min until puffed and golden. Do not open the oven early.",
-      "Cool completely. Whip heavy cream with sugar to stiff peaks.",
-      "Cut each puff in half. Fill with whipped cream. Drizzle with honey and serve."
-    ]
-  },
-  {
-    name: "Caramel Flan",
-    emoji: "🍮",
-    time: "1 hr",
-    cuisine: "Dessert",
-    baseServings: 6,
-    ingredients: [
-      { name: "Egg", amount: 4, unit: "count" },
-      { name: "Milk", amount: 1, unit: "cup" },
-      { name: "Heavy Cream", amount: 1, unit: "cup" },
-      { name: "Sugar", amount: 0.75, unit: "cup" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Make caramel: cook ½ cup sugar in a pan over medium heat without stirring until amber. Quickly pour into a round baking dish.",
-      "Whisk eggs, remaining sugar, and a pinch of salt until combined.",
-      "Warm milk and cream until steaming. Slowly pour into egg mixture whisking constantly.",
-      "Pour custard over the caramel.",
-      "Bake in a water bath at 325°F for 45-50 min until barely set.",
-      "Refrigerate overnight. Run a knife around the edge, invert onto a plate — the caramel flows over the top."
-    ]
-  },
-  {
-    name: "Coconut Macaroons",
-    emoji: "🍪",
-    time: "25 min",
-    cuisine: "Dessert",
-    baseServings: 12,
-    ingredients: [
-      { name: "Egg", amount: 3, unit: "count" },
-      { name: "Sugar", amount: 0.5, unit: "cup" },
-      { name: "Coconut Milk", amount: 0.5, unit: "cup" },
-      { name: "Flour", amount: 0.25, unit: "cup" },
-      { name: "Salt", amount: 1, unit: "pinch" }
-    ],
-    steps: [
-      "Preheat oven to 375°F. Line a baking sheet with parchment.",
-      "Whisk egg whites with a pinch of salt until frothy.",
-      "Mix in sugar, coconut milk, and flour until a sticky dough forms.",
-      "Drop rounded tablespoons onto the baking sheet spacing 2 inches apart.",
-      "Bake 15-18 min until edges are golden and tops are lightly browned.",
-      "Cool on the tray — they firm up as they cool. Store in an airtight container."
-    ]
-  },
-  {
-    name: "Honey Yogurt Parfait",
-    emoji: "🍯",
-    time: "5 min",
-    cuisine: "Dessert",
-    baseServings: 2,
-    ingredients: [
-      { name: "Greek Yogurt", amount: 1, unit: "cup" },
-      { name: "Honey", amount: 3, unit: "tbsp" },
-      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
-      { name: "Butter", amount: 1, unit: "tbsp" }
-    ],
-    steps: [
-      "Toast a handful of whatever nuts or oats you have in butter until golden.",
-      "Layer Greek yogurt in glasses.",
-      "Drizzle honey generously over the yogurt.",
-      "Sprinkle with cinnamon.",
-      "Top with the toasted butter mixture for crunch.",
-      "Serve immediately — simple, refreshing, and naturally sweet."
-    ]
-  },
-  {
-    name: "Crepes Suzette",
-    emoji: "🫓",
-    time: "30 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Flour", amount: 1, unit: "cup" },
-      { name: "Egg", amount: 2, unit: "count" },
-      { name: "Milk", amount: 1, unit: "cup" },
-      { name: "Butter", amount: 4, unit: "tbsp" },
-      { name: "Sugar", amount: 3, unit: "tbsp" },
-      { name: "Lemon", amount: 1, unit: "count" },
-      { name: "Orange", amount: 1, unit: "count" }
-    ],
-    steps: [
-      "Make crepe batter: blend flour, eggs, milk, 1 tbsp melted butter, and a pinch of salt. Rest 15 min.",
-      "Cook thin crepes in a buttered pan. Fold each into quarters.",
-      "Make the sauce: melt 3 tbsp butter with sugar in a wide pan until golden.",
-      "Add lemon and orange juice. Simmer 2 min until slightly syrupy.",
-      "Add folded crepes to the pan. Spoon sauce over them.",
-      "Serve immediately — the orange butter sauce caramelizes the crepes beautifully."
-    ]
-  },
-  {
-    name: "Butter Cookies",
-    emoji: "🍪",
-    time: "25 min",
-    cuisine: "Dessert",
-    baseServings: 24,
-    ingredients: [
-      { name: "Flour", amount: 2, unit: "cups" },
-      { name: "Butter", amount: 1, unit: "cup" },
-      { name: "Sugar", amount: 0.5, unit: "cup" },
-      { name: "Egg", amount: 1, unit: "count" },
-      { name: "Salt", amount: 0.25, unit: "tsp" }
-    ],
-    steps: [
-      "Preheat oven to 350°F. Beat softened butter and sugar until pale and fluffy.",
-      "Add egg and beat until combined.",
-      "Mix in flour and salt until a soft dough forms.",
-      "Roll into small balls or pipe into rosettes on a lined baking sheet.",
-      "Bake 12-14 min until edges are just golden — centers will look underdone.",
-      "Cool on the tray. They firm up beautifully as they cool and keep for a week in a tin."
-    ]
-  },
-  {
-    name: "Cinnamon French Toast Bake",
-    emoji: "🍞",
-    time: "50 min",
-    cuisine: "Dessert",
-    baseServings: 6,
-    ingredients: [
-      { name: "Bread", amount: 1, unit: "loaf" },
-      { name: "Egg", amount: 5, unit: "count" },
-      { name: "Milk", amount: 1.5, unit: "cups" },
-      { name: "Heavy Cream", amount: 0.5, unit: "cup" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Cinnamon", amount: 2, unit: "tsp" },
-      { name: "Butter", amount: 3, unit: "tbsp" },
-      { name: "Honey", amount: 2, unit: "tbsp" }
-    ],
-    steps: [
-      "Slice bread thick and arrange in a buttered baking dish slightly overlapping.",
-      "Whisk eggs, milk, heavy cream, sugar, cinnamon, and honey together.",
-      "Pour custard over the bread. Press down gently. Let soak 20 min.",
-      "Dot the top with small pieces of butter.",
-      "Bake at 350°F for 35-40 min until puffed and golden.",
-      "Serve warm dusted with cinnamon and drizzled with honey."
-    ]
-  },
-  {
-    name: "Muhallebi",
-    emoji: "🥛",
-    time: "20 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Milk", amount: 3, unit: "cups" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Corn Starch", amount: 4, unit: "tbsp" },
-      { name: "Honey", amount: 2, unit: "tbsp" },
-      { name: "Cinnamon", amount: 0.5, unit: "tsp" }
-    ],
-    steps: [
-      "Whisk corn starch with ½ cup cold milk until completely smooth.",
-      "Heat remaining milk and sugar in a pot over medium heat stirring until sugar dissolves.",
-      "Pour in the cornstarch mixture while whisking constantly.",
-      "Cook 8-10 min stirring until mixture thickens to a pudding consistency.",
-      "Pour into small bowls or glasses.",
-      "Refrigerate 2 hours until set. Drizzle with honey and dust with cinnamon before serving."
-    ]
-  },
-  {
-    name: "Sesame Honey Balls",
-    emoji: "🍡",
-    time: "20 min",
-    cuisine: "Dessert",
-    baseServings: 12,
-    ingredients: [
-      { name: "Flour", amount: 1, unit: "cup" },
-      { name: "Sugar", amount: 0.25, unit: "cup" },
-      { name: "Honey", amount: 3, unit: "tbsp" },
-      { name: "Sesame Oil", amount: 1, unit: "tbsp" },
-      { name: "Butter", amount: 2, unit: "tbsp" },
-      { name: "Egg", amount: 1, unit: "count" },
-      { name: "Oil", amount: 2, unit: "cups" }
-    ],
-    steps: [
-      "Mix flour, sugar, honey, sesame oil, melted butter, and egg into a soft dough.",
-      "Roll into small balls about 1 inch in diameter.",
-      "Heat oil to 325°F. Fry balls in batches — they need low heat to cook through.",
-      "Fry 4-5 min turning occasionally until deep golden.",
-      "Drain on paper towels.",
-      "Drizzle with honey while still hot. The sesame oil gives these a gorgeous nutty flavor."
-    ]
-  },
-  {
-    name: "Vanilla Cream Cups",
-    emoji: "🍮",
-    time: "15 min",
-    cuisine: "Dessert",
-    baseServings: 4,
-    ingredients: [
-      { name: "Heavy Cream", amount: 1.5, unit: "cups" },
-      { name: "Milk", amount: 0.5, unit: "cup" },
-      { name: "Sugar", amount: 3, unit: "tbsp" },
-      { name: "Egg", amount: 2, unit: "count" },
-      { name: "Corn Starch", amount: 2, unit: "tbsp" },
-      { name: "Butter", amount: 1, unit: "tbsp" },
-      { name: "Honey", amount: 1, unit: "tbsp" }
-    ],
-    steps: [
-      "Whisk egg yolks, sugar, and corn starch together in a bowl.",
-      "Heat milk and heavy cream until simmering.",
-      "Slowly pour hot cream into egg mixture while whisking constantly.",
-      "Return to pot over medium heat. Cook stirring constantly until thick.",
-      "Remove from heat. Stir in butter and honey.",
-      "Pour into cups. Press cling film directly onto the surface. Refrigerate 1 hour. Serve chilled."
-    ]
-  }
 ];
 
 function findCategory(itemName) {
@@ -4615,3 +3882,694 @@ function findCategory(itemName) {
   }
   return "Other";
 }
+
+const PANTRY_VERSION = "v8_sorted_pantry";
+
+const INGREDIENT_CONFIG = {
+  // --- PROTEINS (Standardized to 1 lb or Count) ---
+  "Chicken":        { unit: "lb",    step: 0.5,  default: 1 },
+  "Chicken Thighs": { unit: "lb",    step: 0.5,  default: 1 },
+  "Chicken Wings":  { unit: "lb",    step: 0.5,  default: 1 },
+  "Ground Chicken": { unit: "lb",    step: 0.5,  default: 1 },
+  "Ground Beef":    { unit: "lb",    step: 0.5,  default: 1 },
+  "Ground Pork":    { unit: "lb",    step: 0.5,  default: 1 },
+  "Beef Flank":     { unit: "lb",    step: 0.5,  default: 1 },
+  "Shrimp":         { unit: "lb",    step: 0.5,  default: 1 },
+  "Rib Eye Steak":  { unit: "count", step: 1,    default: 1 },
+  "Lamb Chops":     { unit: "count", step: 1,    default: 4 },
+  "Tilapia":        { unit: "fillets", step: 1,  default: 2 },
+  "Salmon":         { unit: "fillets", step: 1,  default: 2 },
+  "Bacon":          { unit: "pack",  step: 1,    default: 1 },
+
+  // --- LIQUIDS & CONDIMENTS (Bulk Containers) ---
+  "Soy Sauce":      { unit: "bottle", step: 1,    default: 1 },
+  "Dark Soy Sauce": { unit: "bottle", step: 1,    default: 1 },
+  "Vinegar":        { unit: "bottle", step: 1,    default: 1 },
+  "Dark Vinegar":   { unit: "bottle", step: 1,    default: 1 },
+  "Fish Sauce":     { unit: "bottle", step: 1,    default: 1 },
+  "Oyster Sauce":   { unit: "bottle", step: 1,    default: 1 },
+  "Hoisin Sauce":   { unit: "jar",    step: 1,    default: 1 },
+  "Sesame Oil":     { unit: "bottle", step: 1,    default: 1 },
+  "Olive Oil":      { unit: "bottle", step: 1,    default: 1 },
+  "Avocado Oil":    { unit: "bottle", step: 1,    default: 1 },
+  "Oil":            { unit: "bottle", step: 1,    default: 1 },
+  "Hot Sauce":      { unit: "bottle", step: 1,    default: 1 },
+  "Ketchup":        { unit: "bottle", step: 1,    default: 1 },
+  "Honey":          { unit: "bottle", step: 1,    default: 1 },
+
+  // --- PRODUCE & DAIRY (Counts/Bulk) ---
+  "Garlic":         { unit: "bulb",   step: 1,    default: 2 },
+  "Onion":          { unit: "count",  step: 1,    default: 3 },
+  "Tomato":         { unit: "count",  step: 1,    default: 3 },
+  "Lemon":          { unit: "count",  step: 1,    default: 3 },
+  "Lime":           { unit: "count",  step: 1,    default: 3 },
+  "Egg":            { unit: "dozen",  step: 0.5,  default: 1 },
+  "Butter":         { unit: "stick",  step: 1,    default: 4 },
+  "Heavy Cream":    { unit: "carton", step: 1,    default: 1 },
+  "Greek Yogurt":   { unit: "tub",    step: 1,    default: 1 },
+  "Milk":           { unit: "carton", step: 1,    default: 1 },
+
+  // --- SPICES (Bulk Containers) ---
+  "Salt":           { unit: "container", step: 1, default: 1 },
+  "Pepper":         { unit: "jar",    step: 1,    default: 1 },
+  "Cumin":          { unit: "jar",    step: 1,    default: 1 },
+  "Paprika":        { unit: "jar",    step: 1,    default: 1 },
+  "Garlic Powder":  { unit: "jar",    step: 1,    default: 1 },
+  "Curry Powder":   { unit: "jar",    step: 1,    default: 1 },
+
+  // --- DRY GOODS (Bulk Bags) ---
+  "Jasmine Rice":   { unit: "bag",    step: 1,    default: 1 },
+  "Rice":           { unit: "bag",    step: 1,    default: 1 },
+  "Pasta":          { unit: "box",    step: 1,    default: 1 },
+  "Noodles":        { unit: "pack",   step: 1,    default: 2 },
+  "Flour":          { unit: "bag",    step: 1,    default: 1 },
+  "Bread":          { unit: "loaf",   step: 1,    default: 1 },
+  "Sugar":          { unit: "bag",    step: 1,    default: 1 },   // ~4lb bag
+  "Corn Starch":    { unit: "box",    step: 1,    default: 1 },
+  "Panko Breadcrumbs": { unit: "bag", step: 1,    default: 1 },
+  "Baking Powder":  { unit: "can",    step: 1,    default: 1 },
+  "Tortillas":      { unit: "pack",   step: 1,    default: 1 },
+  "Coconut Milk":   { unit: "can",    step: 1,    default: 2 },
+  "Canned Tomatoes":{ unit: "can",    step: 1,    default: 3 },
+  "Pineapple Chunks":{ unit: "can",   step: 1,    default: 1 },
+  "Beef Broth":     { unit: "carton", step: 1,    default: 1 },
+  "Chicken Broth":  { unit: "carton", step: 1,    default: 1 },
+  "Tomato Paste":   { unit: "can",    step: 1,    default: 1 },
+  "Dijon Mustard":  { unit: "jar",    step: 1,    default: 1 },
+  "Worcestershire Sauce": { unit: "bottle", step: 1, default: 1 },
+};
+
+function getIngredientConfig(item) {
+  return INGREDIENT_CONFIG[item] || { unit: "count", step: 1, default: 1 };
+}
+
+function App() {
+  const allPantryItems = Object.values(PANTRY_CATALOG).flat();
+
+  const [pantryState, setPantryState] = useState(() => {
+    const savedVersion = localStorage.getItem("instacook_pantry_version");
+    const saved = localStorage.getItem("instacook_pantry");
+    if (saved && savedVersion === PANTRY_VERSION) return JSON.parse(saved);
+    const initial = {};
+    allPantryItems.forEach(item => {
+      const cfg = getIngredientConfig(item);
+      initial[item] = { checked: false, qty: cfg.default };
+    });
+    return initial;
+  });
+
+  const [groceryList, setGroceryList] = useState(() => {
+    const saved = localStorage.getItem("instacook_groceries");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const [pantrySearch, setPantrySearch] = useState("");
+  const [cuisineFilter, setCuisineFilter] = useState("All");
+  const [servings, setServings] = useState(4);
+  const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const [collapsedCats, setCollapsedCats] = useState({});
+  const [cookMode, setCookMode] = useState(null);
+  const [cookStep, setCookStep] = useState(0);
+  const [cookPhase, setCookPhase] = useState("checklist");
+  const [timerSeconds, setTimerSeconds] = useState(0);
+  const [timerRunning, setTimerRunning] = useState(false);
+  const [timerInput, setTimerInput] = useState("");
+  const timerRef = React.useRef(null);
+  const [aiSuggestion, setAiSuggestion] = useState(null);
+  const [mobileTab, setMobileTab] = useState("pantry");
+  const [darkMode, setDarkMode] = useState(false);
+  const [aiLoading, setAiLoading] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("instacook_pantry", JSON.stringify(pantryState));
+    localStorage.setItem("instacook_pantry_version", PANTRY_VERSION);
+  }, [pantryState]);
+
+  useEffect(() => {
+    localStorage.setItem("instacook_groceries", JSON.stringify(groceryList));
+  }, [groceryList]);
+
+  const togglePantryItem = (item) => {
+    setPantryState(prev => ({ ...prev, [item]: { ...prev[item], checked: !prev[item].checked } }));
+  };
+
+  const updatePantryQty = (item, value) => {
+    const parsed = parseFloat(value);
+    setPantryState(prev => ({ ...prev, [item]: { ...prev[item], qty: isNaN(parsed) ? 0 : parsed } }));
+  };
+
+  const toggleCat = (cat) => setCollapsedCats(prev => ({ ...prev, [cat]: !prev[cat] }));
+
+  const getScaledIngredients = (recipe) => {
+    const scale = servings / recipe.baseServings;
+    return recipe.ingredients.map(ing => ({ ...ing, scaledAmount: Number((ing.amount * scale).toFixed(2)) }));
+  };
+
+  // Unit conversions: pantryUnit->recipeUnit = multiplier
+  const UNIT_CONVERSIONS = {
+    // Garlic
+    "bulb->cloves":   12,   // 1 bulb = 12 cloves
+    "bulbs->cloves":  12,
+
+    // Sugar & dry goods (1 standard bag is more than enough for any recipe amount)
+    "bag->tsp":       230,  // 4lb sugar bag ≈ 460 tsp, mark as 230 to be conservative
+    "bag->tbsp":      77,   // 4lb sugar bag ≈ 154 tbsp
+    "bag->cup":       10,   // 4lb bag ≈ 10 cups
+    "box->tsp":       96,   // cornstarch/baking powder box ≈ generous supply
+    "box->tbsp":      32,
+    "can->tsp":       24,   // baking powder can
+    "can->tbsp":      8,    // tomato paste can ≈ 8 tbsp
+
+    // Butter: 1 stick = 8 tbsp = 0.5 cup = 24 tsp
+    "stick->tbsp":    8,
+    "stick->cup":     0.5,
+    "stick->tsp":     24,
+
+    // Eggs: 1 dozen = 12 eggs
+    "dozen->count":   12,
+
+    // Broths & liquids: 1 standard carton = 4 cups = 32 fl oz
+    "carton->cup":    4,
+    "carton->cups":   4,
+
+    // Bottles (sauces/oils): treat as ample supply — compare as "have it or not"
+    // These are already in bulkUnits so they pass automatically
+
+    // Packs & loaves
+    "loaf->slices":   20,   // standard bread loaf ≈ 20 slices
+    "pack->count":    10,   // tortilla pack ≈ 10, noodle pack ≈ usable
+  };
+
+  const getRecipeAnalysis = (recipe) => {
+    const scaled = getScaledIngredients(recipe);
+    const have = [], missing = [];
+    const bulkUnits = ["bag", "bottle", "jar", "container", "box", "pack", "loaf", "dozen", "carton", "tub", "can", "stick", "bulb", "bulbs", "fillets", "lb"];
+
+    scaled.forEach(ing => {
+      const pantryEntry = pantryState[ing.name];
+      const isItemChecked = pantryEntry?.checked;
+      let availableQty = pantryEntry?.qty || 0;
+      const pantryUnit = getIngredientConfig(ing.name).unit;
+
+      // Convert pantry unit to recipe unit if they differ
+      const conversionKey = `${pantryUnit}->${ing.unit}`;
+      if (UNIT_CONVERSIONS[conversionKey]) {
+        availableQty = availableQty * UNIT_CONVERSIONS[conversionKey];
+      }
+
+      const hasEnough = isItemChecked && (
+        bulkUnits.includes(pantryUnit)
+          ? availableQty >= 1
+          : availableQty >= ing.scaledAmount
+      );
+
+      if (hasEnough) have.push(ing); else missing.push(ing);
+    });
+    return { have, missing, matchPercent: Math.round((have.length / scaled.length) * 100), canMake: missing.length === 0 };
+  };
+
+  const filteredRecipes = useMemo(() => {
+    return RECIPE_LIBRARY
+      .filter(r => r.name.toLowerCase().includes(searchTerm.toLowerCase()))
+      .filter(r => cuisineFilter === "All" || r.cuisine === cuisineFilter)
+      .map(r => ({ ...r, analysis: getRecipeAnalysis(r) }))
+      .sort((a, b) => b.analysis.matchPercent - a.analysis.matchPercent);
+  }, [searchTerm, cuisineFilter, servings, pantryState]);
+
+  const canMakeRecipes = filteredRecipes.filter(r => r.analysis.canMake);
+  const missingRecipes = filteredRecipes.filter(r => !r.analysis.canMake);
+
+  const addMissingToGrocery = (recipe) => {
+    const analysis = getRecipeAnalysis(recipe);
+    const toAdd = analysis.missing.map(m => ({ name: m.name, checked: false }));
+    setGroceryList(prev => {
+      const existing = new Set(prev.map(i => i.name));
+      return [...prev, ...toAdd.filter(i => !existing.has(i.name))];
+    });
+  };
+
+  const groceryByCategory = useMemo(() => {
+    const grouped = {};
+    groceryList.forEach(item => {
+      const cat = findCategory(item.name);
+      if (!grouped[cat]) grouped[cat] = [];
+      grouped[cat].push(item);
+    });
+    return grouped;
+  }, [groceryList]);
+
+  const toggleGroceryCheck = (name) => {
+    setGroceryList(prev => prev.map(i => i.name === name ? { ...i, checked: !i.checked } : i));
+  };
+  const removeGroceryItem = (name) => setGroceryList(prev => prev.filter(i => i.name !== name));
+  const clearDone = () => setGroceryList(prev => prev.filter(i => !i.checked));
+  const clearAll = () => setGroceryList([]);
+
+  const filteredCatalog = useMemo(() => {
+    if (!pantrySearch) return PANTRY_CATALOG;
+    const q = pantrySearch.toLowerCase();
+    const result = {};
+    for (const [cat, items] of Object.entries(PANTRY_CATALOG)) {
+      const filtered = items.filter(i => i.toLowerCase().includes(q));
+      if (filtered.length) result[cat] = filtered;
+    }
+    return result;
+  }, [pantrySearch]);
+
+  const startCooking = (recipe) => {
+    setCookMode(recipe);
+    setCookStep(0);
+    setCookPhase("checklist");
+    setTimerSeconds(0);
+    setTimerRunning(false);
+    setTimerInput("");
+  };
+
+  const closeCooking = () => {
+    clearInterval(timerRef.current);
+    setCookMode(null);
+    setTimerSeconds(0);
+    setTimerRunning(false);
+  };
+
+  const goToStep = (step) => {
+    clearInterval(timerRef.current);
+    setTimerRunning(false);
+    setTimerSeconds(0);
+    setTimerInput("");
+    setCookStep(step);
+  };
+
+  const detectTimer = (stepText) => {
+    const match = stepText.match(/(\d+)[–\-]?(\d+)?\s*min/i);
+    if (match) {
+      const mins = match[2] ? Math.round((parseInt(match[1]) + parseInt(match[2])) / 2) : parseInt(match[1]);
+      return mins * 60;
+    }
+    const secMatch = stepText.match(/(\d+)\s*sec/i);
+    if (secMatch) return parseInt(secMatch[1]);
+    return 0;
+  };
+
+  React.useEffect(() => {
+    if (cookMode && cookPhase === "cooking") {
+      const detected = detectTimer(cookMode.steps[cookStep]);
+      setTimerSeconds(detected);
+      setTimerInput(detected ? String(Math.floor(detected / 60)) : "");
+      setTimerRunning(false);
+      clearInterval(timerRef.current);
+    }
+  }, [cookStep, cookPhase, cookMode]);
+
+  React.useEffect(() => {
+    if (timerRunning && timerSeconds > 0) {
+      timerRef.current = setInterval(() => {
+        setTimerSeconds(s => {
+          if (s <= 1) { clearInterval(timerRef.current); setTimerRunning(false); return 0; }
+          return s - 1;
+        });
+      }, 1000);
+    } else {
+      clearInterval(timerRef.current);
+    }
+    return () => clearInterval(timerRef.current);
+  }, [timerRunning]);
+
+  const formatTime = (s) => {
+    const m = Math.floor(s / 60);
+    const sec = s % 60;
+    return `${m}:${sec.toString().padStart(2, "0")}`;
+  };
+
+  const getSurprise = async () => {
+    setAiLoading(true);
+    setAiSuggestion(null);
+    const ownedItems = allPantryItems.filter(i => pantryState[i]?.checked);
+    try {
+      const resp = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 400,
+          messages: [{
+            role: "user",
+            content: `I have these ingredients: ${ownedItems.join(", ")}. Suggest ONE creative recipe I can make. Respond ONLY with valid JSON...`
+          }]
+        })
+      });
+      const data = await resp.json();
+      const text = data.content?.find(b => b.type === "text")?.text || "";
+      const clean = text.replace(/```json|```/g, "").trim();
+      setAiSuggestion(JSON.parse(clean));
+    } catch (e) {
+      setAiSuggestion({ name: "Surprise unavailable", description: "Could not reach AI. Try again!", ingredients: [], tip: "" });
+    }
+    setAiLoading(false);
+  };
+
+  return (
+    <div className={`app ${darkMode ? "dark" : ""}`}>
+      <header className="topbar">
+        <div className="logo">
+          <svg className="logo-emblem" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="16.5" stroke="#5dbd74" strokeWidth="1.5" fill="rgba(93,189,116,0.08)"/>
+            <circle cx="18" cy="18" r="12.5" stroke="#5dbd74" strokeWidth="0.5" strokeDasharray="2 3" fill="none" opacity="0.5"/>
+            <text x="18" y="24" textAnchor="middle" fontSize="15" fill="#5dbd74" fontFamily="Cormorant Garamond, serif" fontStyle="italic" fontWeight="600">ic</text>
+          </svg>
+          <div className="logo-text">
+            <span className="logo-wordmark">Insta<strong>Cook</strong></span>
+            <span className="logo-tagline">From pantry to plate</span>
+          </div>
+        </div>
+        <div className="topbar-center">
+          <div className="topbar-divider"></div>
+          <div className="search-wrap">
+            <span className="si">⌕</span>
+            <input placeholder="Search recipes..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
+          </div>
+          <div className="servings-ctrl">
+            <label>Serves</label>
+            <select value={servings} onChange={e => setServings(Number(e.target.value))}>
+              {[2, 4, 6, 8].map(n => <option key={n} value={n}>{n}</option>)}
+            </select>
+          </div>
+        </div>
+        <div className="topbar-right">
+          <button className="btn-darkmode" onClick={() => setDarkMode(d => !d)}>
+            {darkMode ? "☀️" : "🌙"}
+          </button>
+          <button className="btn-surprise" onClick={getSurprise} disabled={aiLoading}>
+            {aiLoading ? "Thinking..." : "✦ Surprise Me"}
+          </button>
+        </div>
+      </header>
+
+      <div className="layout">
+        <aside className={`sidebar ${mobileTab === "pantry" ? "mobile-active" : ""}`}>
+          <div className="sidebar-header">
+            <h2>My Pantry</h2>
+            <div className="pantry-search">
+              <span className="si">⌕</span>
+              <input placeholder="Filter ingredients..." value={pantrySearch} onChange={e => setPantrySearch(e.target.value)} />
+            </div>
+          </div>
+          {Object.entries(filteredCatalog).map(([cat, items]) => {
+            const open = !collapsedCats[cat];
+            const checkedCount = items.filter(i => pantryState[i]?.checked).length;
+            return (
+              <div key={cat} className="cat-block">
+                <div className="cat-header" onClick={() => toggleCat(cat)}>
+                  <span className="cat-title">{cat}</span>
+                  <div className="cat-header-right">
+                    <span className="cat-count">{checkedCount}/{items.length}</span>
+                    <span className={`cat-chevron ${open ? "open" : ""}`}>▶</span>
+                  </div>
+                </div>
+                {open && (
+                  <div className="cat-items">
+                    {items.map(item => {
+                      const cfg = getIngredientConfig(item);
+                      return (
+                        <div key={item} className="pantry-row">
+                          <label className="pantry-label">
+                            <input type="checkbox" checked={!!pantryState[item]?.checked} onChange={() => togglePantryItem(item)} />
+                            <span>{item}</span>
+                          </label>
+                          <div className="qty-wrap">
+                            <input type="number" step={cfg.step} min={0} className="qty-input" value={pantryState[item]?.qty ?? cfg.default} onChange={e => updatePantryQty(item, e.target.value)} />
+                            <span className="qty-unit">{cfg.unit}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </aside>
+
+        <main className={`main ${mobileTab === "recipes" ? "mobile-active" : ""}`}>
+          <div className="main-inner">
+            <div className="cuisine-filter">
+              {CUISINES.map(c => (
+                <button
+                  key={c}
+                  className={`cuisine-btn ${cuisineFilter === c ? "active" : ""}`}
+                  onClick={() => setCuisineFilter(c)}
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
+
+            {(aiLoading || aiSuggestion) && (
+              <div>
+                <div className="section-label">AI suggestion</div>
+                {aiLoading ? (
+                  <div className="ai-card"><div className="ai-loading"><div className="spinner"></div>Finding...</div></div>
+                ) : aiSuggestion && (
+                  <div className="ai-card">
+                    <div className="ai-badge">✦ AI Pick</div>
+                    <h3>{aiSuggestion.name}</h3>
+                    <p>{aiSuggestion.description}</p>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {canMakeRecipes.length > 0 && (
+              <div>
+                <div className="section-label">ready to cook — {canMakeRecipes.length}</div>
+                <div className="recipes-grid">
+                  {canMakeRecipes.map(recipe => (
+                    <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => { setSelectedRecipe(recipe); setMobileTab("detail"); }}>
+                      <span className="card-emoji">{recipe.emoji}</span>
+                      <div className="card-name">{recipe.name}</div>
+                      <div className="card-status ok">✓ All ingredients on hand</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {missingRecipes.length > 0 && (
+              <div>
+                <div className="section-label">need ingredients — {missingRecipes.length}</div>
+                <div className="recipes-grid">
+                  {missingRecipes.map(recipe => (
+                    <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => setSelectedRecipe(recipe)}>
+                      <span className="card-emoji">{recipe.emoji}</span>
+                      <div className="card-name">{recipe.name}</div>
+                      <div className="card-status miss">Missing {recipe.analysis.missing.length}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </main>
+
+        <aside className={`right-panel ${mobileTab === "detail" || mobileTab === "grocery" ? "mobile-active" : ""}`}>
+          <div className="detail-section">
+            <h2>Recipe Detail</h2>
+            {!selectedRecipe ? (
+              <div className="detail-empty">Select a recipe</div>
+            ) : (
+              <>
+                <div className="detail-title-row">
+                  <span className="detail-emoji">{selectedRecipe.emoji}</span>
+                  <div>
+                    <div className="detail-name">{selectedRecipe.name}</div>
+                    <div className="detail-time">⏱ {selectedRecipe.time}</div>
+                  </div>
+                </div>
+                <table className="ing-table">
+                  <thead><tr><th>Ingredient</th><th>Need</th><th>Have</th></tr></thead>
+                  <tbody>
+                    {getScaledIngredients(selectedRecipe).map(ing => {
+                      const analysis = getRecipeAnalysis(selectedRecipe);
+                      const hasEnough = !analysis.missing.find(m => m.name === ing.name);
+                      return (
+                        <tr key={ing.name} className={hasEnough ? "have" : "miss"}>
+                          <td>{ing.name}</td>
+                          <td>{ing.scaledAmount} {ing.unit}</td>
+                          <td>
+                            {pantryState[ing.name]?.checked 
+                              ? `${pantryState[ing.name].qty} ${getIngredientConfig(ing.name).unit}` 
+                              : 0}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+
+                <div className="detail-steps">
+                  <div className="detail-steps-label">Steps</div>
+                  {selectedRecipe.steps.map((step, i) => (
+                    <div key={i} className="detail-step">
+                      <div className="detail-step-num">{i + 1}</div>
+                      <div className="detail-step-text">{step}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <button className="btn-cook" onClick={() => startCooking(selectedRecipe)}>▶ Start Cooking Mode</button>
+              </>
+            )}
+          </div>
+
+          <div className="grocery-section">
+            <h2>Grocery List</h2>
+            {groceryList.length === 0 ? <div className="grocery-empty">Empty</div> : (
+              <>
+                {Object.entries(groceryByCategory).map(([cat, items]) => (
+                  <div key={cat} className="grocery-group">
+                    <div className="grocery-group-title">{cat}</div>
+                    {items.map(item => (
+                      <div key={item.name} className={`grocery-item ${item.checked ? "checked" : ""}`}>
+                        <div className="grocery-left" onClick={() => toggleGroceryCheck(item.name)}>
+                          <input type="checkbox" checked={item.checked} readOnly />
+                          <span>{item.name}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </>
+            )}
+          </div>
+        </aside>
+      <nav className="mobile-tabs">
+          <button className={mobileTab === "pantry" ? "active" : ""} onClick={() => setMobileTab("pantry")}>
+            <span>🥫</span>
+            <span>Pantry</span>
+          </button>
+          <button className={mobileTab === "recipes" ? "active" : ""} onClick={() => setMobileTab("recipes")}>
+            <span>🍽️</span>
+            <span>Recipes</span>
+          </button>
+          <button className={mobileTab === "detail" ? "active" : ""} onClick={() => setMobileTab("detail")}>
+            <span>📋</span>
+            <span>Detail</span>
+          </button>
+          <button className={mobileTab === "grocery" ? "active" : ""} onClick={() => setMobileTab("grocery")}>
+            <span>🛒</span>
+            <span>Grocery</span>
+          </button>
+        </nav>
+      </div>
+      {cookMode && (
+        <div className="cook-overlay" onClick={e => { if (e.target === e.currentTarget) closeCooking(); }}>
+          <div className="cook-modal">
+            <div className="cook-header">
+              <div className="cook-header-top">
+                <div className="cook-title">{cookMode.emoji} {cookMode.name}</div>
+                <button className="btn-close" onClick={closeCooking}>×</button>
+              </div>
+              {cookPhase === "cooking" && (
+                <div className="cook-progress">
+                  {cookMode.steps.map((_, i) => (
+                    <div key={i} className={`prog-dot ${i < cookStep ? "done" : i === cookStep ? "active" : ""}`}></div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* CHECKLIST PHASE */}
+            {cookPhase === "checklist" && (
+              <>
+                <div className="cook-body">
+                  <div className="cook-phase-label">Before you start</div>
+                  <p className="cook-phase-sub">Confirm you have everything ready for {servings} servings</p>
+                  <table className="cook-ing-table">
+                    <thead>
+                      <tr><th>Ingredient</th><th>Amount</th></tr>
+                    </thead>
+                    <tbody>
+                      {getScaledIngredients(cookMode).map(ing => (
+                        <tr key={ing.name}>
+                          <td>{ing.name}</td>
+                          <td className="ing-amount">{ing.scaledAmount} {ing.unit}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div className="cook-footer">
+                  <button className="btn-prev" onClick={closeCooking}>Cancel</button>
+                  <button className="btn-next" onClick={() => setCookPhase("cooking")}>I'm ready — Let's cook →</button>
+                </div>
+              </>
+            )}
+
+            {/* COOKING PHASE */}
+            {cookPhase === "cooking" && (
+              <>
+                <div className="cook-body">
+                  <div className="step-num">Step {cookStep + 1} of {cookMode.steps.length}</div>
+                  <div className="step-text">{cookMode.steps[cookStep]}</div>
+
+                  {/* SCALED INGREDIENTS REMINDER */}
+                  <div className="cook-ing-strip">
+                    {getScaledIngredients(cookMode).map(ing => (
+                      <span key={ing.name} className="cook-ing-pill">
+                        <span className="pill-name">{ing.name}</span>
+                        <span className="pill-amt">{ing.scaledAmount} {ing.unit}</span>
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* TIMER */}
+                  <div className="cook-timer">
+                    <div className="timer-label">
+                      {timerSeconds > 0 && timerRunning ? "⏱ Timer running" : timerSeconds > 0 && !timerRunning ? "⏱ Timer ready" : "⏱ Set a timer"}
+                    </div>
+                    <div className="timer-display" style={{ color: timerSeconds > 0 && timerSeconds <= 10 ? "var(--red)" : "var(--text)" }}>
+                      {formatTime(timerSeconds)}
+                    </div>
+                    <div className="timer-controls">
+                      <input
+                        className="timer-input"
+                        type="number"
+                        placeholder="min"
+                        value={timerInput}
+                        onChange={e => {
+                          setTimerInput(e.target.value);
+                          const mins = parseInt(e.target.value);
+                          if (!isNaN(mins) && mins > 0) setTimerSeconds(mins * 60);
+                        }}
+                      />
+                      <button className="btn-timer-action" onClick={() => setTimerRunning(r => !r)} disabled={timerSeconds === 0}>
+                        {timerRunning ? "⏸ Pause" : "▶ Start"}
+                      </button>
+                      <button className="btn-timer-reset" onClick={() => {
+                        clearInterval(timerRef.current);
+                        setTimerRunning(false);
+                        const mins = parseInt(timerInput);
+                        setTimerSeconds(!isNaN(mins) && mins > 0 ? mins * 60 : 0);
+                      }}>↺</button>
+                    </div>
+                  </div>
+                </div>
+                <div className="cook-footer">
+                  <button className="btn-prev" disabled={cookStep === 0} onClick={() => goToStep(cookStep - 1)}>← Back</button>
+                  {cookStep < cookMode.steps.length - 1 ? (
+                    <button className="btn-next" onClick={() => goToStep(cookStep + 1)}>Next →</button>
+                  ) : (
+                    <button className="btn-done-cook" onClick={closeCooking}>✓ Done! Enjoy</button>
+                  )}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default App;

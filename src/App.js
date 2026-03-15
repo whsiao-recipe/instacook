@@ -1020,9 +1020,7 @@ const RECIPE_LIBRARY = [
       { name: "Green Onion", amount: 1, unit: "bunch" }
     ],
     steps: [
-      "Soft-boil eggs:
-    ],
-    steps: [
+      "Soft-boil eggs: simmer 7 min, then transfer to ice water. Peel and halve.",
       "Cut chicken thighs into bite-sized pieces. Season with half the curry powder, cumin, paprika, and salt.", simmer 7 min, then transfer to ice water. Peel and halve.",
       "Simmer chicken in broth with garlic, ginger, and onion for 20 min. Remove chicken and shred.",
       "Strain broth. Return to pot and season with soy sauce and sesame oil.",

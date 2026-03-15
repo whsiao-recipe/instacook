@@ -4981,6 +4981,112 @@ const RECIPE_LIBRARY = [
       "Squeeze lemon over the top. The Moroccan spice crust is incredible with lamb."
     ]
   }
+,
+  {
+    name: "Baklava",
+    emoji: "🍯",
+    time: "1 hr",
+    cuisine: "Dessert",
+    baseServings: 12,
+    ingredients: [
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Butter", amount: 1, unit: "cup" },
+      { name: "Honey", amount: 0.5, unit: "cup" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Cinnamon", amount: 1, unit: "tsp" },
+      { name: "Cloves", amount: 0.25, unit: "tsp" },
+      { name: "Lemon", amount: 1, unit: "count" }
+    ],
+    steps: [
+      "Make syrup: combine sugar, honey, ½ cup water, lemon juice, and cloves. Simmer 10 min until slightly thickened. Cool completely.",
+      "Preheat oven to 350°F. Melt butter.",
+      "Mix chopped nuts with cinnamon and a pinch of sugar.",
+      "Layer sheets of dough in a buttered baking dish, brushing each with melted butter.",
+      "Add a layer of nut mixture every few sheets. Continue layering until all ingredients are used.",
+      "Cut into diamond shapes before baking. Bake 45 min until golden. Pour cold syrup over hot baklava immediately."
+    ]
+  },
+  {
+    name: "Gyros",
+    emoji: "🥙",
+    time: "30 min",
+    cuisine: "Greek",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Greek Yogurt", amount: 0.5, unit: "cup" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Oregano", amount: 1, unit: "tsp" },
+      { name: "Tortillas", amount: 4, unit: "count" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix yogurt, minced garlic, lemon juice, olive oil, cumin, paprika, oregano, and salt.",
+      "Coat chicken thoroughly. Marinate at least 30 min.",
+      "Cook in a hot pan over medium-high heat 6-7 min per side until deeply golden and cooked through.",
+      "Rest 5 min then slice thinly.",
+      "Warm pitas in the same pan.",
+      "Fill pitas with sliced chicken, tomatoes, and a generous drizzle of tzatziki."
+    ]
+  },
+  {
+    name: "Pad Krapow",
+    emoji: "🌿",
+    time: "15 min",
+    cuisine: "Thai",
+    baseServings: 2,
+    ingredients: [
+      { name: "Ground Chicken", amount: 0.5, unit: "lb" },
+      { name: "Basil", amount: 1, unit: "bunch" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Oyster Sauce", amount: 1, unit: "tbsp" },
+      { name: "Fish Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Egg", amount: 2, unit: "count" }
+    ],
+    steps: [
+      "Heat oil in a wok over very high heat until smoking.",
+      "Add minced garlic and chili flakes. Stir fry 20 seconds.",
+      "Add ground chicken. Cook breaking up until browned and slightly crispy.",
+      "Add soy sauce, oyster sauce, fish sauce, and sugar. Toss to coat.",
+      "Remove from heat. Fold in fresh basil leaves — they will wilt from the residual heat.",
+      "Fry eggs sunny side up separately. Serve chicken over rice topped with the crispy fried egg."
+    ]
+  },
+  {
+    name: "Mapo Tofu",
+    emoji: "🍲",
+    time: "20 min",
+    cuisine: "Chinese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 0.5, unit: "lb" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Chicken Broth", amount: 0.5, unit: "cup" },
+      { name: "Corn Starch", amount: 1, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Heat oil in a wok over high heat. Cook ground pork until browned and crispy.",
+      "Add minced garlic, ginger, and chili flakes. Stir fry 1 min.",
+      "Add soy sauce and chicken broth. Bring to a simmer.",
+      "Mix cornstarch with 2 tbsp cold water. Stir into the sauce until thickened.",
+      "Gently add cubed silken tofu. Simmer 3 min — do not stir too hard or tofu will break.",
+      "Drizzle with sesame oil. Serve over rice. This dish should be spicy, numbing, and deeply savory."
+    ]
+  }
 ];
 
 function findCategory(itemName) {

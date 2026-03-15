@@ -38,7 +38,7 @@ const PANTRY_CATALOG = {
   ]
 };
 
-const CUISINES = ["All", "American", "Asian", "Italian", "Mexican", "Indian", "Middle Eastern", "French", "Healthy"];
+const CUISINES = ["All", "American", "Asian", "Italian", "Mexican", "Indian", "Middle Eastern", "French", "Healthy", "Breakfast", "Dessert", "Greek", "Japanese", "Thai", "Vietnamese"];
 
 const RECIPE_LIBRARY = [
   {

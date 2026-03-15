@@ -1206,12 +1206,3 @@ body {
   border-color: var(--accent);
   color: white;
 }
-```
-
-Press **Ctrl+S** on both files. Now let's add the Batch 4 recipes. Press **Ctrl+H** in `App.js`:
-
-**Find:**
-```
-];
-
-function findCategory

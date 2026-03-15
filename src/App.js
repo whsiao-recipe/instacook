@@ -4585,6 +4585,19 @@ function App() {
               ))}
             </div>
 
+            {cuisineFilter === "Asian" && (
+              <div className="asian-subfilter">
+                {ASIAN_SUBCUISINES.map(s => (
+                  <button
+                    key={s}
+                    className={`cuisine-btn sub ${asianSubFilter === s ? "active" : ""}`}
+                    onClick={() => setAsianSubFilter(s)}
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            )}
             {(aiLoading || aiSuggestion) && (
               <div>
                 <div className="section-label">AI suggestion</div>

@@ -5448,7 +5448,7 @@ function App() {
       })
       .map(r => ({ ...r, analysis: getRecipeAnalysis(r) }))
       .sort((a, b) => b.analysis.matchPercent - a.analysis.matchPercent);
-  }, [searchTerm, cuisineFilter, servings, pantryState]);
+  }, [searchTerm, cuisineFilter, asianSubFilter, servings, pantryState]);
 
   const canMakeRecipes = filteredRecipes.filter(r => r.analysis.canMake);
   const missingRecipes = filteredRecipes.filter(r => !r.analysis.canMake);

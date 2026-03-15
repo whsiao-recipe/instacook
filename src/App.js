@@ -1136,6 +1136,511 @@ const RECIPE_LIBRARY = [
       "Broil 3–4 min until cheese is bubbling and golden. Serve immediately."
     ]
   }
+,
+  {
+    name: "Bibimbap",
+    emoji: "🍚",
+    time: "35 min",
+    cuisine: "Asian",
+    baseServings: 2,
+    ingredients: [
+      { name: "Rice", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Spinach", amount: 2, unit: "cups" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Sesame Oil", amount: 2, unit: "tsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Hot Sauce", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Cook rice and set aside.",
+      "Blanch spinach in boiling water 1 min. Squeeze dry, season with sesame oil and a pinch of salt.",
+      "Sauté sliced mushrooms in oil over high heat until golden. Season with soy sauce.",
+      "Fry eggs sunny side up in the same pan.",
+      "Divide rice into bowls. Arrange spinach and mushrooms in sections around the bowl.",
+      "Place fried egg on top. Drizzle with hot sauce and sesame oil. Mix everything together before eating."
+    ]
+  },
+  {
+    name: "Korean Fried Chicken",
+    emoji: "🍗",
+    time: "40 min",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Wings", amount: 2, unit: "lb" },
+      { name: "Corn Starch", amount: 3, unit: "tbsp" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Honey", amount: 2, unit: "tbsp" },
+      { name: "Hot Sauce", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Pat chicken wings dry. Season with salt and toss in cornstarch until fully coated.",
+      "Heat oil in a deep pan to 350°F (175°C). Fry wings in batches 10-12 min until golden. Drain on paper towels.",
+      "Mix soy sauce, honey, minced garlic, ginger, and hot sauce in a pan over medium heat. Simmer 2 min until slightly thickened.",
+      "Fry the wings a second time at 375°F for 3-4 min until extra crispy. This double fry is the secret to Korean fried chicken.",
+      "Toss hot wings in the sauce until fully coated.",
+      "Serve immediately — they lose their crunch fast!"
+    ]
+  },
+  {
+    name: "Japchae",
+    emoji: "🍜",
+    time: "30 min",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Noodles", amount: 1, unit: "pack" },
+      { name: "Beef Flank", amount: 0.5, unit: "lb" },
+      { name: "Spinach", amount: 2, unit: "cups" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 2, unit: "tsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" }
+    ],
+    steps: [
+      "Soak glass noodles in warm water 20 min, then boil 5 min until tender. Drain and toss with a little sesame oil.",
+      "Slice beef thinly and marinate in 1 tbsp soy sauce, sugar, and garlic for 10 min.",
+      "Blanch spinach 1 min, squeeze dry, season with sesame oil and salt.",
+      "Stir-fry beef in hot oil until cooked. Remove. Stir-fry mushrooms and onion in the same pan.",
+      "Add noodles, remaining soy sauce, and all cooked ingredients to the pan. Toss everything together over medium heat.",
+      "Drizzle with sesame oil and serve warm or at room temperature."
+    ]
+  },
+  {
+    name: "Kimchi Fried Rice",
+    emoji: "🍳",
+    time: "15 min",
+    cuisine: "Asian",
+    baseServings: 2,
+    ingredients: [
+      { name: "Rice", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Hot Sauce", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Use cold day-old rice for best results.",
+      "Heat oil in a wok over high heat. Sauté diced onion and garlic 2 min.",
+      "Add hot sauce and stir 30 seconds until fragrant.",
+      "Add rice, breaking up clumps. Press against the wok and let it sit 30 seconds for a slight char.",
+      "Add soy sauce and toss everything together. Push to the side and fry eggs to your liking.",
+      "Drizzle sesame oil over everything. Serve topped with the fried egg."
+    ]
+  },
+  {
+    name: "Gamja Jorim",
+    emoji: "🥔",
+    time: "25 min",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Potato", amount: 4, unit: "count" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Honey", amount: 1, unit: "tbsp" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Water", amount: 0.5, unit: "cup" }
+    ],
+    steps: [
+      "Peel and cube potatoes into small bite-sized pieces. Soak in water 10 min to remove starch, then drain and pat dry.",
+      "Heat oil in a pan over medium-high. Fry potatoes until golden on all sides, about 8-10 min.",
+      "Mix soy sauce, sugar, honey, minced garlic, and water in a bowl.",
+      "Pour sauce over potatoes. Toss to coat and bring to a simmer.",
+      "Cook uncovered 8-10 min, stirring occasionally, until sauce thickens into a glaze.",
+      "Drizzle with sesame oil. Serve as a side dish with rice."
+    ]
+  },
+  {
+    name: "Char Siu Pork",
+    emoji: "🥩",
+    time: "1 hr",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 1, unit: "lb" },
+      { name: "Hoisin Sauce", amount: 2, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Honey", amount: 2, unit: "tbsp" },
+      { name: "Rice Wine", amount: 1, unit: "tbsp" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Mix hoisin sauce, soy sauce, honey, rice wine, minced garlic, and sugar into a marinade.",
+      "Coat pork thoroughly. Marinate at least 30 min — overnight gives the best flavor.",
+      "Preheat oven to 400°F (200°C). Place pork on a wire rack over a foil-lined baking sheet.",
+      "Roast 25 min, basting with marinade halfway through.",
+      "Brush with remaining marinade and broil 3-5 min until edges are caramelized and slightly charred.",
+      "Rest 5 min before slicing. Serve over rice or in steamed buns."
+    ]
+  },
+  {
+    name: "Egg Drop Soup",
+    emoji: "🍲",
+    time: "10 min",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Corn Starch", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Ginger", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "White Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Bring chicken broth to a boil. Add ginger and season with salt and white pepper.",
+      "Mix cornstarch with 2 tbsp cold water until smooth. Pour into the boiling broth while stirring.",
+      "Reduce to a gentle simmer — the broth should be slightly thickened.",
+      "Beat eggs well in a bowl. While stirring the soup in a slow circle, pour eggs in a thin stream.",
+      "The eggs will cook instantly into silky ribbons — stop stirring as soon as they set.",
+      "Drizzle with sesame oil and serve immediately."
+    ]
+  },
+  {
+    name: "Red Braised Beef",
+    emoji: "🥩",
+    time: "2 hr",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Beef Flank", amount: 2, unit: "lb" },
+      { name: "Dark Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 2, unit: "tbsp" },
+      { name: "Star Anise", amount: 3, unit: "pods" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Rice Wine", amount: 2, unit: "tbsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Cut beef into large chunks. Blanch in boiling water 3 min to remove impurities. Drain and rinse.",
+      "Heat oil in a pot. Brown beef on all sides over high heat. Remove.",
+      "Add garlic, ginger, and star anise. Stir 1 min until fragrant.",
+      "Return beef. Add dark soy sauce, soy sauce, rice wine, sugar, and enough water to just cover.",
+      "Bring to a boil, then reduce to a low simmer. Cover and cook 1.5-2 hours until melt-in-your-mouth tender.",
+      "Uncover and simmer 15 more min to reduce the sauce to a rich glaze. Serve over rice."
+    ]
+  },
+  {
+    name: "Steamed Ginger Fish",
+    emoji: "🐟",
+    time: "20 min",
+    cuisine: "Asian",
+    baseServings: 2,
+    ingredients: [
+      { name: "Tilapia", amount: 2, unit: "fillets" },
+      { name: "Ginger", amount: 2, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Pat fish dry. Score both sides with diagonal cuts. Season with salt.",
+      "Lay julienned ginger over the fish.",
+      "Steam over boiling water 8-10 min until fish is opaque and flakes easily.",
+      "Carefully drain any liquid from the plate.",
+      "Pour soy sauce over the fish.",
+      "Heat oil in a small pan until smoking. Pour hot oil over the fish — it will sizzle and cook the ginger instantly. Drizzle with sesame oil and serve."
+    ]
+  },
+  {
+    name: "Dan Dan Noodles",
+    emoji: "🍜",
+    time: "25 min",
+    cuisine: "Asian",
+    baseServings: 2,
+    ingredients: [
+      { name: "Noodles", amount: 1, unit: "pack" },
+      { name: "Ground Pork", amount: 0.5, unit: "lb" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 2, unit: "tbsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Cook noodles per package directions. Reserve ¼ cup noodle water. Drain.",
+      "Mix sesame oil, soy sauce, chili flakes, sugar, and a splash of noodle water in a bowl — this is your sauce.",
+      "Heat oil in a wok over high heat. Add ground pork and cook, breaking up, until browned and slightly crispy.",
+      "Add minced garlic and ginger. Stir 1 min.",
+      "Divide noodles into bowls. Pour sauce over and toss.",
+      "Top with the pork and an extra drizzle of sesame oil."
+    ]
+  },
+  {
+    name: "Cacio e Pepe",
+    emoji: "🍝",
+    time: "20 min",
+    cuisine: "Italian",
+    baseServings: 2,
+    ingredients: [
+      { name: "Pasta", amount: 200, unit: "g" },
+      { name: "Parmesan", amount: 1, unit: "cup" },
+      { name: "Pepper", amount: 2, unit: "tsp" },
+      { name: "Butter", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cook pasta in well-salted boiling water until al dente. Reserve 1 cup pasta water — this is crucial.",
+      "Toast cracked black pepper in a dry pan over medium heat 1 min until fragrant.",
+      "Add butter and ¼ cup pasta water to the pan. Let it simmer gently.",
+      "Add drained pasta and toss. Remove from heat.",
+      "Add grated parmesan gradually, tossing constantly and adding pasta water a splash at a time to create a smooth creamy sauce.",
+      "The sauce should coat every strand. Serve immediately with extra pepper."
+    ]
+  },
+  {
+    name: "Pasta al Limone",
+    emoji: "🍋",
+    time: "20 min",
+    cuisine: "Italian",
+    baseServings: 2,
+    ingredients: [
+      { name: "Pasta", amount: 200, unit: "g" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Parmesan", amount: 0.5, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Heavy Cream", amount: 0.25, unit: "cup" },
+      { name: "Garlic", amount: 1, unit: "cloves" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Cook pasta in salted boiling water until al dente. Reserve ½ cup pasta water before draining.",
+      "Melt butter in a pan over medium heat. Add minced garlic and cook 1 min.",
+      "Add heavy cream and lemon zest. Simmer 2 min.",
+      "Add drained pasta and toss to coat. Add pasta water as needed.",
+      "Remove from heat. Add parmesan and lemon juice. Toss until sauce is silky.",
+      "Season with salt and pepper. Serve immediately with extra lemon zest."
+    ]
+  },
+  {
+    name: "Chicken Cacciatore",
+    emoji: "🍲",
+    time: "55 min",
+    cuisine: "Italian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Bell Pepper", amount: 2, unit: "count" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Italian Seasoning", amount: 2, unit: "tsp" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Season chicken thighs with salt and Italian seasoning.",
+      "Heat olive oil in a large pan over high heat. Sear chicken skin-side down 5 min until golden. Flip and sear 3 more min. Remove.",
+      "In the same pan, sauté diced onion and bell peppers 5 min. Add garlic and cook 1 min.",
+      "Add canned tomatoes and bay leaves. Stir to combine.",
+      "Return chicken to the pan, nestling it into the sauce. Bring to a simmer.",
+      "Cover and cook on low 30-35 min until chicken is fall-apart tender. Remove bay leaves before serving."
+    ]
+  },
+  {
+    name: "Potato Gnocchi",
+    emoji: "🥔",
+    time: "50 min",
+    cuisine: "Italian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Potato", amount: 4, unit: "count" },
+      { name: "Flour", amount: 1, unit: "cup" },
+      { name: "Egg", amount: 1, unit: "count" },
+      { name: "Parmesan", amount: 0.25, unit: "cup" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Boil potatoes whole until fork tender, about 25 min. Peel while hot and mash until completely smooth.",
+      "Let mashed potato cool 10 min. Make a well in the center. Add egg, parmesan, and salt.",
+      "Add flour gradually, mixing gently until a soft dough just comes together. Do not overwork — less kneading means lighter gnocchi.",
+      "Divide dough into sections. Roll each into a ¾ inch rope. Cut into 1-inch pieces.",
+      "Boil gnocchi in salted water until they float to the surface, about 2-3 min.",
+      "Toss immediately in brown butter or your sauce of choice. Serve with parmesan."
+    ]
+  },
+  {
+    name: "Pasta e Fagioli",
+    emoji: "🍝",
+    time: "35 min",
+    cuisine: "Italian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Pasta", amount: 200, unit: "g" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 3, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Rosemary", amount: 1, unit: "sprig" },
+      { name: "Tomato Paste", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pot. Sauté diced onion 5 min. Add garlic and rosemary, cook 1 min.",
+      "Add tomato paste and stir 1 min. Add canned tomatoes and cook 5 min until thickened.",
+      "Pour in chicken broth. Bring to a boil.",
+      "Add pasta directly to the soup. Cook stirring often until pasta is al dente, about 8-10 min.",
+      "The soup thickens as pasta releases starch — add more broth if too thick.",
+      "Season with salt and pepper. Drizzle with olive oil and serve with crusty bread."
+    ]
+  },
+  {
+    name: "Greek Yogurt Chicken",
+    emoji: "🍗",
+    time: "35 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Greek Yogurt", amount: 1, unit: "cup" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix Greek yogurt, lemon juice, minced garlic, cumin, paprika, olive oil, and salt into a marinade.",
+      "Coat chicken thighs thoroughly. Marinate at least 30 min — overnight is best.",
+      "The yogurt tenderizes the chicken and creates an incredible crust when cooked.",
+      "Cook in a hot pan over medium-high heat 6-7 min per side until deeply golden and cooked through.",
+      "Alternatively bake at 425°F for 30-35 min on a wire rack.",
+      "Rest 5 min before serving. Serve with a simple salad or over rice."
+    ]
+  },
+  {
+    name: "Sweet Potato & Spinach Bowl",
+    emoji: "🍠",
+    time: "30 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Sweet Potato", amount: 2, unit: "count" },
+      { name: "Spinach", amount: 3, unit: "cups" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Smoked Paprika", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 425°F. Cube sweet potatoes and toss with olive oil, cumin, smoked paprika, and salt.",
+      "Spread on a baking sheet and roast 20-25 min until golden and caramelized at the edges.",
+      "Heat a little olive oil in a pan. Add minced garlic and sauté 30 seconds.",
+      "Add spinach and toss until wilted, about 2 min. Season with salt.",
+      "Fry or poach eggs to your preference.",
+      "Build bowls: sweet potatoes on the bottom, wilted spinach, then top with the egg. Drizzle with olive oil."
+    ]
+  },
+  {
+    name: "Shrimp & Broccoli Stir Fry",
+    emoji: "🍤",
+    time: "20 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Corn Starch", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Cut broccoli into small florets. Blanch in boiling water 2 min. Drain.",
+      "Pat shrimp dry. Season with a pinch of salt.",
+      "Mix soy sauce, sesame oil, and cornstarch with 2 tbsp water in a small bowl.",
+      "Heat oil in a wok over high heat. Cook shrimp 1 min per side until pink. Remove.",
+      "Add garlic and ginger to the wok. Stir-fry 30 seconds. Add broccoli and toss.",
+      "Return shrimp. Pour sauce over everything and toss until coated and glossy. Serve over rice."
+    ]
+  },
+  {
+    name: "Turmeric Chicken Soup",
+    emoji: "🍲",
+    time: "40 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken", amount: 1, unit: "lb" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Spinach", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Turmeric", amount: 1, unit: "tsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pot over medium heat. Sauté diced onion 5 min until soft.",
+      "Add minced garlic, ginger, and turmeric. Stir 1 min until fragrant.",
+      "Add chicken and chicken broth. Bring to a boil.",
+      "Reduce heat and simmer 20 min until chicken is cooked through. Remove and shred.",
+      "Return shredded chicken to the pot. Add spinach and stir until wilted.",
+      "Squeeze in lemon juice. Season with salt. Serve hot — this soup is deeply nourishing and anti-inflammatory."
+    ]
+  },
+  {
+    name: "Baked Lemon Herb Salmon",
+    emoji: "🐟",
+    time: "25 min",
+    cuisine: "Healthy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Salmon", amount: 2, unit: "fillets" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Thyme", amount: 2, unit: "sprigs" },
+      { name: "Rosemary", amount: 1, unit: "sprig" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 400°F (200°C). Line a baking sheet with foil.",
+      "Mix olive oil, minced garlic, lemon zest, salt, and pepper together.",
+      "Place salmon fillets on the baking sheet. Brush generously with the herb oil.",
+      "Lay thyme and rosemary sprigs on top. Add lemon slices over the fish.",
+      "Bake 12-15 min until salmon flakes easily with a fork. Do not overcook.",
+      "Squeeze fresh lemon juice over the top and serve with steamed vegetables or salad."
+    ]
+  }
 ];
 
 function findCategory(itemName) {

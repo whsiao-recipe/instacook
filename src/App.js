@@ -2811,6 +2811,464 @@ const RECIPE_LIBRARY = [
       "Pour dressing over and toss. Top with parmesan and serve immediately."
     ]
   }
+,
+  {
+    name: "Tom Yum Soup",
+    emoji: "🍲",
+    time: "30 min",
+    cuisine: "Thai",
+    baseServings: 4,
+    ingredients: [
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Lemongrass", amount: 2, unit: "stalks" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Fish Sauce", amount: 2, unit: "tbsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Tomato", amount: 2, unit: "count" },
+      { name: "Sugar", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Bring chicken broth to a boil. Add bruised lemongrass and sliced ginger. Simmer 10 min to infuse.",
+      "Add sliced mushrooms and diced tomatoes. Cook 5 min.",
+      "Add shrimp. Cook 2-3 min until pink.",
+      "Season with fish sauce, lime juice, sugar, and chili flakes.",
+      "Taste and adjust — it should be sour, spicy, and slightly salty.",
+      "Remove lemongrass before serving. Ladle into bowls."
+    ]
+  },
+  {
+    name: "Minestrone",
+    emoji: "🍲",
+    time: "40 min",
+    cuisine: "Italian",
+    baseServings: 6,
+    ingredients: [
+      { name: "Pasta", amount: 100, unit: "g" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Carrot", amount: 2, unit: "count" },
+      { name: "Potato", amount: 2, unit: "count" },
+      { name: "Spinach", amount: 2, unit: "cups" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pot. Sauté diced onion and garlic 5 min.",
+      "Add diced carrots and potatoes. Cook 3 min.",
+      "Add canned tomatoes, broth, and Italian seasoning. Bring to a boil.",
+      "Simmer 15 min until vegetables are tender.",
+      "Add pasta and cook 8-10 min until al dente.",
+      "Stir in spinach until wilted. Season with salt. Serve with parmesan."
+    ]
+  },
+  {
+    name: "Miso Soup",
+    emoji: "🍜",
+    time: "10 min",
+    cuisine: "Japanese",
+    baseServings: 4,
+    ingredients: [
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Onion", amount: 2, unit: "count" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Bring chicken broth to a simmer. Add ginger and soy sauce.",
+      "Add sliced mushrooms. Cook 3 min.",
+      "Whisk eggs and drizzle slowly into the simmering broth while stirring to create ribbons.",
+      "Season with salt and sesame oil.",
+      "Slice green onions thinly.",
+      "Ladle into bowls and top with green onions. Serve immediately."
+    ]
+  },
+  {
+    name: "Tortilla Soup",
+    emoji: "🍲",
+    time: "35 min",
+    cuisine: "Mexican",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken", amount: 1, unit: "lb" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.5, unit: "tsp" },
+      { name: "Tortillas", amount: 4, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a pot. Sauté diced onion and garlic 5 min.",
+      "Add cumin and chili flakes. Stir 30 seconds.",
+      "Add canned tomatoes and broth. Bring to a boil.",
+      "Add chicken breasts whole. Simmer 20 min until cooked through. Remove and shred.",
+      "Return chicken to the pot. Season with salt.",
+      "Cut tortillas into strips and bake at 400°F 8 min until crispy. Serve soup topped with tortilla strips and sour cream."
+    ]
+  },
+  {
+    name: "Tomato Bisque",
+    emoji: "🍅",
+    time: "35 min",
+    cuisine: "American",
+    baseServings: 4,
+    ingredients: [
+      { name: "Canned Tomatoes", amount: 3, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Heavy Cream", amount: 0.5, unit: "cup" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Tomato Paste", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Melt butter in a pot over medium heat. Sauté diced onion 8 min until soft.",
+      "Add garlic and tomato paste. Cook 2 min.",
+      "Add canned tomatoes, broth, and sugar. Bring to a boil.",
+      "Simmer 15 min. Blend completely smooth with an immersion blender.",
+      "Stir in heavy cream. Simmer 5 more min.",
+      "Season with salt and pepper. Serve with grilled cheese for dipping."
+    ]
+  },
+  {
+    name: "Chicken Noodle Soup",
+    emoji: "🍜",
+    time: "40 min",
+    cuisine: "American",
+    baseServings: 6,
+    ingredients: [
+      { name: "Chicken", amount: 1, unit: "lb" },
+      { name: "Noodles", amount: 1, unit: "pack" },
+      { name: "Chicken Broth", amount: 6, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Thyme", amount: 2, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Add chicken, broth, diced onion, garlic, ginger, thyme, and bay leaves to a large pot.",
+      "Bring to a boil then reduce to a simmer. Cook 25 min.",
+      "Remove chicken and shred. Remove bay leaves and thyme.",
+      "Return shredded chicken to the pot.",
+      "Add noodles and cook per package directions.",
+      "Season with salt and pepper. Serve hot — this soup cures everything."
+    ]
+  },
+  {
+    name: "Hot & Sour Soup",
+    emoji: "🍲",
+    time: "25 min",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 4, unit: "cups" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Corn Starch", amount: 2, unit: "tbsp" },
+      { name: "Vinegar", amount: 3, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "White Pepper", amount: 1, unit: "tsp" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Bring broth to a boil. Add ginger and sliced mushrooms. Cook 5 min.",
+      "Mix cornstarch with 3 tbsp cold water. Stir into broth until slightly thickened.",
+      "Add soy sauce, vinegar, and white pepper. Stir.",
+      "Beat eggs and drizzle slowly into the soup while stirring to create ribbons.",
+      "Add sesame oil. Taste and adjust vinegar and pepper.",
+      "Ladle into bowls. This soup should be tangy, spicy, and deeply savory."
+    ]
+  },
+  {
+    name: "Lemon Chicken Soup",
+    emoji: "🍋",
+    time: "30 min",
+    cuisine: "Greek",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken", amount: 1, unit: "lb" },
+      { name: "Rice", amount: 0.5, unit: "cups" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Chicken Broth", amount: 6, unit: "cups" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Simmer chicken in broth 20 min until cooked. Remove and shred.",
+      "Add rice to the broth. Cook 15 min until tender.",
+      "Whisk eggs and lemon juice together in a bowl.",
+      "Slowly ladle 2 cups of hot broth into the egg mixture while whisking constantly — this tempers the eggs.",
+      "Pour the egg mixture back into the pot while stirring. Do not boil again or eggs will scramble.",
+      "Return chicken. Season with salt and pepper. The soup should be creamy and lemony."
+    ]
+  },
+  {
+    name: "Garlic Bread",
+    emoji: "🥖",
+    time: "15 min",
+    cuisine: "Italian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Bread", amount: 1, unit: "loaf" },
+      { name: "Butter", amount: 4, unit: "tbsp" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Parmesan", amount: 0.25, unit: "cup" },
+      { name: "Italian Seasoning", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 375°F.",
+      "Mix softened butter with minced garlic, Italian seasoning, and salt.",
+      "Slice bread in half lengthwise.",
+      "Spread garlic butter generously over the cut sides.",
+      "Sprinkle with parmesan.",
+      "Bake 10-12 min until golden and crispy at the edges. Broil the last 2 min for extra crunch."
+    ]
+  },
+  {
+    name: "Spring Rolls",
+    emoji: "🥢",
+    time: "30 min",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 0.5, unit: "lb" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Corn Starch", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Cook ground pork in a pan until browned. Add minced garlic, diced onion, and mushrooms.",
+      "Season with soy sauce and sesame oil. Cook 3 min. Mix in cornstarch to bind.",
+      "Let filling cool completely — warm filling makes soggy rolls.",
+      "Place 2 tbsp filling on the lower third of each wrapper. Fold sides in then roll tightly.",
+      "Seal the edge with water.",
+      "Fry in oil at 350°F for 3-4 min until golden. Drain and serve with sweet chili sauce."
+    ]
+  },
+  {
+    name: "Dumplings",
+    emoji: "🥟",
+    time: "45 min",
+    cuisine: "Asian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 0.5, unit: "lb" },
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Onion", amount: 2, unit: "count" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Make dough: mix flour with ½ cup boiling water. Knead 5 min until smooth. Rest 20 min covered.",
+      "Make filling: combine ground pork, minced garlic, ginger, soy sauce, sesame oil, and sliced green onions.",
+      "Roll dough thin and cut into 3-inch circles.",
+      "Place 1 tsp filling in the center. Fold and pleat the edges to seal.",
+      "Pan-fry in oil over medium heat 2 min until golden on the bottom.",
+      "Add ¼ cup water. Cover immediately and steam 6 min until water evaporates. Serve with soy sauce."
+    ]
+  },
+  {
+    name: "Bruschetta",
+    emoji: "🍅",
+    time: "15 min",
+    cuisine: "Italian",
+    baseServings: 4,
+    ingredients: [
+      { name: "Bread", amount: 1, unit: "loaf" },
+      { name: "Tomato", amount: 3, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Basil", amount: 1, unit: "bunch" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Vinegar", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Slice bread into thick rounds. Brush with olive oil.",
+      "Toast under broiler or in a pan until deeply golden.",
+      "Rub each slice immediately with a raw garlic clove — the rough surface grates the garlic onto the bread.",
+      "Dice tomatoes finely. Toss with olive oil, vinegar, salt, and pepper.",
+      "Tear basil and mix into the tomatoes.",
+      "Spoon tomato mixture onto toasted bread just before serving — don't let it sit or bread goes soggy."
+    ]
+  },
+  {
+    name: "Stuffed Mushrooms",
+    emoji: "🍄",
+    time: "30 min",
+    cuisine: "American",
+    baseServings: 4,
+    ingredients: [
+      { name: "Mushrooms", amount: 2, unit: "cups" },
+      { name: "Cream Cheese", amount: 0.5, unit: "cup" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Parmesan", amount: 0.25, unit: "cup" },
+      { name: "Bacon", amount: 3, unit: "strips" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 375°F. Remove mushroom stems and chop finely.",
+      "Cook bacon until crispy. Crumble. Sauté chopped stems with garlic in bacon fat 3 min.",
+      "Mix cream cheese, parmesan, bacon, and cooked stems. Season with salt and pepper.",
+      "Brush mushroom caps with olive oil. Fill each generously with the cream cheese mixture.",
+      "Place on a baking sheet.",
+      "Bake 20 min until mushrooms are tender and tops are golden."
+    ]
+  },
+  {
+    name: "Mac & Cheese",
+    emoji: "🧀",
+    time: "30 min",
+    cuisine: "American",
+    baseServings: 4,
+    ingredients: [
+      { name: "Pasta", amount: 300, unit: "g" },
+      { name: "Cheese", amount: 2, unit: "cups" },
+      { name: "Milk", amount: 1.5, unit: "cups" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Flour", amount: 2, unit: "tbsp" },
+      { name: "Cream Cheese", amount: 0.25, unit: "cup" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Cook pasta until al dente. Drain and set aside.",
+      "Melt butter in the same pot over medium heat. Whisk in flour and cook 1 min.",
+      "Gradually whisk in milk until smooth. Simmer 3-4 min until thickened.",
+      "Remove from heat. Add cream cheese and stir until melted.",
+      "Add shredded cheese in handfuls, stirring between each addition.",
+      "Add pasta and toss to coat. Season with salt and pepper. Serve immediately."
+    ]
+  },
+  {
+    name: "Mashed Potatoes",
+    emoji: "🥔",
+    time: "30 min",
+    cuisine: "American",
+    baseServings: 4,
+    ingredients: [
+      { name: "Potato", amount: 6, unit: "count" },
+      { name: "Butter", amount: 4, unit: "tbsp" },
+      { name: "Heavy Cream", amount: 0.5, unit: "cup" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Peel and cube potatoes. Boil in salted water 20 min until very tender.",
+      "Warm heavy cream and butter together in a small pan.",
+      "Drain potatoes completely. Return to the hot pot and let steam dry 1 min.",
+      "Mash potatoes until no lumps remain.",
+      "Pour in warm cream mixture gradually, stirring until smooth and fluffy.",
+      "Season with salt and pepper. Serve immediately topped with extra butter."
+    ]
+  },
+  {
+    name: "Guacamole",
+    emoji: "🥑",
+    time: "10 min",
+    cuisine: "Mexican",
+    baseServings: 4,
+    ingredients: [
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Red Onion", amount: 0.25, unit: "count" },
+      { name: "Tomato", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 1, unit: "cloves" },
+      { name: "Chili Flakes", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Halve avocados and remove the pit. Scoop flesh into a bowl.",
+      "Add lime juice immediately to prevent browning.",
+      "Mash with a fork to your preferred texture — chunky or smooth.",
+      "Finely dice red onion, tomato, and garlic. Add to the bowl.",
+      "Season with chili flakes and salt.",
+      "Taste and adjust lime and salt. Serve immediately with tortilla chips."
+    ]
+  },
+  {
+    name: "Deviled Eggs",
+    emoji: "🥚",
+    time: "20 min",
+    cuisine: "American",
+    baseServings: 6,
+    ingredients: [
+      { name: "Egg", amount: 6, unit: "count" },
+      { name: "Dijon Mustard", amount: 1, unit: "tbsp" },
+      { name: "Sour Cream", amount: 2, unit: "tbsp" },
+      { name: "Vinegar", amount: 1, unit: "tsp" },
+      { name: "Paprika", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Hard boil eggs 12 min. Transfer to ice water. Peel carefully.",
+      "Slice eggs in half lengthwise. Pop yolks into a bowl.",
+      "Mash yolks with dijon mustard, sour cream, vinegar, salt, and pepper until smooth.",
+      "Taste and adjust seasoning — it should be tangy and rich.",
+      "Spoon or pipe filling back into egg white halves.",
+      "Dust with paprika and serve chilled."
+    ]
+  },
+  {
+    name: "Roasted Vegetables",
+    emoji: "🥦",
+    time: "35 min",
+    cuisine: "Healthy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Bell Pepper", amount: 2, unit: "count" },
+      { name: "Mushrooms", amount: 1, unit: "cup" },
+      { name: "Red Onion", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Garlic Powder", amount: 1, unit: "tsp" },
+      { name: "Italian Seasoning", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 425°F.",
+      "Cut all vegetables into similar sized pieces so they cook evenly.",
+      "Toss with olive oil, garlic powder, Italian seasoning, salt, and pepper.",
+      "Spread in a single layer on a large baking sheet — do not crowd or they will steam instead of roast.",
+      "Roast 20-25 min until edges are caramelized and slightly charred.",
+      "Serve as a side or over rice."
+    ]
+  }
 ];
 
 function findCategory(itemName) {

@@ -1013,7 +1013,8 @@ const RECIPE_LIBRARY = [
       { name: "Cumin", amount: 1, unit: "tsp" },
       { name: "Paprika", amount: 1, unit: "tsp" },
       { name: "Salt", amount: 1, unit: "tsp" },
-      { name: "Cilantro", amount: 1, unit: "bunch" }{ name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Cilantro", amount: 1, unit: "bunch" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
       { name: "Onion", amount: 1, unit: "count" },
       { name: "Chicken", amount: 0.5, unit: "lb" },
       { name: "Green Onion", amount: 1, unit: "bunch" }

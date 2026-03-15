@@ -133,7 +133,9 @@ const RECIPE_LIBRARY = [
       { name: "Garlic", amount: 2, unit: "cloves" },
       { name: "Paprika", amount: 1, unit: "tsp" },
       { name: "Cumin", amount: 1, unit: "tsp" },
-      { name: "Salt", amount: 1, unit: "tsp" }
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Jalapeño", amount: 1, unit: "count" },
+      { name: "Cilantro", amount: 1, unit: "bunch" }
     ],
     steps: [
       "Dice onion finely and mince garlic.",
@@ -472,7 +474,8 @@ const RECIPE_LIBRARY = [
       { name: "Curry Powder", amount: 2, unit: "tsp" },
       { name: "Cumin", amount: 1, unit: "tsp" },
       { name: "Paprika", amount: 1, unit: "tsp" },
-      { name: "Salt", amount: 1, unit: "tsp" }
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Cilantro", amount: 1, unit: "bunch" }
     ],
     steps: [
       "Cut chicken thighs into bite-sized pieces. Season with half the curry powder, cumin, paprika, and salt.",
@@ -499,7 +502,9 @@ const RECIPE_LIBRARY = [
       { name: "Paprika", amount: 1, unit: "tsp" },
       { name: "Chili Flakes", amount: 0.5, unit: "tsp" },
       { name: "Olive Oil", amount: 2, unit: "tbsp" },
-      { name: "Salt", amount: 1, unit: "tsp" }
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Feta", amount: 0.5, unit: "block" },
+      { name: "Parsley", amount: 1, unit: "bunch" }
     ],
     steps: [
       "Heat olive oil in a large, deep skillet over medium heat.",
@@ -980,7 +985,8 @@ const RECIPE_LIBRARY = [
       { name: "Garlic", amount: 4, unit: "cloves" },
       { name: "Ginger", amount: 1, unit: "tsp" },
       { name: "Onion", amount: 1, unit: "count" },
-      { name: "Oil", amount: 1, unit: "tbsp" }
+      { name: "Oil", amount: 1, unit: "tbsp" },
+      { name: "Green Onion", amount: 1, unit: "bunch" }
     ],
     steps: [
       "Freeze beef for 30 min then slice paper-thin against the grain — this makes it melt-in-your-mouth tender.",
@@ -1004,12 +1010,19 @@ const RECIPE_LIBRARY = [
       { name: "Soy Sauce", amount: 2, unit: "tbsp" },
       { name: "Sesame Oil", amount: 1, unit: "tsp" },
       { name: "Garlic", amount: 3, unit: "cloves" },
-      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Cilantro", amount: 1, unit: "bunch" }{ name: "Ginger", amount: 1, unit: "tsp" },
       { name: "Onion", amount: 1, unit: "count" },
-      { name: "Chicken", amount: 0.5, unit: "lb" }
+      { name: "Chicken", amount: 0.5, unit: "lb" },
+      { name: "Green Onion", amount: 1, unit: "bunch" }
     ],
     steps: [
-      "Soft-boil eggs: simmer 7 min, then transfer to ice water. Peel and halve.",
+      "Soft-boil eggs:
+    ],
+    steps: [
+      "Cut chicken thighs into bite-sized pieces. Season with half the curry powder, cumin, paprika, and salt.", simmer 7 min, then transfer to ice water. Peel and halve.",
       "Simmer chicken in broth with garlic, ginger, and onion for 20 min. Remove chicken and shred.",
       "Strain broth. Return to pot and season with soy sauce and sesame oil.",
       "Cook noodles per package directions. Drain.",
@@ -1166,7 +1179,8 @@ const RECIPE_LIBRARY = [
       { name: "Sesame Oil", amount: 2, unit: "tsp" },
       { name: "Soy Sauce", amount: 2, unit: "tbsp" },
       { name: "Hot Sauce", amount: 1, unit: "tbsp" },
-      { name: "Oil", amount: 1, unit: "tbsp" }
+      { name: "Oil", amount: 1, unit: "tbsp" },
+      { name: "Carrot", amount: 2, unit: "count" }
     ],
     steps: [
       "Cook rice and set aside.",
@@ -1927,9 +1941,11 @@ const RECIPE_LIBRARY = [
     cuisine: "Middle Eastern",
     baseServings: 4,
     ingredients: [
+      { name: "Chickpeas", amount: 2, unit: "can" },
       { name: "Olive Oil", amount: 3, unit: "tbsp" },
       { name: "Garlic", amount: 2, unit: "cloves" },
       { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Tahini", amount: 3, unit: "tbsp" },
       { name: "Cumin", amount: 0.5, unit: "tsp" },
       { name: "Salt", amount: 0.5, unit: "tsp" },
       { name: "Paprika", amount: 0.5, unit: "tsp" }
@@ -1950,6 +1966,7 @@ const RECIPE_LIBRARY = [
     cuisine: "Middle Eastern",
     baseServings: 4,
     ingredients: [
+      { name: "Chickpeas", amount: 2, unit: "can" },
       { name: "Flour", amount: 0.25, unit: "cup" },
       { name: "Garlic", amount: 3, unit: "cloves" },
       { name: "Onion", amount: 0.5, unit: "count" },
@@ -2609,9 +2626,10 @@ const RECIPE_LIBRARY = [
     baseServings: 4,
     ingredients: [
       { name: "Tomato", amount: 3, unit: "count" },
+      { name: "Cucumber", amount: 1, unit: "count" },
       { name: "Bell Pepper", amount: 1, unit: "count" },
       { name: "Red Onion", amount: 0.5, unit: "count" },
-      { name: "Mozzarella", amount: 1, unit: "cup" },
+      { name: "Feta", amount: 1, unit: "block" },
       { name: "Olive Oil", amount: 3, unit: "tbsp" },
       { name: "Lemon", amount: 1, unit: "count" },
       { name: "Oregano", amount: 1, unit: "tsp" },
@@ -3560,7 +3578,10 @@ const RECIPE_LIBRARY = [
       { name: "Honey", amount: 1, unit: "tbsp" },
       { name: "Lime", amount: 1, unit: "count" },
       { name: "Hot Sauce", amount: 1, unit: "tbsp" },
-      { name: "Oil", amount: 1, unit: "tbsp" }
+      { name: "Oil", amount: 1, unit: "tbsp" },
+      { name: "Carrot", amount: 1, unit: "count" },
+      { name: "Cilantro", amount: 1, unit: "bunch" },
+      { name: "Jalapeño", amount: 1, unit: "count" }
     ],
     steps: [
       "Marinate sliced chicken in soy sauce, honey, minced garlic, and lime juice for 15 min.",

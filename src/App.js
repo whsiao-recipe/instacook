@@ -5,36 +5,48 @@ import "./App.css";
 const PANTRY_CATALOG = {
   "Meat & Proteins": [
     "Bacon", "Beef Flank", "Chicken", "Chicken Thighs", "Chicken Wings",
-    "Ground Beef", "Ground Chicken", "Ground Pork", "Lamb Chops",
-    "Rib Eye Steak", "Salmon", "Shrimp", "Tilapia"
+    "Chorizo", "Cod", "Duck Breast", "Ground Beef", "Ground Chicken",
+    "Ground Pork", "Lamb Chops", "Pork Belly", "Pork Chops",
+    "Rib Eye Steak", "Salmon", "Sausage", "Shrimp", "Tilapia",
+    "Tofu", "Tuna", "Turkey"
   ],
   "Produce": [
-    "Banana Peppers", "Basil", "Bell Pepper", "Broccoli", "Garlic",
-    "Ginger", "Lemon", "Lime", "Mushrooms", "Onion", "Potato",
-    "Red Onion", "Shallot", "Spinach", "Sweet Potato", "Tomato"
+    "Arugula", "Asparagus", "Avocado", "Banana Peppers", "Basil",
+    "Bell Pepper", "Broccoli", "Cabbage", "Carrot", "Celery", "Cilantro",
+    "Corn", "Cucumber", "Garlic", "Ginger", "Green Onion", "Jalapeño",
+    "Kale", "Lemon", "Lime", "Mushrooms", "Onion", "Parsley", "Potato",
+    "Red Onion", "Shallot", "Spinach", "Sweet Potato", "Tomato", "Zucchini"
   ],
   "Dairy & Eggs": [
-    "American Cheese", "Butter", "Cheese", "Cream", "Cream Cheese",
-    "Egg", "Greek Yogurt", "Heavy Cream", "Milk", "Mozzarella", "Parmesan", "Sour Cream"
+    "American Cheese", "Butter", "Cheddar", "Cheese", "Cottage Cheese",
+    "Cream", "Cream Cheese", "Egg", "Feta", "Greek Yogurt", "Heavy Cream",
+    "Milk", "Mozzarella", "Parmesan", "Ricotta", "Sour Cream", "Whipping Cream"
   ],
   "Pantry Staples": [
-    "Avocado Oil", "Baking Powder", "Beef Broth", "Bread", "Canned Tomatoes",
-    "Chicken Broth", "Coconut Milk", "Corn Starch", "Flour", "Honey",
-    "Jasmine Rice", "Noodles", "Oil", "Olive Oil", "Panko Breadcrumbs",
-    "Pasta", "Pineapple Chunks", "Pita Bread", "Rice", "Tortillas"
+    "Avocado Oil", "Baking Powder", "Baking Soda", "Basmati Rice",
+    "Beef Broth", "Black Beans", "Bread", "Brown Sugar", "Canned Tomatoes",
+    "Chicken Broth", "Chickpeas", "Cocoa Powder", "Coconut Milk",
+    "Corn Starch", "Couscous", "Flour", "Honey", "Jasmine Rice", "Noodles",
+    "Oats", "Oil", "Olive Oil", "Panko Breadcrumbs", "Pasta",
+    "Peanut Butter", "Pineapple Chunks", "Pita Bread", "Quinoa", "Rice",
+    "Tomato Sauce", "Tortillas", "Vanilla Extract"
   ],
   "Spices & Seasonings": [
-    "Adobo", "Bay Leaf", "Chicken Powder", "Chili Flakes", "Cinnamon",
-    "Cloves", "Coriander", "Cumin", "Curry Powder", "Fennel Seeds",
-    "Garlic Powder", "Italian Seasoning", "Mushroom Powder", "Onion Powder",
-    "Oregano", "Paprika", "Pepper", "Peppercorn", "Rosemary", "Salt",
-    "Smoked Paprika", "Star Anise", "Sugar", "Thyme", "Turmeric", "White Pepper"
+    "Adobo", "Allspice", "Bay Leaf", "Cardamom", "Cayenne Pepper",
+    "Chicken Powder", "Chili Flakes", "Chili Powder", "Cinnamon", "Cloves",
+    "Coriander", "Cumin", "Curry Powder", "Dried Mint", "Fennel Seeds",
+    "Five Spice", "Garam Masala", "Garlic Powder", "Italian Seasoning",
+    "Mushroom Powder", "Nutmeg", "Onion Powder", "Oregano", "Paprika",
+    "Pepper", "Peppercorn", "Rosemary", "Salt", "Smoked Paprika",
+    "Star Anise", "Sugar", "Thyme", "Turmeric", "White Pepper", "Za'atar"
   ],
   "Sauces & Condiments": [
-    "Dark Soy Sauce", "Dark Vinegar", "Dijon Mustard", "Fish Sauce",
-    "Hoisin Sauce", "Hot Sauce", "Ketchup", "Mustard", "Oyster Sauce",
-    "Pickles", "Rice Wine", "Sesame Oil", "Soy Sauce", "Tomato Paste",
-    "Vinegar", "Worcestershire Sauce", "Water"
+    "Balsamic Vinegar", "Chili Oil", "Coconut Aminos", "Dark Soy Sauce",
+    "Dark Vinegar", "Dijon Mustard", "Fish Sauce", "Hoisin Sauce",
+    "Hot Sauce", "Ketchup", "Maple Syrup", "Mayonnaise", "Miso Paste",
+    "Mustard", "Oyster Sauce", "Pickles", "Rice Wine", "Sesame Oil",
+    "Soy Sauce", "Sriracha", "Tahini", "Tomato Paste", "Vinegar",
+    "Water", "Worcestershire Sauce"
   ]
 };
 
@@ -5096,7 +5108,7 @@ function findCategory(itemName) {
   return "Other";
 }
 
-const PANTRY_VERSION = "v8_sorted_pantry";
+const PANTRY_VERSION = "v9_expanded_pantry";
 
 const INGREDIENT_CONFIG = {
   // --- PROTEINS (Standardized to 1 lb or Count) ---
@@ -5234,7 +5246,16 @@ function App() {
     setPantryState(prev => ({ ...prev, [item]: { ...prev[item], qty: isNaN(parsed) ? 0 : parsed } }));
   };
 
-  const toggleCat = (cat) => setCollapsedCats(prev => ({ ...prev, [cat]: !prev[cat] }));
+  const selectAllCat = (cat, items) => {
+    const allChecked = items.every(i => pantryState[i]?.checked);
+    setPantryState(prev => {
+      const updated = { ...prev };
+      items.forEach(item => {
+        updated[item] = { ...updated[item], checked: !allChecked };
+      });
+      return updated;
+    });
+  };
 
   const getScaledIngredients = (recipe) => {
     const scale = servings / recipe.baseServings;
@@ -5517,6 +5538,14 @@ function App() {
                 </div>
                 {open && (
                   <div className="cat-items">
+                    <div className="cat-select-all-row">
+                      <button
+                        className="btn-select-all"
+                        onClick={(e) => { e.stopPropagation(); selectAllCat(cat, items); }}
+                      >
+                        {items.every(i => pantryState[i]?.checked) ? "✓ Deselect All" : "Select All"}
+                      </button>
+                    </div>
                     {items.map(item => {
                       const cfg = getIngredientConfig(item);
                       return (

@@ -271,6 +271,30 @@ body {
 
 .cat-chevron { font-size: 9px; color: var(--muted); transition: transform 0.2s; }
 .cat-chevron.open { transform: rotate(90deg); }
+.cat-select-all-row {
+  padding: 5px 20px 2px;
+}
+
+.btn-select-all {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 3px 9px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: background 0.15s;
+  opacity: 0.85;
+}
+
+.btn-select-all:hover {
+  background: var(--accent-dim);
+  opacity: 1;
+}
 
 .cat-items { padding: 3px 0 6px; }
 

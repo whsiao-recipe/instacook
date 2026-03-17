@@ -426,6 +426,42 @@ body {
   white-space: nowrap;
 }
 
+/* ── DIFFICULTY FILTER ── */
+.difficulty-filter { display: flex; gap: 6px; margin-top: 4px; }
+
+.difficulty-btn {
+  background: transparent;
+  border: 1px solid var(--border2);
+  color: var(--muted);
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.2s;
+}
+
+.difficulty-btn:hover { border-color: var(--accent); color: var(--accent); }
+.difficulty-btn.active { background: var(--ink); color: var(--accent); border-color: var(--ink); }
+
+/* ── DIFFICULTY TAGS ── */
+.difficulty-tag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.difficulty-tag.easy { background: rgba(93,189,116,0.12); color: var(--green); }
+.difficulty-tag.medium { background: rgba(230,160,50,0.12); color: #d4940a; }
+.difficulty-tag.hard { background: rgba(220,80,60,0.12); color: #c0392b; }
+
 /* ── RECIPE CARDS ── */
 .recipe-card {
   background: var(--surface);

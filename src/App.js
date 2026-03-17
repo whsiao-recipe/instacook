@@ -60,6 +60,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "30 min",
     cuisine: "American",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -85,6 +86,7 @@ const RECIPE_LIBRARY = [
     emoji: "🧀",
     time: "10 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Bread", amount: 2, unit: "slices" },
@@ -105,6 +107,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍔",
     time: "20 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -126,6 +129,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌮",
     time: "25 min",
     cuisine: "Mexican",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -151,6 +155,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍖",
     time: "45 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Wings", amount: 2, unit: "lb" },
@@ -174,6 +179,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥦",
     time: "25 min",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -198,6 +204,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌿",
     time: "20 min",
     cuisine: "Thai",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Ground Chicken", amount: 1, unit: "lb" },
@@ -222,6 +229,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "3 hr 20 min",
     cuisine: "Vietnamese",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Beef Flank", amount: 3, unit: "lbs" },
@@ -252,6 +260,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "20 min",
     cuisine: "American",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Rib Eye Steak", amount: 2, unit: "steaks" },
@@ -275,6 +284,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌯",
     time: "2 hr",
     cuisine: "Mexican",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Beef Flank", amount: 2, unit: "lb" },
@@ -301,6 +311,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍝",
     time: "30 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -325,6 +336,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "25 min",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -349,6 +361,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "25 min",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Beef Flank", amount: 1, unit: "lb" },
@@ -373,6 +386,7 @@ const RECIPE_LIBRARY = [
     emoji: "🧄",
     time: "30 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -396,6 +410,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "15 min",
     cuisine: "Asian",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Noodles", amount: 1, unit: "pack" },
@@ -418,6 +433,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "15 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Tilapia", amount: 2, unit: "fillets" },
@@ -440,6 +456,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍝",
     time: "25 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Pasta", amount: 400, unit: "g" },
@@ -463,6 +480,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍛",
     time: "45 min",
     cuisine: "Indian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -491,6 +509,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "30 min",
     cuisine: "Middle Eastern",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Egg", amount: 6, unit: "count" },
@@ -520,6 +539,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "20 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Salmon", amount: 2, unit: "fillets" },
@@ -545,6 +565,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "50 min",
     cuisine: "Indian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1.5, unit: "lb" },
@@ -574,6 +595,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍤",
     time: "20 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Shrimp", amount: 1, unit: "lb" },
@@ -600,6 +622,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍝",
     time: "1 hr",
     cuisine: "Italian",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -628,6 +651,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "45 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 4, unit: "count" },
@@ -652,6 +676,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "15 min",
     cuisine: "Chinese",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -677,6 +702,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍋",
     time: "1.5 hr",
     cuisine: "American",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "whole" },
@@ -703,6 +729,7 @@ const RECIPE_LIBRARY = [
     emoji: "🧅",
     time: "1 hr",
     cuisine: "French",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Onion", amount: 4, unit: "count" },
@@ -731,6 +758,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌮",
     time: "2.5 hr",
     cuisine: "Mexican",
+    difficulty: "Medium",
     baseServings: 6,
     ingredients: [
       { name: "Pork Shoulder", amount: 2, unit: "lb" },
@@ -759,6 +787,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍄",
     time: "40 min",
     cuisine: "Italian",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Arborio Rice", amount: 2, unit: "cups" },
@@ -787,6 +816,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "25 min",
     cuisine: "Middle Eastern",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Lamb Chops", amount: 4, unit: "count" },
@@ -812,6 +842,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥣",
     time: "40 min",
     cuisine: "American",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Potato", amount: 4, unit: "count" },
@@ -840,6 +871,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍡",
     time: "35 min",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -867,6 +899,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "25 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Salmon", amount: 2, unit: "fillets" },
@@ -894,6 +927,7 @@ const RECIPE_LIBRARY = [
     emoji: "🫓",
     time: "20 min",
     cuisine: "Mexican",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Chicken", amount: 0.5, unit: "lb" },
@@ -921,6 +955,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍱",
     time: "25 min",
     cuisine: "Japanese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -947,6 +982,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥘",
     time: "35 min",
     cuisine: "Indian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Potato", amount: 2, unit: "count" },
@@ -976,6 +1012,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "30 min",
     cuisine: "Korean",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Beef Flank", amount: 1.5, unit: "lb" },
@@ -1002,6 +1039,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "35 min",
     cuisine: "Japanese",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Noodles", amount: 2, unit: "packs" },
@@ -1033,6 +1071,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌯",
     time: "35 min",
     cuisine: "Middle Eastern",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -1060,6 +1099,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍝",
     time: "25 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Pasta", amount: 400, unit: "g" },
@@ -1085,6 +1125,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍋",
     time: "30 min",
     cuisine: "American",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -1112,6 +1153,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "40 min",
     cuisine: "Indian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -1140,6 +1182,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥪",
     time: "20 min",
     cuisine: "French",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Bread", amount: 4, unit: "slices" },
@@ -1167,6 +1210,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍚",
     time: "35 min",
     cuisine: "Korean",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -1194,6 +1238,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "40 min",
     cuisine: "Korean",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Wings", amount: 2, unit: "lb" },
@@ -1220,6 +1265,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "30 min",
     cuisine: "Korean",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Noodles", amount: 1, unit: "pack" },
@@ -1247,6 +1293,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "15 min",
     cuisine: "Korean",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -1273,6 +1320,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥔",
     time: "25 min",
     cuisine: "Korean",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Potato", amount: 4, unit: "count" },
@@ -1298,6 +1346,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "1 hr",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Pork Shoulder", amount: 2, unit: "lb" },
@@ -1326,6 +1375,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "10 min",
     cuisine: "Chinese",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Egg", amount: 3, unit: "count" },
@@ -1350,6 +1400,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "2 hr",
     cuisine: "Chinese",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Beef Flank", amount: 2, unit: "lb" },
@@ -1376,6 +1427,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "20 min",
     cuisine: "Chinese",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Tilapia", amount: 2, unit: "fillets" },
@@ -1399,6 +1451,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "25 min",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Noodles", amount: 1, unit: "pack" },
@@ -1425,6 +1478,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍝",
     time: "20 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Pasta", amount: 200, unit: "g" },
@@ -1447,6 +1501,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍋",
     time: "20 min",
     cuisine: "Italian",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Pasta", amount: 200, unit: "g" },
@@ -1472,6 +1527,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "55 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -1498,6 +1554,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥔",
     time: "50 min",
     cuisine: "Italian",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Potato", amount: 4, unit: "count" },
@@ -1521,6 +1578,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍝",
     time: "35 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Pasta", amount: 200, unit: "g" },
@@ -1549,6 +1607,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "35 min",
     cuisine: "Healthy",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -1574,6 +1633,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍠",
     time: "30 min",
     cuisine: "Healthy",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Sweet Potato", amount: 2, unit: "count" },
@@ -1599,6 +1659,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍤",
     time: "20 min",
     cuisine: "Healthy",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Shrimp", amount: 0.5, unit: "lb" },
@@ -1624,6 +1685,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "40 min",
     cuisine: "Healthy",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -1651,6 +1713,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "25 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Salmon", amount: 2, unit: "fillets" },
@@ -1677,6 +1740,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍷",
     time: "1.5 hr",
     cuisine: "French",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -1705,6 +1769,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥣",
     time: "45 min",
     cuisine: "French",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Potato", amount: 4, unit: "count" },
@@ -1729,6 +1794,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "3 hr",
     cuisine: "French",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Beef Flank", amount: 2, unit: "lb" },
@@ -1757,6 +1823,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍆",
     time: "1 hr",
     cuisine: "French",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Tomato", amount: 4, unit: "count" },
@@ -1784,6 +1851,7 @@ const RECIPE_LIBRARY = [
     emoji: "🧅",
     time: "1.5 hr",
     cuisine: "French",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Onion", amount: 6, unit: "count" },
@@ -1812,6 +1880,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥗",
     time: "25 min",
     cuisine: "French",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Egg", amount: 3, unit: "count" },
@@ -1838,6 +1907,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "1.5 hr",
     cuisine: "French",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "whole" },
@@ -1863,6 +1933,7 @@ const RECIPE_LIBRARY = [
     emoji: "🫓",
     time: "30 min",
     cuisine: "French",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Flour", amount: 2, unit: "cups" },
@@ -1888,6 +1959,7 @@ const RECIPE_LIBRARY = [
     emoji: "🦞",
     time: "1 hr",
     cuisine: "French",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Shrimp", amount: 1, unit: "lb" },
@@ -1916,6 +1988,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥧",
     time: "55 min",
     cuisine: "French",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -1941,6 +2014,7 @@ const RECIPE_LIBRARY = [
     emoji: "🫙",
     time: "10 min",
     cuisine: "Middle Eastern",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Chickpeas", amount: 2, unit: "can" },
@@ -1966,6 +2040,7 @@ const RECIPE_LIBRARY = [
     emoji: "🧆",
     time: "30 min",
     cuisine: "Middle Eastern",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chickpeas", amount: 2, unit: "can" },
@@ -1992,6 +2067,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍢",
     time: "25 min",
     cuisine: "Middle Eastern",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -2018,6 +2094,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥗",
     time: "15 min",
     cuisine: "Middle Eastern",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Tomato", amount: 3, unit: "count" },
@@ -2044,6 +2121,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍚",
     time: "45 min",
     cuisine: "Middle Eastern",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Rice", amount: 1, unit: "cups" },
@@ -2068,6 +2146,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍆",
     time: "40 min",
     cuisine: "Middle Eastern",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Garlic", amount: 2, unit: "cloves" },
@@ -2091,6 +2170,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "40 min",
     cuisine: "Middle Eastern",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Onion", amount: 1, unit: "count" },
@@ -2118,6 +2198,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍖",
     time: "2 hr",
     cuisine: "Middle Eastern",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Lamb Chops", amount: 4, unit: "count" },
@@ -2146,6 +2227,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥗",
     time: "20 min",
     cuisine: "Middle Eastern",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Tomato", amount: 3, unit: "count" },
@@ -2169,6 +2251,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "1 hr",
     cuisine: "Middle Eastern",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -2196,6 +2279,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "10 min",
     cuisine: "Breakfast",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -2218,6 +2302,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍞",
     time: "15 min",
     cuisine: "Breakfast",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Bread", amount: 4, unit: "slices" },
@@ -2242,6 +2327,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥞",
     time: "20 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Flour", amount: 1.5, unit: "cups" },
@@ -2266,6 +2352,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "10 min",
     cuisine: "Breakfast",
+    difficulty: "Easy",
     baseServings: 1,
     ingredients: [
       { name: "Egg", amount: 3, unit: "count" },
@@ -2288,6 +2375,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌯",
     time: "20 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -2313,6 +2401,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥓",
     time: "15 min",
     cuisine: "Breakfast",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Bacon", amount: 4, unit: "strips" },
@@ -2335,6 +2424,7 @@ const RECIPE_LIBRARY = [
     emoji: "🧁",
     time: "25 min",
     cuisine: "Breakfast",
+    difficulty: "Easy",
     baseServings: 6,
     ingredients: [
       { name: "Egg", amount: 6, unit: "count" },
@@ -2359,6 +2449,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍚",
     time: "45 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Rice", amount: 0.5, unit: "cups" },
@@ -2383,6 +2474,7 @@ const RECIPE_LIBRARY = [
     emoji: "🫓",
     time: "20 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Flour", amount: 1, unit: "cup" },
@@ -2406,6 +2498,7 @@ const RECIPE_LIBRARY = [
     emoji: "🧇",
     time: "25 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Flour", amount: 2, unit: "cups" },
@@ -2430,6 +2523,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌮",
     time: "20 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -2456,6 +2550,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "15 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -2480,6 +2575,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "15 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -2505,6 +2601,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥔",
     time: "25 min",
     cuisine: "Breakfast",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Potato", amount: 3, unit: "count" },
@@ -2531,6 +2628,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥪",
     time: "10 min",
     cuisine: "Breakfast",
+    difficulty: "Easy",
     baseServings: 1,
     ingredients: [
       { name: "Egg", amount: 2, unit: "count" },
@@ -2554,6 +2652,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "35 min",
     cuisine: "Breakfast",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Egg", amount: 6, unit: "count" },
@@ -2576,6 +2675,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥚",
     time: "10 min",
     cuisine: "Breakfast",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -2598,6 +2698,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥗",
     time: "15 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Spinach", amount: 4, unit: "cups" },
@@ -2625,6 +2726,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥗",
     time: "10 min",
     cuisine: "Greek",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Tomato", amount: 3, unit: "count" },
@@ -2652,6 +2754,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍅",
     time: "10 min",
     cuisine: "Italian",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Tomato", amount: 4, unit: "count" },
@@ -2675,6 +2778,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍝",
     time: "20 min",
     cuisine: "Italian",
+    difficulty: "Easy",
     baseServings: 6,
     ingredients: [
       { name: "Pasta", amount: 300, unit: "g" },
@@ -2701,6 +2805,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥔",
     time: "30 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 6,
     ingredients: [
       { name: "Potato", amount: 6, unit: "count" },
@@ -2726,6 +2831,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥗",
     time: "15 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Romaine", amount: 4, unit: "cups" },
@@ -2751,6 +2857,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥗",
     time: "20 min",
     cuisine: "Thai",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Beef Flank", amount: 0.5, unit: "lb" },
@@ -2777,6 +2884,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥚",
     time: "15 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Egg", amount: 6, unit: "count" },
@@ -2801,6 +2909,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍅",
     time: "10 min",
     cuisine: "Italian",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Tomato", amount: 4, unit: "count" },
@@ -2825,6 +2934,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍄",
     time: "15 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Spinach", amount: 4, unit: "cups" },
@@ -2851,6 +2961,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "30 min",
     cuisine: "Thai",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Shrimp", amount: 0.5, unit: "lb" },
@@ -2878,6 +2989,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "40 min",
     cuisine: "Italian",
+    difficulty: "Medium",
     baseServings: 6,
     ingredients: [
       { name: "Pasta", amount: 100, unit: "g" },
@@ -2906,6 +3018,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "10 min",
     cuisine: "Japanese",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Mushrooms", amount: 1, unit: "cup" },
@@ -2931,6 +3044,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "35 min",
     cuisine: "Mexican",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -2958,6 +3072,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍅",
     time: "35 min",
     cuisine: "American",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Canned Tomatoes", amount: 3, unit: "cups" },
@@ -2985,6 +3100,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "40 min",
     cuisine: "American",
+    difficulty: "Medium",
     baseServings: 6,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -3012,6 +3128,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "25 min",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Mushrooms", amount: 1, unit: "cup" },
@@ -3039,6 +3156,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍋",
     time: "30 min",
     cuisine: "Greek",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -3063,6 +3181,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥖",
     time: "15 min",
     cuisine: "Italian",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Bread", amount: 1, unit: "loaf" },
@@ -3086,6 +3205,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥢",
     time: "30 min",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Ground Pork", amount: 0.5, unit: "lb" },
@@ -3112,6 +3232,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥟",
     time: "45 min",
     cuisine: "Chinese",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Ground Pork", amount: 0.5, unit: "lb" },
@@ -3137,6 +3258,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍅",
     time: "15 min",
     cuisine: "Italian",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Bread", amount: 1, unit: "loaf" },
@@ -3162,6 +3284,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍄",
     time: "30 min",
     cuisine: "American",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Mushrooms", amount: 2, unit: "cups" },
@@ -3187,6 +3310,7 @@ const RECIPE_LIBRARY = [
     emoji: "🧀",
     time: "30 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Pasta", amount: 300, unit: "g" },
@@ -3212,6 +3336,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥔",
     time: "30 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Potato", amount: 6, unit: "count" },
@@ -3235,6 +3360,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥑",
     time: "10 min",
     cuisine: "Mexican",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Avocado", amount: 3, unit: "count" },
@@ -3260,6 +3386,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥚",
     time: "20 min",
     cuisine: "American",
+    difficulty: "Easy",
     baseServings: 6,
     ingredients: [
       { name: "Egg", amount: 6, unit: "count" },
@@ -3284,6 +3411,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥦",
     time: "35 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Broccoli", amount: 1, unit: "head" },
@@ -3311,6 +3439,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥟",
     time: "30 min",
     cuisine: "Japanese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Ground Pork", amount: 0.5, unit: "lb" },
@@ -3337,6 +3466,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "20 min",
     cuisine: "Japanese",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Salmon", amount: 2, unit: "fillets" },
@@ -3361,6 +3491,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍛",
     time: "45 min",
     cuisine: "Japanese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -3388,6 +3519,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥞",
     time: "25 min",
     cuisine: "Japanese",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Flour", amount: 1, unit: "cup" },
@@ -3413,6 +3545,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "25 min",
     cuisine: "Japanese",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Tilapia", amount: 2, unit: "fillets" },
@@ -3437,6 +3570,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "25 min",
     cuisine: "Thai",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Noodles", amount: 1, unit: "pack" },
@@ -3464,6 +3598,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍛",
     time: "30 min",
     cuisine: "Thai",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -3491,6 +3626,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "1 hr",
     cuisine: "Thai",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -3519,6 +3655,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "20 min",
     cuisine: "Thai",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Noodles", amount: 1, unit: "pack" },
@@ -3545,6 +3682,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥥",
     time: "25 min",
     cuisine: "Thai",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -3571,6 +3709,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥖",
     time: "20 min",
     cuisine: "Vietnamese",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Chicken", amount: 0.5, unit: "lb" },
@@ -3601,6 +3740,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍜",
     time: "45 min",
     cuisine: "Vietnamese",
+    difficulty: "Hard",
     baseServings: 2,
     ingredients: [
       { name: "Beef Flank", amount: 0.5, unit: "lb" },
@@ -3628,6 +3768,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "30 min",
     cuisine: "Vietnamese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -3654,6 +3795,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍖",
     time: "35 min",
     cuisine: "Vietnamese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Ground Pork", amount: 1, unit: "lb" },
@@ -3680,6 +3822,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍤",
     time: "30 min",
     cuisine: "Vietnamese",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Shrimp", amount: 0.5, unit: "lb" },
@@ -3705,6 +3848,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍆",
     time: "1.5 hr",
     cuisine: "Greek",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -3733,6 +3877,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍢",
     time: "30 min",
     cuisine: "Greek",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -3759,6 +3904,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥧",
     time: "50 min",
     cuisine: "Greek",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Spinach", amount: 4, unit: "cups" },
@@ -3786,6 +3932,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍝",
     time: "1.5 hr",
     cuisine: "Greek",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Pasta", amount: 300, unit: "g" },
@@ -3814,6 +3961,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌮",
     time: "45 min",
     cuisine: "Mexican",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken", amount: 1, unit: "lb" },
@@ -3841,6 +3989,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "1.5 hr",
     cuisine: "Mexican",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -3867,6 +4016,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌶️",
     time: "45 min",
     cuisine: "Mexican",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Bell Pepper", amount: 4, unit: "count" },
@@ -3894,6 +4044,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌽",
     time: "20 min",
     cuisine: "Mexican",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Sour Cream", amount: 0.25, unit: "cup" },
@@ -3919,6 +4070,7 @@ const RECIPE_LIBRARY = [
     emoji: "🫑",
     time: "45 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Bell Pepper", amount: 4, unit: "count" },
@@ -3944,6 +4096,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "10 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 1,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -3968,6 +4121,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥬",
     time: "20 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Ground Chicken", amount: 1, unit: "lb" },
@@ -3993,6 +4147,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "20 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Salmon", amount: 2, unit: "fillets" },
@@ -4018,6 +4173,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "30 min",
     cuisine: "Healthy",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Ground Chicken", amount: 1, unit: "lb" },
@@ -4043,6 +4199,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍠",
     time: "35 min",
     cuisine: "Healthy",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Sweet Potato", amount: 2, unit: "count" },
@@ -4069,6 +4226,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍄",
     time: "15 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Spinach", amount: 4, unit: "cups" },
@@ -4093,6 +4251,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥦",
     time: "35 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -4118,6 +4277,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍤",
     time: "20 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Shrimp", amount: 0.5, unit: "lb" },
@@ -4143,6 +4303,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "15 min",
     cuisine: "Healthy",
+    difficulty: "Easy",
     baseServings: 1,
     ingredients: [
       { name: "Egg", amount: 3, unit: "count" },
@@ -4169,6 +4330,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍚",
     time: "35 min",
     cuisine: "Dessert",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Rice", amount: 0.5, unit: "cups" },
@@ -4192,6 +4354,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍞",
     time: "55 min",
     cuisine: "Dessert",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Bread", amount: 1, unit: "loaf" },
@@ -4217,6 +4380,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍩",
     time: "30 min",
     cuisine: "Dessert",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Flour", amount: 1, unit: "cup" },
@@ -4241,6 +4405,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍮",
     time: "20 min",
     cuisine: "Dessert",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Heavy Cream", amount: 2, unit: "cups" },
@@ -4262,6 +4427,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍮",
     time: "1 hr",
     cuisine: "Dessert",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Heavy Cream", amount: 2, unit: "cups" },
@@ -4283,6 +4449,7 @@ const RECIPE_LIBRARY = [
     emoji: "☕",
     time: "30 min",
     cuisine: "Dessert",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Heavy Cream", amount: 1, unit: "cup" },
@@ -4306,6 +4473,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥭",
     time: "35 min",
     cuisine: "Dessert",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Jasmine Rice", amount: 1, unit: "cups" },
@@ -4328,6 +4496,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥥",
     time: "20 min",
     cuisine: "Dessert",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Coconut Milk", amount: 1, unit: "can" },
@@ -4350,6 +4519,7 @@ const RECIPE_LIBRARY = [
     emoji: "🎂",
     time: "1 hr",
     cuisine: "Dessert",
+    difficulty: "Hard",
     baseServings: 8,
     ingredients: [
       { name: "Flour", amount: 1, unit: "cup" },
@@ -4375,6 +4545,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍮",
     time: "40 min",
     cuisine: "Dessert",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -4397,6 +4568,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍯",
     time: "45 min",
     cuisine: "Dessert",
+    difficulty: "Medium",
     baseServings: 8,
     ingredients: [
       { name: "Flour", amount: 2, unit: "cups" },
@@ -4422,6 +4594,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍡",
     time: "45 min",
     cuisine: "Dessert",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Flour", amount: 0.5, unit: "cup" },
@@ -4446,6 +4619,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍮",
     time: "1 hr",
     cuisine: "Dessert",
+    difficulty: "Medium",
     baseServings: 6,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -4468,6 +4642,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍪",
     time: "25 min",
     cuisine: "Dessert",
+    difficulty: "Easy",
     baseServings: 12,
     ingredients: [
       { name: "Egg", amount: 3, unit: "count" },
@@ -4490,6 +4665,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍯",
     time: "5 min",
     cuisine: "Dessert",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Greek Yogurt", amount: 1, unit: "cup" },
@@ -4511,6 +4687,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍪",
     time: "25 min",
     cuisine: "Dessert",
+    difficulty: "Easy",
     baseServings: 24,
     ingredients: [
       { name: "Flour", amount: 2, unit: "cups" },
@@ -4533,6 +4710,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥛",
     time: "20 min",
     cuisine: "Dessert",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Milk", amount: 3, unit: "cups" },
@@ -4555,6 +4733,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍮",
     time: "15 min",
     cuisine: "Dessert",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Heavy Cream", amount: 1.5, unit: "cups" },
@@ -4580,6 +4759,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "30 min",
     cuisine: "Greek",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -4605,6 +4785,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥔",
     time: "50 min",
     cuisine: "Greek",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Potato", amount: 6, unit: "count" },
@@ -4630,6 +4811,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍢",
     time: "30 min",
     cuisine: "Greek",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -4656,6 +4838,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍢",
     time: "25 min",
     cuisine: "Turkish",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -4682,6 +4865,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍳",
     time: "20 min",
     cuisine: "Turkish",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Egg", amount: 4, unit: "count" },
@@ -4707,6 +4891,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "35 min",
     cuisine: "Turkish",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Onion", amount: 1, unit: "count" },
@@ -4734,6 +4919,7 @@ const RECIPE_LIBRARY = [
     emoji: "🫓",
     time: "35 min",
     cuisine: "Turkish",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Ground Beef", amount: 0.5, unit: "lb" },
@@ -4761,6 +4947,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "30 min",
     cuisine: "Turkish",
+    difficulty: "Hard",
     baseServings: 4,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -4787,6 +4974,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍗",
     time: "35 min",
     cuisine: "Lebanese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -4813,6 +5001,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍢",
     time: "45 min",
     cuisine: "Lebanese",
+    difficulty: "Hard",
     baseServings: 6,
     ingredients: [
       { name: "Ground Beef", amount: 1, unit: "lb" },
@@ -4839,6 +5028,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍚",
     time: "30 min",
     cuisine: "Lebanese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Rice", amount: 2, unit: "cups" },
@@ -4863,6 +5053,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍤",
     time: "15 min",
     cuisine: "Lebanese",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Shrimp", amount: 0.5, unit: "lb" },
@@ -4887,6 +5078,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "1 hr",
     cuisine: "Moroccan",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -4915,6 +5107,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "50 min",
     cuisine: "Moroccan",
+    difficulty: "Medium",
     baseServings: 6,
     ingredients: [
       { name: "Ground Beef", amount: 0.5, unit: "lb" },
@@ -4944,6 +5137,7 @@ const RECIPE_LIBRARY = [
     emoji: "🐟",
     time: "20 min",
     cuisine: "Moroccan",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Salmon", amount: 2, unit: "fillets" },
@@ -4970,6 +5164,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍚",
     time: "25 min",
     cuisine: "Moroccan",
+    difficulty: "Easy",
     baseServings: 4,
     ingredients: [
       { name: "Jasmine Rice", amount: 2, unit: "cups" },
@@ -4997,6 +5192,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥩",
     time: "25 min",
     cuisine: "Moroccan",
+    difficulty: "Medium",
     baseServings: 2,
     ingredients: [
       { name: "Lamb Chops", amount: 4, unit: "count" },
@@ -5024,6 +5220,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍯",
     time: "1 hr",
     cuisine: "Dessert",
+    difficulty: "Hard",
     baseServings: 12,
     ingredients: [
       { name: "Flour", amount: 2, unit: "cups" },
@@ -5048,6 +5245,7 @@ const RECIPE_LIBRARY = [
     emoji: "🥙",
     time: "30 min",
     cuisine: "Greek",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
@@ -5075,6 +5273,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌿",
     time: "15 min",
     cuisine: "Thai",
+    difficulty: "Easy",
     baseServings: 2,
     ingredients: [
       { name: "Ground Chicken", amount: 0.5, unit: "lb" },
@@ -5102,6 +5301,7 @@ const RECIPE_LIBRARY = [
     emoji: "🍲",
     time: "20 min",
     cuisine: "Chinese",
+    difficulty: "Medium",
     baseServings: 4,
     ingredients: [
       { name: "Ground Pork", amount: 0.5, unit: "lb" },
@@ -5239,6 +5439,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [pantrySearch, setPantrySearch] = useState("");
   const [cuisineFilter, setCuisineFilter] = useState("All");
+  const [difficultyFilter, setDifficultyFilter] = useState("All");
   const [servings, setServings] = useState(4);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [collapsedCats, setCollapsedCats] = useState({});
@@ -5370,9 +5571,10 @@ function App() {
         }
         return r.cuisine === cuisineFilter;
       })
+      .filter(r => difficultyFilter === "All" || r.difficulty === difficultyFilter)
       .map(r => ({ ...r, analysis: getRecipeAnalysis(r) }))
       .sort((a, b) => b.analysis.matchPercent - a.analysis.matchPercent);
-  }, [searchTerm, cuisineFilter, asianSubFilter, medSubFilter, servings, pantryState]);
+  }, [searchTerm, cuisineFilter, asianSubFilter, medSubFilter, difficultyFilter, servings, pantryState]);
 
   const canMakeRecipes = filteredRecipes.filter(r => r.analysis.canMake);
   const missingRecipes = filteredRecipes.filter(r => !r.analysis.canMake);
@@ -5636,6 +5838,17 @@ function App() {
                 ))}
               </div>
             )}
+            <div className="difficulty-filter">
+              {["All", "Easy", "Medium", "Hard"].map(d => (
+                <button
+                  key={d}
+                  className={`difficulty-btn ${d.toLowerCase()} ${difficultyFilter === d ? "active" : ""}`}
+                  onClick={() => setDifficultyFilter(d)}
+                >
+                  {d === "All" ? "All Levels" : d}
+                </button>
+              ))}
+            </div>
             {(aiLoading || aiSuggestion) && (
               <div>
                 <div className="section-label">AI suggestion</div>
@@ -5659,6 +5872,7 @@ function App() {
                     <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => { setSelectedRecipe(recipe); setMobileTab("detail"); }}>
                       <span className="card-emoji">{recipe.emoji}</span>
                       <div className="card-name">{recipe.name}</div>
+                      <div className="card-meta"><span className={`difficulty-tag ${recipe.difficulty?.toLowerCase()}`}>{recipe.difficulty}</span><span className="card-time">⏱ {recipe.time}</span></div>
                       <div className="card-status ok">✓ All ingredients on hand</div>
                     </div>
                   ))}
@@ -5674,6 +5888,7 @@ function App() {
                     <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => setSelectedRecipe(recipe)}>
                       <span className="card-emoji">{recipe.emoji}</span>
                       <div className="card-name">{recipe.name}</div>
+                      <div className="card-meta"><span className={`difficulty-tag ${recipe.difficulty?.toLowerCase()}`}>{recipe.difficulty}</span><span className="card-time">⏱ {recipe.time}</span></div>
                       <div className="card-status miss">Missing {recipe.analysis.missing.length}</div>
                     </div>
                   ))}
@@ -5695,6 +5910,7 @@ function App() {
                   <div>
                     <div className="detail-name">{selectedRecipe.name}</div>
                     <div className="detail-time">⏱ {selectedRecipe.time}</div>
+                    <span className={`difficulty-tag ${selectedRecipe.difficulty?.toLowerCase()}`}>{selectedRecipe.difficulty}</span>
                   </div>
                 </div>
                 <table className="ing-table">

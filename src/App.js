@@ -5,8 +5,8 @@ import "./App.css";
 const PANTRY_CATALOG = {
   "Meat & Proteins": [
     "Bacon", "Beef Flank", "Chicken", "Chicken Thighs", "Chicken Wings",
-    "Chorizo", "Cod", "Duck Breast", "Ground Beef", "Ground Chicken",
-    "Ground Pork", "Lamb Chops", "Pork Belly", "Pork Chops", "Pork Ribs", "Pork Shoulder",
+    "Chorizo", "Cod", "Duck Breast", "Fish Balls", "Ground Beef", "Ground Chicken",
+    "Ground Pork", "Ham", "Lamb Chops", "Pork Belly", "Pork Chops", "Pork Ribs", "Pork Shoulder",
     "Rib Eye Steak", "Salmon", "Sausage", "Shrimp", "Tilapia",
     "Tofu", "Tuna", "Turkey"
   ],
@@ -5307,6 +5307,7 @@ const RECIPE_LIBRARY = [
     ingredients: [
       { name: "Rice", amount: 3, unit: "cups" },
       { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Ham", amount: 0.5, unit: "lb" },
       { name: "Egg", amount: 3, unit: "count" },
       { name: "Green Onion", amount: 3, unit: "stalks" },
       { name: "Soy Sauce", amount: 2, unit: "tbsp" },
@@ -5317,10 +5318,10 @@ const RECIPE_LIBRARY = [
     ],
     steps: [
       "Use cold day-old rice — this is non-negotiable for proper fried rice.",
-      "Heat oil in a wok over high heat until smoking. Cook shrimp 1 min per side until pink. Remove.",
+      "Heat oil in a wok over high heat until smoking. Cook shrimp 1 min per side until pink. Remove. Dice ham and stir-fry 1 min until lightly browned. Remove.",
       "Scramble eggs in the wok until just set. Break into pieces and push to the side.",
       "Add rice. Press flat against the wok and let it char 30 seconds before tossing. Repeat 3-4 times.",
-      "Return shrimp. Add soy sauce, sesame oil, and white pepper. Toss to combine.",
+      "Return shrimp and ham. Add soy sauce, sesame oil, and white pepper. Toss to combine.",
       "Add sliced green onions. Give one final toss and serve immediately."
     ]
   },
@@ -5440,6 +5441,7 @@ const RECIPE_LIBRARY = [
       { name: "Shrimp", amount: 0.5, unit: "lb" },
       { name: "Potato", amount: 1, unit: "count" },
       { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Fish Balls", amount: 6, unit: "count" },
       { name: "Doubanjiang", amount: 2, unit: "tbsp" },
       { name: "Sichuan Peppercorn", amount: 1, unit: "tsp" },
       { name: "Chili Flakes", amount: 1, unit: "tsp" },
@@ -5451,7 +5453,7 @@ const RECIPE_LIBRARY = [
     ],
     steps: [
       "Slice beef thinly. Cut potato into thin slices. Break broccoli into small florets.",
-      "Blanch potato and broccoli in boiling water 2 min. Drain.",
+      "Blanch potato, broccoli, and fish balls in boiling water 2 min. Drain.",
       "Heat oil in a wok over high heat. Sear beef until browned. Remove. Cook shrimp 1 min per side. Remove.",
       "In the same wok, fry doubanjiang, Sichuan peppercorn, chili flakes, garlic, and ginger 1 min until oil turns red and fragrant.",
       "Return all proteins and vegetables. Add soy sauce. Toss everything over high heat 2 min.",
@@ -5845,6 +5847,8 @@ const INGREDIENT_CONFIG = {
   "Ground Beef":    { unit: "lb",    step: 0.5,  default: 1 },
   "Pork Shoulder":  { unit: "lb",    step: 0.5,  default: 2 },
   "Pork Ribs":      { unit: "lb",    step: 0.5,  default: 2 },
+  "Fish Balls":     { unit: "bag",   step: 1,    default: 1 },
+  "Ham":            { unit: "lb",    step: 0.5,  default: 1 },
   "Beef Flank":     { unit: "lb",    step: 0.5,  default: 1 },
   "Shrimp":         { unit: "lb",    step: 0.5,  default: 1 },
   "Rib Eye Steak":  { unit: "count", step: 1,    default: 1 },

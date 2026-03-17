@@ -764,6 +764,191 @@ body {
 
 .detail-step-text { font-size: 12.5px; line-height: 1.65; color: var(--text2); }
 
+/* ── MEAL PLANNER ── */
+.planner-section { padding: 22px 22px 16px; border-bottom: 1px solid var(--border); }
+
+.planner-header { margin-bottom: 16px; }
+
+.planner-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.planner-actions { display: flex; gap: 6px; }
+
+.btn-plan-grocery {
+  flex: 1;
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: opacity 0.2s;
+}
+
+.btn-plan-grocery:hover { opacity: 0.85; }
+
+.btn-plan-clear {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  color: var(--muted);
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+}
+
+.btn-plan-clear:hover { color: var(--red); border-color: var(--red); }
+
+.planner-week {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.planner-day {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 10px 12px;
+  position: relative;
+}
+
+.planner-day.today {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(93,189,116,0.15);
+}
+
+.planner-day-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.planner-day-name {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+}
+
+.planner-day.today .planner-day-name { color: var(--accent); }
+
+.planner-day-num {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.planner-day-meals { display: flex; flex-direction: column; gap: 3px; }
+
+.planner-meal {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  background: var(--bg2);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.planner-meal:hover { background: var(--surface3); }
+
+.planner-meal-emoji { font-size: 14px; flex-shrink: 0; }
+
+.planner-meal-name {
+  font-size: 12px;
+  color: var(--text2);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.planner-meal-remove {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 2px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.planner-meal-remove:hover { color: var(--red); }
+
+.btn-add-meal {
+  background: none;
+  border: 1px dashed var(--border2);
+  color: var(--muted);
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  width: 100%;
+  margin-top: 4px;
+  transition: all 0.15s;
+}
+
+.btn-add-meal:hover { border-color: var(--accent); color: var(--accent); }
+
+.planner-picker {
+  margin-top: 6px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--surface);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.planner-picker-search {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 10px;
+  font-size: 12px;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+  background: var(--surface);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.planner-picker-list { max-height: 200px; overflow-y: auto; }
+
+.planner-picker-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  font-size: 12px;
+  color: var(--text2);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.planner-picker-item:hover { background: var(--bg2); }
+.planner-picker-item span:first-child { flex-shrink: 0; }
+.planner-picker-item span:nth-child(2) { flex: 1; }
+
 /* ── GROCERY LIST ── */
 .grocery-section { padding: 20px 22px; flex: 1; }
 

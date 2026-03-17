@@ -5965,6 +5965,72 @@ function App() {
   });
   useEffect(() => { localStorage.setItem("instacook_favorites", JSON.stringify(favorites)); }, [favorites]);
   const toggleFavorite = (name) => setFavorites(prev => prev.includes(name) ? prev.filter(n => n !== name) : [...prev, name]);
+  // --- MEAL PLANNER ---
+  const [mealPlan, setMealPlan] = useState(() => {
+    const saved = localStorage.getItem("instacook_mealplan");
+    return saved ? JSON.parse(saved) : {};
+  });
+  const [plannerPickerDay, setPlannerPickerDay] = useState(null);
+  const [plannerSearch, setPlannerSearch] = useState("");
+  useEffect(() => { localStorage.setItem("instacook_mealplan", JSON.stringify(mealPlan)); }, [mealPlan]);
+
+  const getPlannerWeek = () => {
+    const days = [];
+    const today = new Date();
+    const monday = new Date(today);
+    monday.setDate(today.getDate() - ((today.getDay() + 6) % 7));
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(monday);
+      d.setDate(monday.getDate() + i);
+      days.push(d.toISOString().split("T")[0]);
+    }
+    return days;
+  };
+
+  const addToPlan = (dateKey, recipeName) => {
+    setMealPlan(prev => ({
+      ...prev,
+      [dateKey]: [...(prev[dateKey] || []), recipeName]
+    }));
+    setPlannerPickerDay(null);
+    setPlannerSearch("");
+  };
+
+  const removeFromPlan = (dateKey, idx) => {
+    setMealPlan(prev => ({
+      ...prev,
+      [dateKey]: (prev[dateKey] || []).filter((_, i) => i !== idx)
+    }));
+  };
+
+  const clearPlan = () => setMealPlan({});
+
+  const addPlanToGrocery = () => {
+    const week = getPlannerWeek();
+    const allRecipeNames = week.flatMap(d => mealPlan[d] || []);
+    const uniqueNames = [...new Set(allRecipeNames)];
+    const allMissing = [];
+    uniqueNames.forEach(name => {
+      const recipe = RECIPE_LIBRARY.find(r => r.name === name);
+      if (recipe) {
+        const analysis = getRecipeAnalysis(recipe);
+        analysis.missing.forEach(m => {
+          if (!allMissing.find(x => x.name === m.name)) {
+            allMissing.push({ name: m.name, checked: false });
+          }
+        });
+      }
+    });
+    setGroceryList(prev => {
+      const existing = new Set(prev.map(i => i.name));
+      return [...prev, ...allMissing.filter(i => !existing.has(i.name))];
+    });
+  };
+
+  const plannerWeek = getPlannerWeek();
+  const dayNames = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  const plannerRecipeCount = plannerWeek.reduce((sum, d) => sum + (mealPlan[d]?.length || 0), 0);
+
   const [servings, setServings] = useState(4);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [collapsedCats, setCollapsedCats] = useState({});
@@ -6433,7 +6499,7 @@ function App() {
           </div>
         </main>
 
-        <aside className={`right-panel ${mobileTab === "detail" || mobileTab === "grocery" ? "mobile-active" : ""}`}>
+        <aside className={`right-panel ${mobileTab === "detail" || mobileTab === "grocery" || mobileTab === "planner" ? "mobile-active" : ""}`}>
           <div className="detail-section">
             <h2>Recipe Detail</h2>
             {!selectedRecipe ? (
@@ -6494,6 +6560,75 @@ function App() {
             )}
           </div>
 
+
+          <div className={`planner-section ${mobileTab === "planner" ? "mobile-active" : ""}`}>
+            <div className="planner-header">
+              <h2>Meal Planner</h2>
+              <div className="planner-actions">
+                {plannerRecipeCount > 0 && (
+                  <>
+                    <button className="btn-plan-grocery" onClick={addPlanToGrocery}>+ Add Missing to Grocery</button>
+                    <button className="btn-plan-clear" onClick={clearPlan}>Clear Week</button>
+                  </>
+                )}
+              </div>
+            </div>
+            <div className="planner-week">
+              {plannerWeek.map((dateKey, i) => {
+                const meals = mealPlan[dateKey] || [];
+                const isToday = dateKey === new Date().toISOString().split("T")[0];
+                const dayNum = new Date(dateKey + "T12:00:00").getDate();
+                return (
+                  <div key={dateKey} className={`planner-day ${isToday ? "today" : ""}`}>
+                    <div className="planner-day-header">
+                      <span className="planner-day-name">{dayNames[i]}</span>
+                      <span className="planner-day-num">{dayNum}</span>
+                    </div>
+                    <div className="planner-day-meals">
+                      {meals.map((name, idx) => {
+                        const recipe = RECIPE_LIBRARY.find(r => r.name === name);
+                        return (
+                          <div key={idx} className="planner-meal" onClick={() => { const r = RECIPE_LIBRARY.find(x => x.name === name); if (r) { setSelectedRecipe(r); setMobileTab("detail"); } }}>
+                            <span className="planner-meal-emoji">{recipe?.emoji || "🍽️"}</span>
+                            <span className="planner-meal-name">{name}</span>
+                            <button className="planner-meal-remove" onClick={(e) => { e.stopPropagation(); removeFromPlan(dateKey, idx); }}>×</button>
+                          </div>
+                        );
+                      })}
+                    </div>
+                    <button className="btn-add-meal" onClick={() => { setPlannerPickerDay(dateKey === plannerPickerDay ? null : dateKey); setPlannerSearch(""); }}>
+                      + Add
+                    </button>
+                    {plannerPickerDay === dateKey && (
+                      <div className="planner-picker">
+                        <input
+                          className="planner-picker-search"
+                          placeholder="Search recipes..."
+                          value={plannerSearch}
+                          onChange={e => setPlannerSearch(e.target.value)}
+                          autoFocus
+                        />
+                        <div className="planner-picker-list">
+                          {RECIPE_LIBRARY
+                            .filter(r => r.name.toLowerCase().includes(plannerSearch.toLowerCase()))
+                            .slice(0, 8)
+                            .map(r => (
+                              <div key={r.name} className="planner-picker-item" onClick={() => addToPlan(dateKey, r.name)}>
+                                <span>{r.emoji}</span>
+                                <span>{r.name}</span>
+                                <span className={`difficulty-tag ${r.difficulty?.toLowerCase()}`}>{r.difficulty}</span>
+                              </div>
+                            ))
+                          }
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
           <div className="grocery-section">
             <h2>Grocery List</h2>
             {groceryList.length === 0 ? <div className="grocery-empty">Empty</div> : (
@@ -6532,6 +6667,10 @@ function App() {
           <button className={mobileTab === "detail" ? "active" : ""} onClick={() => setMobileTab("detail")}>
             <span>📋</span>
             <span>Detail</span>
+          </button>
+          <button className={mobileTab === "planner" ? "active" : ""} onClick={() => setMobileTab("planner")}>
+            <span>📅</span>
+            <span>Planner</span>
           </button>
           <button className={mobileTab === "grocery" ? "active" : ""} onClick={() => setMobileTab("grocery")}>
             <span>🛒</span>

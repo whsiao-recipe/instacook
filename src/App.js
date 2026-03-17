@@ -5582,7 +5582,7 @@ function App() {
       .filter(r => !favoritesOnly || favorites.includes(r.name))
       .map(r => ({ ...r, analysis: getRecipeAnalysis(r) }))
       .sort((a, b) => b.analysis.matchPercent - a.analysis.matchPercent);
-  }, [searchTerm, cuisineFilter, asianSubFilter, medSubFilter, difficultyFilter, servings, pantryState]);
+  }, [searchTerm, cuisineFilter, asianSubFilter, medSubFilter, difficultyFilter, favoritesOnly, favorites, servings, pantryState]);
 
   const canMakeRecipes = filteredRecipes.filter(r => r.analysis.canMake);
   const missingRecipes = filteredRecipes.filter(r => !r.analysis.canMake);

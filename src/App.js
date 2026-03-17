@@ -6,7 +6,7 @@ const PANTRY_CATALOG = {
   "Meat & Proteins": [
     "Bacon", "Beef Flank", "Chicken", "Chicken Thighs", "Chicken Wings",
     "Chorizo", "Cod", "Duck Breast", "Ground Beef", "Ground Chicken",
-    "Ground Pork", "Lamb Chops", "Pork Belly", "Pork Chops",
+    "Ground Pork", "Lamb Chops", "Pork Belly", "Pork Chops", "Pork Shoulder",
     "Rib Eye Steak", "Salmon", "Sausage", "Shrimp", "Tilapia",
     "Tofu", "Tuna", "Turkey"
   ],
@@ -1293,29 +1293,32 @@ const RECIPE_LIBRARY = [
       "Drizzle with sesame oil. Serve as a side dish with rice."
     ]
   },
-  {
+{
     name: "Char Siu Pork",
     emoji: "🥩",
     time: "1 hr",
     cuisine: "Chinese",
     baseServings: 4,
     ingredients: [
-      { name: "Ground Pork", amount: 1, unit: "lb" },
-      { name: "Hoisin Sauce", amount: 2, unit: "tbsp" },
+      { name: "Pork Shoulder", amount: 2, unit: "lb" },
+      { name: "Hoisin Sauce", amount: 3, unit: "tbsp" },
       { name: "Soy Sauce", amount: 2, unit: "tbsp" },
-      { name: "Honey", amount: 2, unit: "tbsp" },
-      { name: "Rice Wine", amount: 1, unit: "tbsp" },
-      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Honey", amount: 3, unit: "tbsp" },
+      { name: "Rice Wine", amount: 2, unit: "tbsp" },
+      { name: "Five Spice", amount: 1, unit: "tsp" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Sesame Oil", amount: 1, unit: "tbsp" },
       { name: "Sugar", amount: 1, unit: "tbsp" },
       { name: "Oil", amount: 1, unit: "tbsp" }
     ],
     steps: [
-      "Mix hoisin sauce, soy sauce, honey, rice wine, minced garlic, and sugar into a marinade.",
-      "Coat pork thoroughly. Marinate at least 30 min — overnight gives the best flavor.",
-      "Preheat oven to 400°F (200°C). Place pork on a wire rack over a foil-lined baking sheet.",
-      "Roast 25 min, basting with marinade halfway through.",
-      "Brush with remaining marinade and broil 3-5 min until edges are caramelized and slightly charred.",
-      "Rest 5 min before slicing. Serve over rice or in steamed buns."
+      "Cut pork shoulder into 2-inch thick strips along the grain — long, flat pieces roast and caramelize best.",
+      "Mix hoisin sauce, soy sauce, honey, rice wine, five spice, minced garlic, sesame oil, and sugar into a marinade.",
+      "Coat pork strips thoroughly. Marinate at least 30 min — overnight in the fridge gives the best flavor.",
+      "Preheat oven to 400°F (200°C). Place pork on a wire rack over a foil-lined baking sheet. Reserve the leftover marinade.",
+      "Roast 25 min, then flip and baste generously with reserved marinade. Roast another 15 min.",
+      "Switch to broil. Brush with a final coat of marinade and broil 3-5 min until edges are caramelized and slightly charred — watch closely.",
+      "Rest 5 min before slicing against the grain into thin pieces. Serve over rice or tucked into steamed buns."
     ]
   },
   {
@@ -5136,7 +5139,7 @@ const INGREDIENT_CONFIG = {
   "Chicken Wings":  { unit: "lb",    step: 0.5,  default: 1 },
   "Ground Chicken": { unit: "lb",    step: 0.5,  default: 1 },
   "Ground Beef":    { unit: "lb",    step: 0.5,  default: 1 },
-  "Ground Pork":    { unit: "lb",    step: 0.5,  default: 1 },
+  "Pork Shoulder":  { unit: "lb",    step: 0.5,  default: 2 },
   "Beef Flank":     { unit: "lb",    step: 0.5,  default: 1 },
   "Shrimp":         { unit: "lb",    step: 0.5,  default: 1 },
   "Rib Eye Steak":  { unit: "count", step: 1,    default: 1 },

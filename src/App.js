@@ -6,7 +6,7 @@ const PANTRY_CATALOG = {
   "Meat & Proteins": [
     "Bacon", "Beef Flank", "Chicken", "Chicken Thighs", "Chicken Wings",
     "Chorizo", "Cod", "Duck Breast", "Ground Beef", "Ground Chicken",
-    "Ground Pork", "Lamb Chops", "Pork Belly", "Pork Chops", "Pork Shoulder",
+    "Ground Pork", "Lamb Chops", "Pork Belly", "Pork Chops", "Pork Ribs", "Pork Shoulder",
     "Rib Eye Steak", "Salmon", "Sausage", "Shrimp", "Tilapia",
     "Tofu", "Tuna", "Turkey"
   ],
@@ -14,7 +14,7 @@ const PANTRY_CATALOG = {
     "Arugula", "Asparagus", "Avocado", "Banana Peppers", "Basil",
     "Bell Pepper", "Broccoli", "Cabbage", "Carrot", "Celery", "Cilantro",
     "Corn", "Cucumber", "Garlic", "Ginger", "Green Onion", "Jalapeño",
-    "Kale", "Lemon", "Lime", "Mushrooms", "Onion", "Parsley", "Potato",
+    "Kale", "Lemon", "Lemongrass", "Lime", "Mushrooms", "Onion", "Parsley", "Potato",
     "Red Onion", "Romaine", "Shallot", "Spinach", "Sweet Potato", "Tomato", "Zucchini"
   ],
   "Dairy & Eggs": [
@@ -26,10 +26,11 @@ const PANTRY_CATALOG = {
     "Avocado Oil", "Baking Powder", "Baking Soda", "Basmati Rice",
     "Beef Broth", "Black Beans", "Bread", "Brown Sugar", "Canned Tomatoes",
     "Chicken Broth", "Chickpeas", "Cocoa Powder", "Coconut Milk",
-    "Corn Starch", "Couscous", "Flour", "Honey", "Jasmine Rice", "Noodles",
+    "Corn Starch", "Couscous", "Flour", "Honey", "Jasmine Rice", "Noodles", "Nori",
     "Oats", "Oil", "Olive Oil", "Panko Breadcrumbs", "Pasta",
-    "Peanut Butter", "Pineapple Chunks", "Pita Bread", "Quinoa", "Rice",
-    "Tomato Sauce", "Tortillas", "Vanilla Extract"
+    "Peanut Butter", "Peanuts", "Pineapple Chunks", "Pita Bread", "Quinoa", "Rice",
+    "Sushi Rice", "Tomato Sauce", "Tortillas", "Vanilla Extract",
+    "Wonton Wrappers", "Yeast"
   ],
   "Spices & Seasonings": [
     "Adobo", "Allspice", "Bay Leaf", "Cardamom", "Cayenne Pepper",
@@ -37,15 +38,15 @@ const PANTRY_CATALOG = {
     "Coriander", "Cumin", "Curry Powder", "Dried Mint", "Fennel Seeds",
     "Five Spice", "Garam Masala", "Garlic Powder", "Italian Seasoning",
     "Mushroom Powder", "Nutmeg", "Onion Powder", "Oregano", "Paprika",
-    "Pepper", "Peppercorn", "Rosemary", "Salt", "Smoked Paprika",
+    "Pepper", "Peppercorn", "Rosemary", "Salt", "Sichuan Peppercorn", "Smoked Paprika",
     "Star Anise", "Sugar", "Thyme", "Turmeric", "White Pepper", "Za'atar"
   ],
   "Sauces & Condiments": [
-    "Balsamic Vinegar", "Chili Oil", "Coconut Aminos", "Dark Soy Sauce",
-    "Dark Vinegar", "Dijon Mustard", "Fish Sauce", "Hoisin Sauce",
-    "Hot Sauce", "Ketchup", "Maple Syrup", "Mayonnaise", "Miso Paste",
-    "Mustard", "Oyster Sauce", "Pickles", "Rice Wine", "Sesame Oil",
-    "Soy Sauce", "Sriracha", "Tahini", "Tomato Paste", "Vinegar",
+    "Balsamic Vinegar", "BBQ Sauce", "Chili Oil", "Coconut Aminos", "Dark Soy Sauce",
+    "Dark Vinegar", "Dijon Mustard", "Doubanjiang", "Fish Sauce", "Hoisin Sauce",
+    "Hot Sauce", "Ketchup", "Kimchi", "Maple Syrup", "Mayonnaise", "Miso Paste",
+    "Mustard", "Oyster Sauce", "Pickles", "Rice Vinegar", "Rice Wine", "Sesame Oil",
+    "Soy Sauce", "Shrimp Paste", "Sriracha", "Tahini", "Tomato Paste", "Vinegar",
     "Water", "Worcestershire Sauce"
   ]
 };
@@ -5297,6 +5298,506 @@ const RECIPE_LIBRARY = [
     ]
   },
   {
+    name: "Young Chow Fried Rice",
+    emoji: "🍚",
+    time: "20 min",
+    cuisine: "Chinese",
+    difficulty: "Easy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Rice", amount: 3, unit: "cups" },
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Egg", amount: 3, unit: "count" },
+      { name: "Green Onion", amount: 3, unit: "stalks" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "White Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Use cold day-old rice — this is non-negotiable for proper fried rice.",
+      "Heat oil in a wok over high heat until smoking. Cook shrimp 1 min per side until pink. Remove.",
+      "Scramble eggs in the wok until just set. Break into pieces and push to the side.",
+      "Add rice. Press flat against the wok and let it char 30 seconds before tossing. Repeat 3-4 times.",
+      "Return shrimp. Add soy sauce, sesame oil, and white pepper. Toss to combine.",
+      "Add sliced green onions. Give one final toss and serve immediately."
+    ]
+  },
+  {
+    name: "Kung Pao Chicken",
+    emoji: "🌶️",
+    time: "25 min",
+    cuisine: "Chinese",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Peanuts", amount: 0.5, unit: "cup" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Rice Vinegar", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Corn Starch", amount: 1, unit: "tbsp" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Sichuan Peppercorn", amount: 0.5, unit: "tsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" }
+    ],
+    steps: [
+      "Cut chicken into bite-sized cubes. Toss with 1 tbsp soy sauce and cornstarch. Let sit 10 min.",
+      "Mix remaining soy sauce, rice vinegar, sugar, and sesame oil into a sauce.",
+      "Heat oil in a wok over high heat. Fry chicken until golden and cooked through. Remove.",
+      "Add Sichuan peppercorns and chili flakes to the wok. Stir 20 seconds until fragrant — do not burn.",
+      "Add garlic and ginger. Stir 30 seconds. Return chicken and pour in the sauce.",
+      "Toss in peanuts. Stir until sauce thickens and coats everything. Serve over rice."
+    ]
+  },
+  {
+    name: "Xiao Long Bao",
+    emoji: "🥟",
+    time: "2 hr",
+    cuisine: "Chinese",
+    difficulty: "Hard",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 1, unit: "lb" },
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Chicken Broth", amount: 1, unit: "cup" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Green Onion", amount: 2, unit: "stalks" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Make aspic: heat chicken broth until boiling. Refrigerate until set into a firm jelly, at least 2 hours. Dice into small cubes.",
+      "Make dough: mix flour with ½ cup boiling water. Knead 10 min until very smooth and elastic. Rest 30 min covered.",
+      "Make filling: mix ground pork, minced ginger, soy sauce, sesame oil, sliced green onions, sugar, and salt. Fold in the diced aspic gently.",
+      "Roll dough into a thin rope. Cut into 20 pieces. Roll each into a very thin circle, thinner at edges than center.",
+      "Place 1 tbsp filling in center. Pleat edges with 16-18 folds, twisting to seal at the top.",
+      "Steam on parchment-lined steamer over high heat for 8 min. Serve immediately with black vinegar and ginger — be careful, the soup inside is very hot."
+    ]
+  },
+  {
+    name: "Shanghai Scallion Oil Noodles",
+    emoji: "🍜",
+    time: "15 min",
+    cuisine: "Chinese",
+    difficulty: "Easy",
+    baseServings: 2,
+    ingredients: [
+      { name: "Noodles", amount: 2, unit: "packs" },
+      { name: "Green Onion", amount: 6, unit: "stalks" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Dark Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 4, unit: "tbsp" }
+    ],
+    steps: [
+      "Cut green onions into 2-inch segments.",
+      "Heat oil in a pan over medium-low heat. Add green onions and cook slowly 8-10 min until deeply caramelized and crispy — patience is key.",
+      "Remove the crispy onions and set aside. The oil should be dark and incredibly fragrant.",
+      "Mix soy sauce, dark soy sauce, and sugar into the scallion oil.",
+      "Cook noodles per package directions. Drain and toss immediately in the scallion oil sauce.",
+      "Top with the crispy scallion pieces. This is Shanghainese comfort food at its best."
+    ]
+  },
+  {
+    name: "Scallion Pancakes",
+    emoji: "🥞",
+    time: "30 min",
+    cuisine: "Chinese",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Green Onion", amount: 4, unit: "stalks" },
+      { name: "Sesame Oil", amount: 2, unit: "tbsp" },
+      { name: "Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix flour with ¾ cup boiling water. Knead 5 min until smooth. Rest 20 min covered.",
+      "Divide into 4 balls. Roll each very thin into a rectangle.",
+      "Brush with sesame oil and sprinkle generously with salt and finely sliced green onions.",
+      "Roll up tightly into a log, then coil the log into a spiral. Flatten and re-roll into a round disc.",
+      "Pan-fry in oil over medium heat 3 min per side until golden and flaky.",
+      "Cut into wedges. Serve with soy sauce and black vinegar for dipping."
+    ]
+  },
+  {
+    name: "Ma La Xiang Guo",
+    emoji: "🌶️",
+    time: "25 min",
+    cuisine: "Chinese",
+    difficulty: "Medium",
+    baseServings: 2,
+    ingredients: [
+      { name: "Beef Flank", amount: 0.5, unit: "lb" },
+      { name: "Shrimp", amount: 0.5, unit: "lb" },
+      { name: "Potato", amount: 1, unit: "count" },
+      { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Doubanjiang", amount: 2, unit: "tbsp" },
+      { name: "Sichuan Peppercorn", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 3, unit: "tbsp" }
+    ],
+    steps: [
+      "Slice beef thinly. Cut potato into thin slices. Break broccoli into small florets.",
+      "Blanch potato and broccoli in boiling water 2 min. Drain.",
+      "Heat oil in a wok over high heat. Sear beef until browned. Remove. Cook shrimp 1 min per side. Remove.",
+      "In the same wok, fry doubanjiang, Sichuan peppercorn, chili flakes, garlic, and ginger 1 min until oil turns red and fragrant.",
+      "Return all proteins and vegetables. Add soy sauce. Toss everything over high heat 2 min.",
+      "Drizzle with sesame oil. This is a dry, intensely spicy Sichuan stir-fry — adjust chili to your tolerance."
+    ]
+  },
+  {
+    name: "Lion's Head Meatballs",
+    emoji: "🧆",
+    time: "50 min",
+    cuisine: "Chinese",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 1.5, unit: "lb" },
+      { name: "Cabbage", amount: 0.5, unit: "head" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Corn Starch", amount: 2, unit: "tbsp" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" }
+    ],
+    steps: [
+      "Mix ground pork with minced ginger, garlic, 2 tbsp soy sauce, cornstarch, sesame oil, sugar, and salt. Shape into 4 large meatballs — they should be the size of your fist.",
+      "Heat oil in a deep pot. Brown meatballs on all sides over medium-high heat. Remove.",
+      "Separate cabbage leaves. Line the bottom of the pot with cabbage.",
+      "Nestle meatballs on top. Pour in chicken broth and remaining soy sauce.",
+      "Bring to a boil, then reduce to a gentle simmer. Cover and cook 30 min.",
+      "The meatballs should be incredibly tender and the cabbage silky. Serve in the broth over rice."
+    ]
+  },
+  {
+    name: "General Tso's Chicken",
+    emoji: "🍗",
+    time: "30 min",
+    cuisine: "Chinese",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Corn Starch", amount: 3, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 3, unit: "tbsp" },
+      { name: "Rice Vinegar", amount: 2, unit: "tbsp" },
+      { name: "Hoisin Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sugar", amount: 2, unit: "tbsp" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 3, unit: "cups" }
+    ],
+    steps: [
+      "Cut chicken into bite-sized pieces. Toss with 2 tbsp cornstarch and a pinch of salt until well coated.",
+      "Mix soy sauce, rice vinegar, hoisin sauce, sugar, remaining cornstarch, and 2 tbsp water into a sauce.",
+      "Heat oil in a wok or deep pot to 350°F. Fry chicken in batches 4-5 min until golden and crispy. Drain.",
+      "Pour out all but 1 tbsp oil. Add garlic, ginger, and chili flakes. Stir 30 seconds.",
+      "Pour in the sauce. Stir until it thickens and bubbles.",
+      "Add fried chicken and toss until every piece is glazed. Drizzle with sesame oil. Serve over rice."
+    ]
+  },
+  {
+    name: "Wonton Soup",
+    emoji: "🥟",
+    time: "40 min",
+    cuisine: "Chinese",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Pork", amount: 0.5, unit: "lb" },
+      { name: "Shrimp", amount: 0.25, unit: "lb" },
+      { name: "Wonton Wrappers", amount: 1, unit: "pack" },
+      { name: "Chicken Broth", amount: 6, unit: "cups" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Green Onion", amount: 2, unit: "stalks" },
+      { name: "White Pepper", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mince shrimp finely. Mix with ground pork, 1 tbsp soy sauce, sesame oil, minced ginger, sliced green onion, and salt.",
+      "Place 1 tsp filling in the center of each wonton wrapper. Wet edges, fold into a triangle, then bring the two bottom corners together and press to seal.",
+      "Bring chicken broth to a simmer. Add remaining soy sauce and sliced ginger.",
+      "Drop wontons into the simmering broth. Cook 5-6 min until they float and the wrappers are translucent.",
+      "Season broth with white pepper.",
+      "Ladle into bowls. Top with sliced green onions and a drizzle of sesame oil."
+    ]
+  },
+  {
+    name: "Beef Gyros",
+    emoji: "🥙",
+    time: "35 min",
+    cuisine: "Greek",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Beef", amount: 1.5, unit: "lb" },
+      { name: "Pita Bread", amount: 4, unit: "count" },
+      { name: "Greek Yogurt", amount: 0.5, unit: "cup" },
+      { name: "Cucumber", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Oregano", amount: 2, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix ground beef with minced garlic, grated onion, cumin, oregano, paprika, and salt. Shape into a tight loaf.",
+      "Cook in an oiled pan over medium-high heat, pressing flat to about 1-inch thick. Cook 6-7 min per side until deeply browned with a crust.",
+      "Make tzatziki: mix Greek yogurt, grated cucumber (squeeze out water first), minced garlic, lemon juice, and salt.",
+      "Rest the meat 5 min then slice thinly against the grain.",
+      "Warm pita bread in a dry pan.",
+      "Fill pitas with sliced meat, tzatziki, tomatoes, and onion."
+    ]
+  },
+  {
+    name: "Kimchi Jjigae",
+    emoji: "🍲",
+    time: "35 min",
+    cuisine: "Korean",
+    difficulty: "Medium",
+    baseServings: 2,
+    ingredients: [
+      { name: "Pork Belly", amount: 0.5, unit: "lb" },
+      { name: "Kimchi", amount: 1, unit: "cup" },
+      { name: "Tofu", amount: 0.5, unit: "block" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 0.5, unit: "tsp" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Green Onion", amount: 2, unit: "stalks" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Slice pork belly into thin pieces. Cut tofu into cubes.",
+      "Heat oil in a pot over medium-high heat. Cook pork belly 3-4 min until fat renders and edges crisp.",
+      "Add kimchi (with its juice) and chili flakes. Stir-fry 3 min until kimchi is slightly caramelized.",
+      "Add minced garlic, ginger, soy sauce, and 2 cups water. Bring to a boil.",
+      "Add tofu. Simmer 15 min until the broth is rich and deeply red.",
+      "Drizzle with sesame oil and top with sliced green onions. Serve bubbling hot with rice."
+    ]
+  },
+  {
+    name: "Sundubu Jjigae",
+    emoji: "🍲",
+    time: "30 min",
+    cuisine: "Korean",
+    difficulty: "Medium",
+    baseServings: 2,
+    ingredients: [
+      { name: "Tofu", amount: 1, unit: "block" },
+      { name: "Shrimp", amount: 0.25, unit: "lb" },
+      { name: "Egg", amount: 1, unit: "count" },
+      { name: "Kimchi", amount: 0.5, unit: "cup" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Sesame Oil", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 2, unit: "tsp" },
+      { name: "Green Onion", amount: 2, unit: "stalks" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Heat oil in a small pot over medium heat. Add chili flakes and stir 30 seconds until oil turns red.",
+      "Add kimchi and minced garlic. Cook 2 min.",
+      "Add 2 cups water and soy sauce. Bring to a boil.",
+      "Break soft tofu into large chunks directly into the pot. Add shrimp.",
+      "Simmer 10 min. Crack an egg on top. Cover and cook 2 more min until egg white is set but yolk is runny.",
+      "Drizzle with sesame oil and top with green onions. Serve immediately with rice — eat straight from the pot."
+    ]
+  },
+  {
+    name: "Sushi Rolls",
+    emoji: "🍣",
+    time: "45 min",
+    cuisine: "Japanese",
+    difficulty: "Hard",
+    baseServings: 4,
+    ingredients: [
+      { name: "Sushi Rice", amount: 2, unit: "cups" },
+      { name: "Nori", amount: 4, unit: "sheets" },
+      { name: "Salmon", amount: 1, unit: "fillets" },
+      { name: "Cucumber", amount: 1, unit: "count" },
+      { name: "Avocado", amount: 1, unit: "count" },
+      { name: "Rice Vinegar", amount: 3, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Cook sushi rice per package directions. While hot, fold in rice vinegar, sugar, and salt. Fan to cool — the rice should be glossy and sticky.",
+      "Slice salmon, cucumber, and avocado into thin strips.",
+      "Place a nori sheet shiny-side down on a bamboo mat or plastic wrap. Spread a thin, even layer of rice, leaving 1 inch bare at the top edge.",
+      "Lay filling ingredients in a line across the center of the rice.",
+      "Roll tightly from the bottom, using the mat to shape. Wet the bare nori edge to seal.",
+      "Slice with a sharp wet knife into 6-8 pieces. Serve with soy sauce and wasabi."
+    ]
+  },
+  {
+    name: "Japanese Curry Udon",
+    emoji: "🍛",
+    time: "30 min",
+    cuisine: "Japanese",
+    difficulty: "Medium",
+    baseServings: 2,
+    ingredients: [
+      { name: "Noodles", amount: 2, unit: "packs" },
+      { name: "Chicken Thighs", amount: 0.5, unit: "lb" },
+      { name: "Potato", amount: 1, unit: "count" },
+      { name: "Carrot", amount: 1, unit: "count" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Curry Powder", amount: 2, unit: "tbsp" },
+      { name: "Soy Sauce", amount: 1, unit: "tbsp" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Corn Starch", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Dice chicken, potato, carrot, and onion into bite-sized pieces.",
+      "Heat oil in a pot. Brown chicken 3-4 min. Add onion and cook 3 min.",
+      "Add curry powder and stir 1 min until fragrant.",
+      "Add potato, carrot, chicken broth, and soy sauce. Bring to a boil then simmer 15 min until vegetables are tender.",
+      "Mix cornstarch with 2 tbsp water. Stir into the curry until thickened.",
+      "Cook udon noodles per package. Divide into bowls and ladle the thick curry broth over the top."
+    ]
+  },
+  {
+    name: "Bun Bo Hue",
+    emoji: "🍜",
+    time: "2 hr",
+    cuisine: "Vietnamese",
+    difficulty: "Hard",
+    baseServings: 6,
+    ingredients: [
+      { name: "Pork Shoulder", amount: 1.5, unit: "lb" },
+      { name: "Beef Flank", amount: 1, unit: "lb" },
+      { name: "Noodles", amount: 2, unit: "packs" },
+      { name: "Lemongrass", amount: 3, unit: "stalks" },
+      { name: "Shrimp Paste", amount: 1, unit: "tbsp" },
+      { name: "Chili Flakes", amount: 2, unit: "tsp" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Fish Sauce", amount: 3, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Lime", amount: 2, unit: "count" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Blanch pork shoulder and beef flank in boiling water 5 min. Drain, rinse, and clean the pot.",
+      "Return meats to pot. Add 12 cups water, bruised lemongrass stalks, and salt. Bring to a boil, then simmer 1.5 hours until meat is tender.",
+      "Meanwhile, make the chili oil: heat oil in a small pan. Fry shrimp paste, minced garlic, and chili flakes 2 min until fragrant and deep red.",
+      "Remove meats from broth. Slice thinly. Stir the chili oil into the broth.",
+      "Season broth with fish sauce and sugar. Taste — it should be spicy, savory, and slightly sweet.",
+      "Cook noodles per package. Divide into bowls. Top with sliced meats, ladle hot broth over, and serve with lime wedges."
+    ]
+  },
+  {
+    name: "Pulled BBQ Chicken",
+    emoji: "🍗",
+    time: "1.5 hr",
+    cuisine: "American",
+    difficulty: "Medium",
+    baseServings: 6,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 2, unit: "lb" },
+      { name: "BBQ Sauce", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 0.5, unit: "cup" },
+      { name: "Smoked Paprika", amount: 2, unit: "tsp" },
+      { name: "Garlic Powder", amount: 1, unit: "tsp" },
+      { name: "Onion Powder", amount: 1, unit: "tsp" },
+      { name: "Brown Sugar", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Bread", amount: 6, unit: "buns" }
+    ],
+    steps: [
+      "Season chicken thighs with smoked paprika, garlic powder, onion powder, brown sugar, and salt.",
+      "Place in a baking dish. Pour chicken broth around the chicken.",
+      "Cover tightly with foil. Bake at 325°F for 1 hour until fall-apart tender.",
+      "Shred chicken with two forks directly in the dish. Drain excess liquid.",
+      "Pour BBQ sauce over the shredded chicken. Toss to coat. Return to oven uncovered 15 min.",
+      "Pile onto buns. Serve with coleslaw on the side."
+    ]
+  },
+  {
+    name: "BBQ Ribs",
+    emoji: "🍖",
+    time: "3 hr",
+    cuisine: "American",
+    difficulty: "Hard",
+    baseServings: 4,
+    ingredients: [
+      { name: "Pork Ribs", amount: 2, unit: "racks" },
+      { name: "BBQ Sauce", amount: 1.5, unit: "cups" },
+      { name: "Brown Sugar", amount: 3, unit: "tbsp" },
+      { name: "Smoked Paprika", amount: 2, unit: "tbsp" },
+      { name: "Garlic Powder", amount: 1, unit: "tbsp" },
+      { name: "Onion Powder", amount: 1, unit: "tbsp" },
+      { name: "Chili Powder", amount: 1, unit: "tsp" },
+      { name: "Cayenne Pepper", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 2, unit: "tsp" },
+      { name: "Pepper", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Remove the membrane from the back of the ribs — grab with a paper towel and peel off in one piece.",
+      "Mix brown sugar, smoked paprika, garlic powder, onion powder, chili powder, cayenne, salt, and pepper into a dry rub.",
+      "Coat ribs generously on both sides. Let sit 30 min at room temperature.",
+      "Wrap tightly in foil. Bake at 275°F for 2.5 hours until meat is very tender and pulling away from the bone.",
+      "Unwrap. Brush generously with BBQ sauce on both sides.",
+      "Broil 5 min until sauce is caramelized and sticky. Rest 10 min, then cut between the bones and serve."
+    ]
+  },
+  {
+    name: "Pizza",
+    emoji: "🍕",
+    time: "1.5 hr",
+    cuisine: "Italian",
+    difficulty: "Hard",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 3, unit: "cups" },
+      { name: "Yeast", amount: 1, unit: "packet" },
+      { name: "Tomato Sauce", amount: 0.5, unit: "cup" },
+      { name: "Mozzarella", amount: 2, unit: "cups" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Basil", amount: 1, unit: "bunch" },
+      { name: "Garlic", amount: 2, unit: "cloves" }
+    ],
+    steps: [
+      "Mix yeast with 1 cup warm water and sugar. Let sit 10 min until foamy.",
+      "Add flour, olive oil, and salt. Knead 8-10 min until smooth and elastic. Cover and let rise 1 hour until doubled.",
+      "Punch down dough. Stretch or roll into a large round on a floured surface — use your hands, not a rolling pin, for better texture.",
+      "Place on an oiled baking sheet or pizza stone. Spread tomato sauce, leaving a 1-inch border.",
+      "Top with torn mozzarella and minced garlic.",
+      "Bake at 475°F for 12-15 min until crust is golden and cheese is bubbling. Top with fresh basil. Slice and serve."
+    ]
+  },
+  {
     name: "Mapo Tofu",
     emoji: "🍲",
     time: "20 min",
@@ -5343,6 +5844,7 @@ const INGREDIENT_CONFIG = {
   "Ground Chicken": { unit: "lb",    step: 0.5,  default: 1 },
   "Ground Beef":    { unit: "lb",    step: 0.5,  default: 1 },
   "Pork Shoulder":  { unit: "lb",    step: 0.5,  default: 2 },
+  "Pork Ribs":      { unit: "lb",    step: 0.5,  default: 2 },
   "Beef Flank":     { unit: "lb",    step: 0.5,  default: 1 },
   "Shrimp":         { unit: "lb",    step: 0.5,  default: 1 },
   "Rib Eye Steak":  { unit: "count", step: 1,    default: 1 },
@@ -5410,6 +5912,18 @@ const INGREDIENT_CONFIG = {
   "Tomato Paste":   { unit: "can",    step: 1,    default: 1 },
   "Dijon Mustard":  { unit: "jar",    step: 1,    default: 1 },
   "Worcestershire Sauce": { unit: "bottle", step: 1, default: 1 },
+  "BBQ Sauce":      { unit: "bottle", step: 1,    default: 1 },
+  "Doubanjiang":    { unit: "jar",    step: 1,    default: 1 },
+  "Kimchi":         { unit: "jar",    step: 1,    default: 1 },
+  "Rice Vinegar":   { unit: "bottle", step: 1,    default: 1 },
+  "Shrimp Paste":   { unit: "jar",    step: 1,    default: 1 },
+  "Sichuan Peppercorn": { unit: "jar", step: 1,   default: 1 },
+  "Peanuts":        { unit: "bag",    step: 1,    default: 1 },
+  "Wonton Wrappers":{ unit: "pack",   step: 1,    default: 1 },
+  "Nori":           { unit: "pack",   step: 1,    default: 1 },
+  "Sushi Rice":     { unit: "bag",    step: 1,    default: 1 },
+  "Yeast":          { unit: "pack",   step: 1,    default: 1 },
+  "Lemongrass":     { unit: "count",  step: 1,    default: 3 },
 };
 
 function getIngredientConfig(item) {

@@ -5970,44 +5970,31 @@ function App() {
     const saved = localStorage.getItem("instacook_mealplan");
     return saved ? JSON.parse(saved) : {};
   });
-  const [plannerPickerDay, setPlannerPickerDay] = useState(null);
-  const [plannerSearch, setPlannerSearch] = useState("");
+  const [showPlanner, setShowPlanner] = useState(false);
+  const [plannerMonth, setPlannerMonth] = useState(() => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), 1); });
+  const [plannerAddRecipe, setPlannerAddRecipe] = useState(null);
   useEffect(() => { localStorage.setItem("instacook_mealplan", JSON.stringify(mealPlan)); }, [mealPlan]);
-
-  const getPlannerWeek = () => {
-    const days = [];
-    const today = new Date();
-    const monday = new Date(today);
-    monday.setDate(today.getDate() - ((today.getDay() + 6) % 7));
-    for (let i = 0; i < 7; i++) {
-      const d = new Date(monday);
-      d.setDate(monday.getDate() + i);
-      days.push(d.toISOString().split("T")[0]);
-    }
-    return days;
-  };
 
   const addToPlan = (dateKey, recipeName) => {
     setMealPlan(prev => ({
       ...prev,
       [dateKey]: [...(prev[dateKey] || []), recipeName]
     }));
-    setPlannerPickerDay(null);
-    setPlannerSearch("");
+    setPlannerAddRecipe(null);
   };
 
   const removeFromPlan = (dateKey, idx) => {
-    setMealPlan(prev => ({
-      ...prev,
-      [dateKey]: (prev[dateKey] || []).filter((_, i) => i !== idx)
-    }));
+    setMealPlan(prev => {
+      const updated = { ...prev, [dateKey]: (prev[dateKey] || []).filter((_, i) => i !== idx) };
+      if (updated[dateKey].length === 0) delete updated[dateKey];
+      return updated;
+    });
   };
 
   const clearPlan = () => setMealPlan({});
 
   const addPlanToGrocery = () => {
-    const week = getPlannerWeek();
-    const allRecipeNames = week.flatMap(d => mealPlan[d] || []);
+    const allRecipeNames = Object.values(mealPlan).flat();
     const uniqueNames = [...new Set(allRecipeNames)];
     const allMissing = [];
     uniqueNames.forEach(name => {
@@ -6027,9 +6014,29 @@ function App() {
     });
   };
 
-  const plannerWeek = getPlannerWeek();
-  const dayNames = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-  const plannerRecipeCount = plannerWeek.reduce((sum, d) => sum + (mealPlan[d]?.length || 0), 0);
+  const getCalendarDays = () => {
+    const year = plannerMonth.getFullYear();
+    const month = plannerMonth.getMonth();
+    const firstDay = new Date(year, month, 1);
+    const lastDay = new Date(year, month + 1, 0);
+    const startPad = (firstDay.getDay() + 6) % 7;
+    const days = [];
+    for (let i = startPad - 1; i >= 0; i--) {
+      const d = new Date(year, month, -i);
+      days.push({ date: d, outside: true });
+    }
+    for (let i = 1; i <= lastDay.getDate(); i++) {
+      days.push({ date: new Date(year, month, i), outside: false });
+    }
+    while (days.length % 7 !== 0) {
+      const d = new Date(year, month + 1, days.length - startPad - lastDay.getDate() + 1);
+      days.push({ date: d, outside: true });
+    }
+    return days;
+  };
+
+  const plannerTotalMeals = Object.values(mealPlan).flat().length;
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   const [servings, setServings] = useState(4);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
@@ -6331,6 +6338,9 @@ function App() {
           <button className="btn-darkmode" onClick={() => setDarkMode(d => !d)}>
             {darkMode ? "☀️" : "🌙"}
           </button>
+          <button className="btn-planner-toggle" onClick={() => setShowPlanner(true)}>
+            📅 {plannerTotalMeals > 0 ? `Plan (${plannerTotalMeals})` : "Planner"}
+          </button>
           <button className="btn-surprise" onClick={getSurprise} disabled={aiLoading}>
             {aiLoading ? "Thinking..." : "✦ Surprise Me"}
           </button>
@@ -6499,7 +6509,7 @@ function App() {
           </div>
         </main>
 
-        <aside className={`right-panel ${mobileTab === "detail" || mobileTab === "grocery" || mobileTab === "planner" ? "mobile-active" : ""}`}>
+        <aside className={`right-panel ${mobileTab === "detail" || mobileTab === "grocery" ? "mobile-active" : ""}`}>
           <div className="detail-section">
             <h2>Recipe Detail</h2>
             {!selectedRecipe ? (
@@ -6551,6 +6561,7 @@ function App() {
                 </div>
 
                 <button className="btn-cook" onClick={() => startCooking(selectedRecipe)}>▶ Start Cooking Mode</button>
+                <button className="btn-add-plan" onClick={() => { setPlannerAddRecipe(selectedRecipe); setShowPlanner(true); }}>📅 Add to Meal Plan</button>
                 {getRecipeAnalysis(selectedRecipe).missing.length > 0 && (
                   <button className="btn-add-grocery" onClick={() => addMissingToGrocery(selectedRecipe)}>
                     + Add Missing to Grocery List
@@ -6560,74 +6571,6 @@ function App() {
             )}
           </div>
 
-
-          <div className={`planner-section ${mobileTab === "planner" ? "mobile-active" : ""}`}>
-            <div className="planner-header">
-              <h2>Meal Planner</h2>
-              <div className="planner-actions">
-                {plannerRecipeCount > 0 && (
-                  <>
-                    <button className="btn-plan-grocery" onClick={addPlanToGrocery}>+ Add Missing to Grocery</button>
-                    <button className="btn-plan-clear" onClick={clearPlan}>Clear Week</button>
-                  </>
-                )}
-              </div>
-            </div>
-            <div className="planner-week">
-              {plannerWeek.map((dateKey, i) => {
-                const meals = mealPlan[dateKey] || [];
-                const isToday = dateKey === new Date().toISOString().split("T")[0];
-                const dayNum = new Date(dateKey + "T12:00:00").getDate();
-                return (
-                  <div key={dateKey} className={`planner-day ${isToday ? "today" : ""}`}>
-                    <div className="planner-day-header">
-                      <span className="planner-day-name">{dayNames[i]}</span>
-                      <span className="planner-day-num">{dayNum}</span>
-                    </div>
-                    <div className="planner-day-meals">
-                      {meals.map((name, idx) => {
-                        const recipe = RECIPE_LIBRARY.find(r => r.name === name);
-                        return (
-                          <div key={idx} className="planner-meal" onClick={() => { const r = RECIPE_LIBRARY.find(x => x.name === name); if (r) { setSelectedRecipe(r); setMobileTab("detail"); } }}>
-                            <span className="planner-meal-emoji">{recipe?.emoji || "🍽️"}</span>
-                            <span className="planner-meal-name">{name}</span>
-                            <button className="planner-meal-remove" onClick={(e) => { e.stopPropagation(); removeFromPlan(dateKey, idx); }}>×</button>
-                          </div>
-                        );
-                      })}
-                    </div>
-                    <button className="btn-add-meal" onClick={() => { setPlannerPickerDay(dateKey === plannerPickerDay ? null : dateKey); setPlannerSearch(""); }}>
-                      + Add
-                    </button>
-                    {plannerPickerDay === dateKey && (
-                      <div className="planner-picker">
-                        <input
-                          className="planner-picker-search"
-                          placeholder="Search recipes..."
-                          value={plannerSearch}
-                          onChange={e => setPlannerSearch(e.target.value)}
-                          autoFocus
-                        />
-                        <div className="planner-picker-list">
-                          {RECIPE_LIBRARY
-                            .filter(r => r.name.toLowerCase().includes(plannerSearch.toLowerCase()))
-                            .slice(0, 8)
-                            .map(r => (
-                              <div key={r.name} className="planner-picker-item" onClick={() => addToPlan(dateKey, r.name)}>
-                                <span>{r.emoji}</span>
-                                <span>{r.name}</span>
-                                <span className={`difficulty-tag ${r.difficulty?.toLowerCase()}`}>{r.difficulty}</span>
-                              </div>
-                            ))
-                          }
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
 
           <div className="grocery-section">
             <h2>Grocery List</h2>
@@ -6668,16 +6611,79 @@ function App() {
             <span>📋</span>
             <span>Detail</span>
           </button>
-          <button className={mobileTab === "planner" ? "active" : ""} onClick={() => setMobileTab("planner")}>
-            <span>📅</span>
-            <span>Planner</span>
-          </button>
           <button className={mobileTab === "grocery" ? "active" : ""} onClick={() => setMobileTab("grocery")}>
             <span>🛒</span>
             <span>Grocery</span>
           </button>
         </nav>
       </div>
+      {showPlanner && (
+        <div className="planner-overlay" onClick={() => { setShowPlanner(false); setPlannerAddRecipe(null); }}>
+          <div className="planner-modal" onClick={e => e.stopPropagation()}>
+            <div className="planner-modal-header">
+              <h2>
+                {plannerAddRecipe
+                  ? <><span className="planner-adding-label">Adding:</span> {plannerAddRecipe.emoji} {plannerAddRecipe.name}</>
+                  : "Meal Planner"
+                }
+              </h2>
+              <button className="planner-close" onClick={() => { setShowPlanner(false); setPlannerAddRecipe(null); }}>×</button>
+            </div>
+
+            <div className="planner-month-nav">
+              <button onClick={() => setPlannerMonth(new Date(plannerMonth.getFullYear(), plannerMonth.getMonth() - 1, 1))}>‹</button>
+              <span>{monthNames[plannerMonth.getMonth()]} {plannerMonth.getFullYear()}</span>
+              <button onClick={() => setPlannerMonth(new Date(plannerMonth.getFullYear(), plannerMonth.getMonth() + 1, 1))}>›</button>
+            </div>
+
+            {plannerAddRecipe && (
+              <div className="planner-add-hint">Tap a day to add this recipe</div>
+            )}
+
+            <div className="planner-cal-grid">
+              {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map(d => (
+                <div key={d} className="planner-cal-head">{d}</div>
+              ))}
+              {getCalendarDays().map(({ date, outside }, i) => {
+                const key = date.toISOString().split("T")[0];
+                const meals = mealPlan[key] || [];
+                const isToday = key === new Date().toISOString().split("T")[0];
+                return (
+                  <div
+                    key={i}
+                    className={`planner-cal-day ${outside ? "outside" : ""} ${isToday ? "today" : ""} ${plannerAddRecipe ? "selectable" : ""}`}
+                    onClick={() => { if (plannerAddRecipe && !outside) addToPlan(key, plannerAddRecipe.name); }}
+                  >
+                    <span className="cal-day-num">{date.getDate()}</span>
+                    <div className="cal-day-meals">
+                      {meals.map((name, idx) => {
+                        const recipe = RECIPE_LIBRARY.find(r => r.name === name);
+                        return (
+                          <div key={idx} className="cal-meal-chip">
+                            <span>{recipe?.emoji || "🍽️"}</span>
+                            <span className="cal-meal-name">{name}</span>
+                            {!plannerAddRecipe && (
+                              <button className="cal-meal-x" onClick={(e) => { e.stopPropagation(); removeFromPlan(key, idx); }}>×</button>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {!plannerAddRecipe && plannerTotalMeals > 0 && (
+              <div className="planner-modal-footer">
+                <button className="btn-plan-grocery-modal" onClick={addPlanToGrocery}>+ Add All Missing to Grocery List</button>
+                <button className="btn-plan-clear-modal" onClick={clearPlan}>Clear All</button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {cookMode && (
         <div className="cook-overlay" onClick={e => { if (e.target === e.currentTarget) closeCooking(); }}>
           <div className="cook-modal">

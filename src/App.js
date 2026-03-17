@@ -15,7 +15,7 @@ const PANTRY_CATALOG = {
     "Bell Pepper", "Broccoli", "Cabbage", "Carrot", "Celery", "Cilantro",
     "Corn", "Cucumber", "Garlic", "Ginger", "Green Onion", "Jalapeño",
     "Kale", "Lemon", "Lime", "Mushrooms", "Onion", "Parsley", "Potato",
-    "Red Onion", "Shallot", "Spinach", "Sweet Potato", "Tomato", "Zucchini"
+    "Red Onion", "Romaine", "Shallot", "Spinach", "Sweet Potato", "Tomato", "Zucchini"
   ],
   "Dairy & Eggs": [
     "American Cheese", "Butter", "Cheddar", "Cheese", "Cottage Cheese",
@@ -306,8 +306,8 @@ const RECIPE_LIBRARY = [
       { name: "Chicken", amount: 1, unit: "lb" },
       { name: "Heavy Cream", amount: 1, unit: "cup" },
       { name: "Garlic", amount: 3, unit: "cloves" },
-      { name: "Noodles", amount: 1, unit: "pack" },
-      { name: "Cheese", amount: 1, unit: "cup" },
+      { name: "Pasta", amount: 400, unit: "g" },
+      { name: "Parmesan", amount: 1, unit: "cup" },
       { name: "Olive Oil", amount: 1, unit: "tbsp" },
       { name: "Pepper", amount: 1, unit: "tsp" }
     ],
@@ -733,7 +733,7 @@ const RECIPE_LIBRARY = [
     cuisine: "Mexican",
     baseServings: 6,
     ingredients: [
-      { name: "Ground Pork", amount: 2, unit: "lb" },
+      { name: "Pork Shoulder", amount: 2, unit: "lb" },
       { name: "Tortillas", amount: 12, unit: "count" },
       { name: "Garlic", amount: 4, unit: "cloves" },
       { name: "Onion", amount: 1, unit: "count" },
@@ -761,7 +761,7 @@ const RECIPE_LIBRARY = [
     cuisine: "Italian",
     baseServings: 4,
     ingredients: [
-      { name: "Jasmine Rice", amount: 2, unit: "cups" },
+      { name: "Arborio Rice", amount: 2, unit: "cups" },
       { name: "Mushrooms", amount: 2, unit: "cups" },
       { name: "Chicken Broth", amount: 4, unit: "cups" },
       { name: "Onion", amount: 1, unit: "count" },
@@ -1524,6 +1524,7 @@ const RECIPE_LIBRARY = [
     baseServings: 4,
     ingredients: [
       { name: "Pasta", amount: 200, unit: "g" },
+      { name: "Cannellini Beans", amount: 1, unit: "can" },
       { name: "Canned Tomatoes", amount: 1, unit: "cup" },
       { name: "Chicken Broth", amount: 3, unit: "cups" },
       { name: "Onion", amount: 1, unit: "count" },
@@ -1537,7 +1538,7 @@ const RECIPE_LIBRARY = [
     steps: [
       "Heat olive oil in a large pot. Sauté diced onion 5 min. Add garlic and rosemary, cook 1 min.",
       "Add tomato paste and stir 1 min. Add canned tomatoes and cook 5 min until thickened.",
-      "Pour in chicken broth. Bring to a boil.",
+      "Pour in chicken broth. Add drained cannellini beans. Bring to a boil.",
       "Add pasta directly to the soup. Cook stirring often until pasta is al dente, about 8-10 min.",
       "The soup thickens as pasta releases starch — add more broth if too thick.",
       "Season with salt and pepper. Drizzle with olive oil and serve with crusty bread."
@@ -2613,7 +2614,7 @@ const RECIPE_LIBRARY = [
     steps: [
       "Make croutons: cube bread, toss with olive oil and a pinch of garlic, toast in oven at 375°F for 10 min.",
       "Make dressing: whisk lemon juice, dijon mustard, worcestershire, minced garlic, salt, and pepper. Drizzle in olive oil while whisking.",
-      "Toss spinach with dressing until well coated.",
+      "Toss chopped romaine with dressing until well coated.",
       "Add half the parmesan and toss again.",
       "Top with croutons and remaining parmesan.",
       "Serve immediately — dressed salad wilts quickly."
@@ -2638,9 +2639,9 @@ const RECIPE_LIBRARY = [
       { name: "Pepper", amount: 0.25, unit: "tsp" }
     ],
     steps: [
-      "Chop tomatoes into large chunks. Dice bell pepper and red onion.",
+      "Chop tomatoes into large chunks. Dice bell pepper, cucumber, and red onion.",
       "Combine vegetables in a large bowl.",
-      "Add mozzarella cubes on top.",
+      "Crumble feta on top.",
       "Drizzle with olive oil and lemon juice.",
       "Season with oregano, salt, and pepper.",
       "Toss gently and serve immediately."
@@ -2727,7 +2728,7 @@ const RECIPE_LIBRARY = [
     cuisine: "American",
     baseServings: 4,
     ingredients: [
-      { name: "Spinach", amount: 4, unit: "cups" },
+      { name: "Romaine", amount: 4, unit: "cups" },
       { name: "Bacon", amount: 4, unit: "strips" },
       { name: "Egg", amount: 2, unit: "count" },
       { name: "Red Onion", amount: 0.25, unit: "count" },
@@ -3236,7 +3237,9 @@ const RECIPE_LIBRARY = [
     cuisine: "Mexican",
     baseServings: 4,
     ingredients: [
+      { name: "Avocado", amount: 3, unit: "count" },
       { name: "Lime", amount: 2, unit: "count" },
+      { name: "Cilantro", amount: 2, unit: "tbsp" },
       { name: "Red Onion", amount: 0.25, unit: "count" },
       { name: "Tomato", amount: 1, unit: "count" },
       { name: "Garlic", amount: 1, unit: "cloves" },
@@ -5167,6 +5170,7 @@ const INGREDIENT_CONFIG = {
   // --- PRODUCE & DAIRY (Counts/Bulk) ---
   "Garlic":         { unit: "bulb",   step: 1,    default: 2 },
   "Onion":          { unit: "count",  step: 1,    default: 3 },
+  "Romaine":        { unit: "count",  step: 1,    default: 1 },
   "Tomato":         { unit: "count",  step: 1,    default: 3 },
   "Lemon":          { unit: "count",  step: 1,    default: 3 },
   "Lime":           { unit: "count",  step: 1,    default: 3 },
@@ -5185,6 +5189,7 @@ const INGREDIENT_CONFIG = {
   "Curry Powder":   { unit: "jar",    step: 1,    default: 1 },
 
   // --- DRY GOODS (Bulk Bags) ---
+  "Arborio Rice":   { unit: "bag",    step: 1,    default: 1 },
   "Jasmine Rice":   { unit: "bag",    step: 1,    default: 1 },
   "Rice":           { unit: "bag",    step: 1,    default: 1 },
   "Pasta":          { unit: "box",    step: 1,    default: 1 },
@@ -5197,6 +5202,7 @@ const INGREDIENT_CONFIG = {
   "Baking Powder":  { unit: "can",    step: 1,    default: 1 },
   "Tortillas":      { unit: "pack",   step: 1,    default: 1 },
   "Coconut Milk":   { unit: "can",    step: 1,    default: 2 },
+ "Cannellini Beans":{ unit: "can",   step: 1,    default: 2 },
   "Canned Tomatoes":{ unit: "can",    step: 1,    default: 3 },
   "Pineapple Chunks":{ unit: "can",   step: 1,    default: 1 },
   "Beef Broth":     { unit: "carton", step: 1,    default: 1 },

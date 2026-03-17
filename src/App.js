@@ -5440,6 +5440,13 @@ function App() {
   const [pantrySearch, setPantrySearch] = useState("");
   const [cuisineFilter, setCuisineFilter] = useState("All");
   const [difficultyFilter, setDifficultyFilter] = useState("All");
+  const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const [favorites, setFavorites] = useState(() => {
+    const saved = localStorage.getItem("instacook_favorites");
+    return saved ? JSON.parse(saved) : [];
+  });
+  useEffect(() => { localStorage.setItem("instacook_favorites", JSON.stringify(favorites)); }, [favorites]);
+  const toggleFavorite = (name) => setFavorites(prev => prev.includes(name) ? prev.filter(n => n !== name) : [...prev, name]);
   const [servings, setServings] = useState(4);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [collapsedCats, setCollapsedCats] = useState({});
@@ -5572,6 +5579,7 @@ function App() {
         return r.cuisine === cuisineFilter;
       })
       .filter(r => difficultyFilter === "All" || r.difficulty === difficultyFilter)
+      .filter(r => !favoritesOnly || favorites.includes(r.name))
       .map(r => ({ ...r, analysis: getRecipeAnalysis(r) }))
       .sort((a, b) => b.analysis.matchPercent - a.analysis.matchPercent);
   }, [searchTerm, cuisineFilter, asianSubFilter, medSubFilter, difficultyFilter, servings, pantryState]);
@@ -5838,6 +5846,9 @@ function App() {
                 ))}
               </div>
             )}
+            <button className={`favorites-btn ${favoritesOnly ? "active" : ""}`} onClick={() => setFavoritesOnly(f => !f)}>
+              {favoritesOnly ? "♥ Favorites" : "♡ Favorites"}
+            </button>
             <div className="difficulty-filter">
               {["All", "Easy", "Medium", "Hard"].map(d => (
                 <button
@@ -5871,6 +5882,9 @@ function App() {
                   {canMakeRecipes.map(recipe => (
                     <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => { setSelectedRecipe(recipe); setMobileTab("detail"); }}>
                       <span className="card-emoji">{recipe.emoji}</span>
+                      <button className={`fav-heart ${favorites.includes(recipe.name) ? "active" : ""}`} onClick={(e) => { e.stopPropagation(); toggleFavorite(recipe.name); }}>
+                        {favorites.includes(recipe.name) ? "♥" : "♡"}
+                      </button>
                       <div className="card-name">{recipe.name}</div>
                       <div className="card-meta"><span className={`difficulty-tag ${recipe.difficulty?.toLowerCase()}`}>{recipe.difficulty}</span><span className="card-time">⏱ {recipe.time}</span></div>
                       <div className="card-status ok">✓ All ingredients on hand</div>
@@ -5887,6 +5901,9 @@ function App() {
                   {missingRecipes.map(recipe => (
                     <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => setSelectedRecipe(recipe)}>
                       <span className="card-emoji">{recipe.emoji}</span>
+                      <button className={`fav-heart ${favorites.includes(recipe.name) ? "active" : ""}`} onClick={(e) => { e.stopPropagation(); toggleFavorite(recipe.name); }}>
+                        {favorites.includes(recipe.name) ? "♥" : "♡"}
+                      </button>
                       <div className="card-name">{recipe.name}</div>
                       <div className="card-meta"><span className={`difficulty-tag ${recipe.difficulty?.toLowerCase()}`}>{recipe.difficulty}</span><span className="card-time">⏱ {recipe.time}</span></div>
                       <div className="card-status miss">Missing {recipe.analysis.missing.length}</div>
@@ -5908,7 +5925,12 @@ function App() {
                 <div className="detail-title-row">
                   <span className="detail-emoji">{selectedRecipe.emoji}</span>
                   <div>
-                    <div className="detail-name">{selectedRecipe.name}</div>
+                    <div className="detail-name">
+                      {selectedRecipe.name}
+                      <button className={`fav-heart detail ${favorites.includes(selectedRecipe.name) ? "active" : ""}`} onClick={() => toggleFavorite(selectedRecipe.name)}>
+                        {favorites.includes(selectedRecipe.name) ? "♥" : "♡"}
+                      </button>
+                    </div>
                     <div className="detail-time">⏱ {selectedRecipe.time}</div>
                     <span className={`difficulty-tag ${selectedRecipe.difficulty?.toLowerCase()}`}>{selectedRecipe.difficulty}</span>
                   </div>

@@ -153,7 +153,7 @@ const RECIPE_LIBRARY = [
   },
   {
     name: "Chicken Wings",
-    emoji: "🍖",
+    emoji: "🍗",
     time: "45 min",
     cuisine: "American",
     difficulty: "Easy",
@@ -4171,7 +4171,7 @@ const RECIPE_LIBRARY = [
   },
   {
     name: "Chicken Meatballs",
-    emoji: "🍗",
+    emoji: "🧆",
     time: "30 min",
     cuisine: "Healthy",
     difficulty: "Medium",
@@ -4809,7 +4809,7 @@ const RECIPE_LIBRARY = [
   },
   {
     name: "Greek Meatballs",
-    emoji: "🍢",
+    emoji: "🧆",
     time: "30 min",
     cuisine: "Greek",
     difficulty: "Medium",

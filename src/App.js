@@ -44,7 +44,7 @@ const PANTRY_CATALOG = {
   "Sauces & Condiments": [
     "Balsamic Vinegar", "BBQ Sauce", "Chili Oil", "Coconut Aminos", "Dark Soy Sauce",
     "Dark Vinegar", "Dijon Mustard", "Doubanjiang", "Fish Sauce", "Hoisin Sauce",
-    "Hot Sauce", "Ketchup", "Kimchi", "Kimchi", "Maple Syrup", "Mayonnaise", "Miso Paste",
+    "Apple Cider Vinegar", "Hot Sauce", "Ketchup", "Kimchi", "Maple Syrup", "Mayonnaise", "Miso Paste",
     "Mustard", "Oyster Sauce", "Pickles", "Rice Vinegar", "Rice Wine", "Sesame Oil",
     "Soy Sauce", "Shrimp Paste", "Sriracha", "Tahini", "Tomato Paste", "Vinegar",
     "Water", "Worcestershire Sauce"
@@ -285,6 +285,7 @@ const RECIPE_LIBRARY = [
     emoji: "🌮",
     time: "3.5 hr",
     cuisine: "Mexican",
+    difficulty: "Hard",
     baseServings: 10,
     ingredients: [
       { name: "Beef Flank", amount: 2, unit: "lb" },
@@ -5929,12 +5930,12 @@ const INGREDIENT_CONFIG = {
   "Chicken Broth":  { unit: "carton", step: 1,    default: 1 },
   "Tomato Paste":   { unit: "can",    step: 1,    default: 1 },
   "Kimchi":         { unit: "jar",    step: 1,    default: 1 },
+  "Apple Cider Vinegar": { unit: "bottle", step: 1, default: 1 },
   "Short Ribs":     { unit: "lb",     step: 0.5,  default: 1 },
   "Dijon Mustard":  { unit: "jar",    step: 1,    default: 1 },
   "Worcestershire Sauce": { unit: "bottle", step: 1, default: 1 },
   "BBQ Sauce":      { unit: "bottle", step: 1,    default: 1 },
   "Doubanjiang":    { unit: "jar",    step: 1,    default: 1 },
-  "Kimchi":         { unit: "jar",    step: 1,    default: 1 },
   "Rice Vinegar":   { unit: "bottle", step: 1,    default: 1 },
   "Shrimp Paste":   { unit: "jar",    step: 1,    default: 1 },
   "Sichuan Peppercorn": { unit: "jar", step: 1,   default: 1 },

@@ -6162,31 +6162,31 @@ const RECIPE_LIBRARY = [
   },
   // ── MIDDLE EASTERN (+7) ──
   {
-    name: "Kibbeh",
-    emoji: "🥩",
-    time: "1 hr",
+    name: "Arayes",
+    emoji: "🫓",
+    time: "25 min",
     cuisine: "Middle Eastern",
-    difficulty: "Hard",
-    baseServings: 6,
+    difficulty: "Easy",
+    baseServings: 4,
     ingredients: [
-      { name: "Ground Lamb", amount: 1, unit: "lb" },
-      { name: "Ground Beef", amount: 0.5, unit: "lb" },
-      { name: "Onion", amount: 2, unit: "count" },
-      { name: "Pine Nuts", amount: 0.25, unit: "cup" },
-      { name: "Allspice", amount: 1, unit: "tsp" },
-      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
-      { name: "Cumin", amount: 0.5, unit: "tsp" },
-      { name: "Olive Oil", amount: 3, unit: "tbsp" },
-      { name: "Salt", amount: 1, unit: "tsp" },
-      { name: "Pepper", amount: 0.5, unit: "tsp" }
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Pita Bread", amount: 4, unit: "count" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Parsley", amount: 1, unit: "bunch" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Allspice", amount: 0.5, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
     ],
     steps: [
-      "Make filling: sauté diced onion in olive oil until softened. Add ground beef, pine nuts, allspice, cinnamon, and salt. Cook until browned. Set aside.",
-      "Make shell: combine ground lamb with grated onion, cumin, salt, and pepper. Knead until very smooth and paste-like — wet your hands to prevent sticking.",
-      "Take a golf-ball sized piece of the lamb shell. Form into an oval and make a hollow in the center with your finger.",
-      "Stuff with a spoonful of the beef and pine nut filling. Seal the shell around it into a football shape.",
-      "Deep fry at 350°F for 5–6 min until golden brown. Or bake at 400°F for 25 min.",
-      "Serve hot with yogurt and a fresh salad."
+      "Mix ground beef with finely diced onion, minced garlic, chopped parsley, cumin, allspice, cinnamon, and salt.",
+      "Cut pita bread in half to make pockets. Stuff each pocket generously with the meat mixture, pressing flat.",
+      "Brush the outside of each stuffed pita with olive oil.",
+      "Grill on a hot grill or pan over medium-high heat 3–4 min per side until the pita is crispy and the meat is cooked through.",
+      "Alternatively, bake at 425°F for 12–15 min, flipping halfway.",
+      "Cut into wedges and serve with tahini sauce and a fresh salad."
     ]
   },
   {
@@ -6559,26 +6559,28 @@ const RECIPE_LIBRARY = [
     ]
   },
   {
-    name: "Crème Brûlée",
-    emoji: "🍮",
-    time: "1 hr",
+    name: "Mousse au Chocolat",
+    emoji: "🍫",
+    time: "30 min",
     cuisine: "French",
     difficulty: "Medium",
     baseServings: 4,
     ingredients: [
-      { name: "Heavy Cream", amount: 2, unit: "cups" },
-      { name: "Egg", amount: 5, unit: "count" },
-      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Cocoa Powder", amount: 3, unit: "tbsp" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Sugar", amount: 0.25, unit: "cup" },
+      { name: "Heavy Cream", amount: 0.5, unit: "cup" },
       { name: "Vanilla Extract", amount: 1, unit: "tsp" },
       { name: "Salt", amount: 0.25, unit: "tsp" }
     ],
     steps: [
-      "Preheat oven to 325°F. Heat cream in a saucepan until it just starts to simmer. Remove from heat.",
-      "Whisk 5 egg yolks (save whites for another use) with ¼ cup sugar, vanilla, and salt until pale.",
-      "Slowly pour hot cream into the yolk mixture, whisking constantly — go slow or you'll scramble the eggs.",
-      "Strain through a fine sieve into 4 ramekins. Place ramekins in a baking dish. Pour hot water halfway up the sides.",
-      "Bake 40–45 min until edges are set but centers still jiggle slightly.",
-      "Chill at least 2 hours. Before serving, sprinkle remaining sugar on top and torch until caramelized and crackling."
+      "Melt butter gently. Whisk in cocoa powder until smooth and glossy. Let cool slightly.",
+      "Separate eggs. Beat yolks with half the sugar until pale and thick. Fold into the chocolate mixture.",
+      "Whip cream to soft peaks with vanilla. Set aside.",
+      "Beat egg whites with salt until foamy. Gradually add remaining sugar and beat to stiff, glossy peaks.",
+      "Fold whipped cream into the chocolate base, then gently fold in egg whites in 3 additions — do not deflate.",
+      "Divide into glasses or ramekins. Chill at least 2 hours. Serve with a dollop of cream."
     ]
   },
   {

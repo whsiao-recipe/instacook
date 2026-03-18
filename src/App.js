@@ -7,7 +7,7 @@ const PANTRY_CATALOG = {
     "Bacon", "Beef Flank", "Chicken", "Chicken Thighs", "Chicken Wings",
     "Chorizo", "Cod", "Duck Breast", "Fish Balls", "Ground Beef", "Ground Chicken",
     "Ground Pork", "Ham", "Lamb Chops", "Pork Belly", "Pork Chops", "Pork Ribs", "Pork Shoulder",
-    "Rib Eye Steak", "Salmon", "Sausage", "Shrimp", "Tilapia",
+    "Rib Eye Steak", "Salmon", "Short Ribs", "Sausage", "Shrimp", "Tilapia",
     "Tofu", "Tuna", "Turkey"
   ],
   "Produce": [
@@ -34,8 +34,8 @@ const PANTRY_CATALOG = {
   ],
   "Spices & Seasonings": [
     "Adobo", "Allspice", "Bay Leaf", "Cardamom", "Cayenne Pepper",
-    "Chicken Powder", "Chili Flakes", "Chili Powder", "Cinnamon", "Cloves",
-    "Coriander", "Cumin", "Curry Powder", "Dried Mint", "Fennel Seeds",
+    "Chicken Powder", "Chiles de Arbol", "Chili Flakes", "Chili Powder", "Cinnamon", "Cloves",
+    "Coriander", "Cumin", "Curry Powder", "Dried Guajillo Chiles", "Dried Ancho Chiles", "Dried Mint", "Fennel Seeds",
     "Five Spice", "Garam Masala", "Garlic Powder", "Italian Seasoning",
     "Mushroom Powder", "Nutmeg", "Onion Powder", "Oregano", "Paprika",
     "Pepper", "Peppercorn", "Rosemary", "Salt", "Sichuan Peppercorn", "Smoked Paprika",
@@ -44,7 +44,7 @@ const PANTRY_CATALOG = {
   "Sauces & Condiments": [
     "Balsamic Vinegar", "BBQ Sauce", "Chili Oil", "Coconut Aminos", "Dark Soy Sauce",
     "Dark Vinegar", "Dijon Mustard", "Doubanjiang", "Fish Sauce", "Hoisin Sauce",
-    "Hot Sauce", "Ketchup", "Kimchi", "Maple Syrup", "Mayonnaise", "Miso Paste",
+    "Hot Sauce", "Ketchup", "Kimchi", "Kimchi", "Maple Syrup", "Mayonnaise", "Miso Paste",
     "Mustard", "Oyster Sauce", "Pickles", "Rice Vinegar", "Rice Wine", "Sesame Oil",
     "Soy Sauce", "Shrimp Paste", "Sriracha", "Tahini", "Tomato Paste", "Vinegar",
     "Water", "Worcestershire Sauce"
@@ -280,31 +280,44 @@ const RECIPE_LIBRARY = [
       "Rest steaks 5 min before slicing to lock in juices."
     ]
   },
-  {
-    name: "Birria",
-    emoji: "🌯",
-    time: "2 hr",
+ {
+    name: "Birria Tacos",
+    emoji: "🌮",
+    time: "3.5 hr",
     cuisine: "Mexican",
-    difficulty: "Hard",
-    baseServings: 6,
+    baseServings: 10,
     ingredients: [
       { name: "Beef Flank", amount: 2, unit: "lb" },
-      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Short Ribs", amount: 1, unit: "lb" },
+      { name: "Dried Guajillo Chiles", amount: 7, unit: "count" },
+      { name: "Dried Ancho Chiles", amount: 7, unit: "count" },
+      { name: "Chiles de Arbol", amount: 3, unit: "count" },
       { name: "Onion", amount: 1, unit: "count" },
-      { name: "Bay Leaf", amount: 2, unit: "leaves" },
-      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Garlic", amount: 6, unit: "cloves" },
+      { name: "Tomato", amount: 4, unit: "count" },
+      { name: "Peppercorn", amount: 1, unit: "tbsp" },
       { name: "Oregano", amount: 1, unit: "tsp" },
-      { name: "Cinnamon", amount: 1, unit: "stick" },
-      { name: "Cloves", amount: 3, unit: "count" },
-      { name: "Beef Broth", amount: 3, unit: "cups" }
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Cloves", amount: 0.25, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "stick" },
+      { name: "Bay Leaf", amount: 3, unit: "leaves" },
+      { name: "Apple Cider Vinegar", amount: 1, unit: "tsp" },
+      { name: "Beef Broth", amount: 3, unit: "cups" },
+      { name: "Oil", amount: 1, unit: "tsp" },
+      { name: "Tortillas", amount: 20, unit: "count" },
+      { name: "Mozzarella", amount: 3, unit: "oz" },
+      { name: "Cilantro", amount: 0.25, unit: "cup" },
+      { name: "Lime", amount: 1, unit: "count" },
+      { name: "Salt", amount: 1, unit: "tbsp" }
     ],
     steps: [
-      "Toast dry spices (cumin, oregano) in a dry pan until fragrant. Combine with cinnamon and cloves.",
-      "Season beef generously with salt. Brown all sides in a hot pot.",
-      "Add broth, garlic, onion, bay leaves, and toasted spices.",
-      "Bring to a boil, then reduce heat. Cover and simmer 90 min until beef is fall-apart tender.",
-      "Remove beef and shred with two forks. Reserve the braising liquid (consomé).",
-      "Serve shredded beef in tacos or dip tortillas in consomé and fry until crispy."
+      "PREP MEAT: Bring chuck and short ribs to room temperature ~30 min. Salt liberally on all sides.",
+      "SEAR MEAT: Heat oil in a Dutch oven over medium-high heat. Sear meat in batches until deeply browned on all sides, about 3 min per side. Transfer to a bowl.",
+      "MAKE SAUCE: In a separate pot, add trimmed and de-seeded dried chiles (guajillo, ancho, arbol), halved onion, garlic, tomatoes, peppercorns, oregano, cumin, coriander, cloves, cinnamon, and bay leaves. Cover with cold water. Simmer 15 min until chiles and tomatoes are very soft.",
+      "BLEND: Drain and transfer solids to a blender. Add apple cider vinegar and 1 cup beef broth. Blend until very smooth, about 2 min. Add salt to taste.",
+      "BRAISE: Preheat oven to 300°F. Return seared meat to the Dutch oven. Pour sauce over it. Swish remaining 2 cups broth in the blender to pick up leftover sauce and pour into pot. Bring to a gentle simmer on the stove, then cover and transfer to oven. Braise 3 hours until meat shreds easily.",
+      "ASSEMBLE TACOS: Remove meat and shred with two forks. Mix cilantro, minced onion, lime juice, and salt in a small bowl. Dip corn tortillas in the top layer of the brothy sauce (the fat). Pan-fry in a skillet over medium heat, flip, add shredded meat and cheese, fold into a taco. Cook until crispy on both sides. Serve with a bowl of the consomé for dipping."
     ]
   },
   {
@@ -1301,19 +1314,20 @@ const RECIPE_LIBRARY = [
       { name: "Egg", amount: 2, unit: "count" },
       { name: "Onion", amount: 0.5, unit: "count" },
       { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Kimchi", amount: 1, unit: "cup" },
       { name: "Soy Sauce", amount: 1, unit: "tbsp" },
       { name: "Sesame Oil", amount: 1, unit: "tsp" },
       { name: "Hot Sauce", amount: 1, unit: "tbsp" },
       { name: "Oil", amount: 2, unit: "tbsp" },
-      { name: "Salt", amount: 0.5, unit: "tsp" }
+      { name: "Sugar", amount: 0.5, unit: "tsp" }
     ],
     steps: [
-      "Use cold day-old rice for best results.",
+      "Use cold day-old rice for best results. Roughly chop the kimchi — keep the juice, you'll use it.",
       "Heat oil in a wok over high heat. Sauté diced onion and garlic 2 min.",
-      "Add hot sauce and stir 30 seconds until fragrant.",
+      "Add chopped kimchi and its juice. Stir-fry 2–3 min until the kimchi starts to caramelize and turn slightly crispy.",
       "Add rice, breaking up clumps. Press against the wok and let it sit 30 seconds for a slight char.",
-      "Add soy sauce and toss everything together. Push to the side and fry eggs to your liking.",
-      "Drizzle sesame oil over everything. Serve topped with the fried egg."
+      "Add soy sauce, sugar, and hot sauce. Toss everything together. Push rice to the side and fry eggs to your liking.",
+      "Drizzle sesame oil over everything. Serve topped with the fried egg and a sprinkle of sesame seeds."
     ]
   },
   {
@@ -5836,7 +5850,7 @@ function findCategory(itemName) {
   return "Other";
 }
 
-const PANTRY_VERSION = "v9_expanded_pantry";
+const PANTRY_VERSION = "v10_birria_kimchi";
 
 const INGREDIENT_CONFIG = {
   // --- PROTEINS (Standardized to 1 lb or Count) ---
@@ -5914,6 +5928,8 @@ const INGREDIENT_CONFIG = {
   "Beef Broth":     { unit: "carton", step: 1,    default: 1 },
   "Chicken Broth":  { unit: "carton", step: 1,    default: 1 },
   "Tomato Paste":   { unit: "can",    step: 1,    default: 1 },
+  "Kimchi":         { unit: "jar",    step: 1,    default: 1 },
+  "Short Ribs":     { unit: "lb",     step: 0.5,  default: 1 },
   "Dijon Mustard":  { unit: "jar",    step: 1,    default: 1 },
   "Worcestershire Sauce": { unit: "bottle", step: 1, default: 1 },
   "BBQ Sauce":      { unit: "bottle", step: 1,    default: 1 },

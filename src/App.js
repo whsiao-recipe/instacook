@@ -6,8 +6,8 @@ const PANTRY_CATALOG = {
   "Meat & Proteins": [
     "Bacon", "Beef Flank", "Chicken", "Chicken Thighs", "Chicken Wings",
     "Chorizo", "Cod", "Duck Breast", "Fish Balls", "Ground Beef", "Ground Chicken",
-    "Ground Pork", "Ham", "Lamb Chops", "Pork Belly", "Pork Chops", "Pork Ribs", "Pork Shoulder",
-    "Rib Eye Steak", "Salmon", "Short Ribs", "Sausage", "Shrimp", "Tilapia",
+    "Ground Lamb", "Ground Pork", "Ham", "Lamb Chops", "Pork Belly", "Pork Chops", "Pork Ribs", "Pork Shoulder",
+    "Rib Eye Steak", "Salmon", "Short Ribs", "Sausage", "Shrimp", "Spam", "Tilapia",
     "Tofu", "Tuna", "Turkey"
   ],
   "Produce": [
@@ -20,16 +20,16 @@ const PANTRY_CATALOG = {
   "Dairy & Eggs": [
     "American Cheese", "Butter", "Cheddar", "Cheese", "Cottage Cheese",
     "Cream", "Cream Cheese", "Egg", "Feta", "Greek Yogurt", "Heavy Cream",
-    "Milk", "Mozzarella", "Parmesan", "Ricotta", "Sour Cream", "Whipping Cream"
+    "Milk", "Mozzarella", "Paneer", "Parmesan", "Ricotta", "Sour Cream", "Whipping Cream"
   ],
   "Pantry Staples": [
     "Avocado Oil", "Baking Powder", "Baking Soda", "Basmati Rice",
     "Beef Broth", "Black Beans", "Bread", "Brown Sugar", "Canned Tomatoes",
     "Chicken Broth", "Chickpeas", "Cocoa Powder", "Coconut Milk",
-    "Corn Starch", "Couscous", "Flour", "Honey", "Jasmine Rice", "Noodles", "Nori",
-    "Oats", "Oil", "Olive Oil", "Panko Breadcrumbs", "Pasta",
-    "Peanut Butter", "Peanuts", "Pineapple Chunks", "Pita Bread", "Quinoa", "Rice",
-    "Sushi Rice", "Tomato Sauce", "Tortillas", "Vanilla Extract",
+    "Corn Starch", "Couscous", "Flour", "Grape Leaves", "Honey", "Jasmine Rice", "Lentils", "Noodles", "Nori",
+    "Masa Harina", "Oats", "Oil", "Olive Oil", "Panko Breadcrumbs", "Pasta",
+    "Peanut Butter", "Peanuts", "Pine Nuts", "Pineapple Chunks", "Pita Bread", "Quinoa", "Rice",
+    "Rice Cakes", "Sushi Rice", "Tomato Sauce", "Tortillas", "Vanilla Extract",
     "Wonton Wrappers", "Yeast"
   ],
   "Spices & Seasonings": [
@@ -38,12 +38,12 @@ const PANTRY_CATALOG = {
     "Coriander", "Cumin", "Curry Powder", "Dried Guajillo Chiles", "Dried Ancho Chiles", "Dried Mint", "Fennel Seeds",
     "Five Spice", "Garam Masala", "Garlic Powder", "Italian Seasoning",
     "Mushroom Powder", "Nutmeg", "Onion Powder", "Oregano", "Paprika",
-    "Pepper", "Peppercorn", "Rosemary", "Salt", "Sichuan Peppercorn", "Smoked Paprika",
-    "Star Anise", "Sugar", "Thyme", "Turmeric", "White Pepper", "Za'atar"
+    "Pepper", "Peppercorn", "Rosemary", "Saffron", "Salt", "Sichuan Peppercorn", "Smoked Paprika",
+    "Star Anise", "Sugar", "Sumac", "Thyme", "Turmeric", "White Pepper", "Za'atar"
   ],
   "Sauces & Condiments": [
     "Balsamic Vinegar", "BBQ Sauce", "Chili Oil", "Coconut Aminos", "Dark Soy Sauce",
-    "Dark Vinegar", "Dijon Mustard", "Doubanjiang", "Fish Sauce", "Hoisin Sauce",
+    "Dark Vinegar", "Dijon Mustard", "Doubanjiang", "Fish Sauce", "Gochujang", "Hoisin Sauce",
     "Apple Cider Vinegar", "Hot Sauce", "Ketchup", "Kimchi", "Maple Syrup", "Mayonnaise", "Miso Paste",
     "Mustard", "Oyster Sauce", "Pickles", "Rice Vinegar", "Rice Wine", "Sesame Oil",
     "Soy Sauce", "Shrimp Paste", "Sriracha", "Tahini", "Tomato Paste", "Vinegar",
@@ -5841,7 +5841,909 @@ const RECIPE_LIBRARY = [
       "Gently add cubed silken tofu. Simmer 3 min — do not stir too hard or tofu will break.",
       "Drizzle with sesame oil. Serve over rice. This dish should be spicy, numbing, and deeply savory."
     ]
+  },
+  // ── MEXICAN (+10) ──
+  {
+    name: "Carnitas",
+    emoji: "🐷",
+    time: "2.5 hr",
+    cuisine: "Mexican",
+    difficulty: "Medium",
+    baseServings: 8,
+    ingredients: [
+      { name: "Pork Shoulder", amount: 3, unit: "lb" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 6, unit: "cloves" },
+      { name: "Cumin", amount: 2, unit: "tsp" },
+      { name: "Oregano", amount: 1, unit: "tsp" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Lime", amount: 3, unit: "count" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tbsp" },
+      { name: "Tortillas", amount: 16, unit: "count" },
+      { name: "Cilantro", amount: 1, unit: "bunch" }
+    ],
+    steps: [
+      "Cut pork shoulder into 3-inch chunks. Season generously with salt, cumin, and oregano.",
+      "Sear pork in batches in hot oil until deeply browned on all sides. Transfer to a Dutch oven.",
+      "Add quartered onion, smashed garlic, bay leaves, juice of 2 limes, and enough water to come halfway up the meat.",
+      "Bring to a boil, then cover and reduce to a low simmer. Cook 2–2.5 hours until fork-tender and falling apart.",
+      "Remove pork and shred with two forks. Discard liquid or reduce it for extra flavor.",
+      "Spread shredded pork on a baking sheet. Broil 5–7 min until edges are crispy and caramelized. Serve in warm tortillas with cilantro and fresh lime."
+    ]
+  },
+  {
+    name: "Carne Asada",
+    emoji: "🥩",
+    time: "30 min",
+    cuisine: "Mexican",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Beef Flank", amount: 2, unit: "lb" },
+      { name: "Lime", amount: 3, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Cilantro", amount: 1, unit: "bunch" },
+      { name: "Jalapeño", amount: 1, unit: "count" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Tortillas", amount: 8, unit: "count" }
+    ],
+    steps: [
+      "Mix lime juice, minced garlic, chopped cilantro, diced jalapeño, cumin, oil, and salt into a marinade.",
+      "Score the flank steak lightly on both sides. Coat in marinade and rest at least 20 min — overnight is ideal.",
+      "Heat a cast iron skillet or grill to very high heat until smoking.",
+      "Sear steak 4–5 min per side for medium-rare. Do not move it while searing — you want a deep crust.",
+      "Rest 10 min then slice thinly against the grain.",
+      "Serve on warm tortillas with fresh cilantro, diced onion, and lime wedges."
+    ]
+  },
+  {
+    name: "Chilaquiles",
+    emoji: "🍳",
+    time: "25 min",
+    cuisine: "Mexican",
+    difficulty: "Easy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Tortillas", amount: 8, unit: "count" },
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Jalapeño", amount: 1, unit: "count" },
+      { name: "Sour Cream", amount: 0.25, unit: "cup" },
+      { name: "Mozzarella", amount: 0.5, unit: "cup" },
+      { name: "Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Cut tortillas into triangles. Fry in oil until crispy, about 2 min per side. Drain on paper towels.",
+      "Blend canned tomatoes, onion, garlic, and jalapeño into a smooth salsa. Simmer in a skillet 10 min.",
+      "Add the fried tortilla chips to the salsa. Toss gently to coat — they should soften slightly but keep some crunch.",
+      "Make wells in the mixture and crack eggs in. Cover and cook 4–5 min until eggs are set.",
+      "Sprinkle with cheese and cover until melted.",
+      "Serve topped with sour cream, cilantro, and sliced avocado."
+    ]
+  },
+  {
+    name: "Chicken Tinga",
+    emoji: "🍗",
+    time: "35 min",
+    cuisine: "Mexican",
+    difficulty: "Easy",
+    baseServings: 6,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Chili Powder", amount: 2, unit: "tsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Oregano", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Tortillas", amount: 12, unit: "count" }
+    ],
+    steps: [
+      "Poach chicken thighs in salted water for 20 min until cooked through. Shred with two forks.",
+      "Sauté diced onion in oil until softened, about 4 min. Add minced garlic, chili powder, cumin, and oregano. Stir 1 min.",
+      "Add canned tomatoes. Simmer 10 min until sauce thickens slightly.",
+      "Add shredded chicken and toss to coat. Simmer another 5 min until chicken absorbs the smoky sauce.",
+      "Taste and adjust salt and spice.",
+      "Serve on tostadas or in warm tortillas with crumbled cheese and sour cream."
+    ]
+  },
+  {
+    name: "Barbacoa",
+    emoji: "🥩",
+    time: "3 hr",
+    cuisine: "Mexican",
+    difficulty: "Hard",
+    baseServings: 8,
+    ingredients: [
+      { name: "Beef Flank", amount: 3, unit: "lb" },
+      { name: "Dried Ancho Chiles", amount: 4, unit: "count" },
+      { name: "Dried Guajillo Chiles", amount: 3, unit: "count" },
+      { name: "Garlic", amount: 6, unit: "cloves" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Cumin", amount: 2, unit: "tsp" },
+      { name: "Oregano", amount: 1, unit: "tsp" },
+      { name: "Cloves", amount: 0.25, unit: "tsp" },
+      { name: "Apple Cider Vinegar", amount: 2, unit: "tbsp" },
+      { name: "Beef Broth", amount: 1, unit: "cup" },
+      { name: "Bay Leaf", amount: 3, unit: "leaves" },
+      { name: "Salt", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Toast dried chiles in a dry pan 1 min per side. Cover with boiling water and soak 20 min until soft.",
+      "Blend softened chiles with garlic, half the onion, cumin, oregano, cloves, apple cider vinegar, and a splash of beef broth until very smooth.",
+      "Season beef with salt. Sear in a hot Dutch oven until deeply browned on all sides.",
+      "Pour chile sauce over the beef. Add remaining broth, bay leaves, and the other onion half.",
+      "Cover and braise in a 300°F oven for 2.5–3 hours until the meat shreds effortlessly.",
+      "Shred the beef into the braising liquid. Serve in tacos with cilantro, onion, and lime."
+    ]
+  },
+  {
+    name: "Arroz Rojo",
+    emoji: "🍚",
+    time: "30 min",
+    cuisine: "Mexican",
+    difficulty: "Easy",
+    baseServings: 6,
+    ingredients: [
+      { name: "Rice", amount: 2, unit: "cups" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Onion", amount: 0.5, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Blend canned tomatoes, onion, and garlic until smooth.",
+      "Heat oil in a pot over medium heat. Add rice and toast, stirring constantly, 3–4 min until golden.",
+      "Pour in the tomato blend — it will sizzle. Stir to coat the rice evenly.",
+      "Add chicken broth, cumin, and salt. Bring to a boil.",
+      "Reduce heat to very low. Cover tightly and cook 18 min without lifting the lid.",
+      "Fluff with a fork. Let steam uncovered 5 min before serving."
+    ]
+  },
+  {
+    name: "Tamales",
+    emoji: "🫔",
+    time: "2.5 hr",
+    cuisine: "Mexican",
+    difficulty: "Hard",
+    baseServings: 12,
+    ingredients: [
+      { name: "Pork Shoulder", amount: 2, unit: "lb" },
+      { name: "Masa Harina", amount: 3, unit: "cups" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Dried Guajillo Chiles", amount: 5, unit: "count" },
+      { name: "Dried Ancho Chiles", amount: 3, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 0.75, unit: "cup" },
+      { name: "Salt", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Soak corn husks in warm water 30 min until pliable. Boil pork in salted water 1.5 hours until tender. Shred and reserve 1 cup cooking liquid.",
+      "Toast and soak dried chiles 20 min. Blend with garlic, cumin, salt, and a splash of broth into a smooth red sauce. Simmer 10 min.",
+      "Toss shredded pork in the chile sauce. This is your filling.",
+      "Make masa: mix masa harina, oil, salt, and warm broth. Beat until fluffy — a small ball should float in water.",
+      "Spread 2 tbsp masa onto a corn husk. Add a spoonful of filling in the center. Fold sides in, then fold bottom up. Tie if needed.",
+      "Stand tamales upright in a steamer. Steam 1–1.5 hours until masa pulls away from the husk cleanly. Rest 10 min before serving."
+    ]
+  },
+  {
+    name: "Mole Chicken",
+    emoji: "🍫",
+    time: "1.5 hr",
+    cuisine: "Mexican",
+    difficulty: "Hard",
+    baseServings: 6,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 2, unit: "lb" },
+      { name: "Dried Ancho Chiles", amount: 4, unit: "count" },
+      { name: "Dried Guajillo Chiles", amount: 3, unit: "count" },
+      { name: "Cocoa Powder", amount: 1, unit: "tbsp" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Peanuts", amount: 0.25, unit: "cup" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Toast dried chiles in a dry pan 1 min per side. Soak in hot water 20 min. Toast peanuts in the same pan until golden.",
+      "Sauté diced onion and garlic in oil until softened. Add cumin and cinnamon, stir 1 min.",
+      "Blend softened chiles, sautéed onion mixture, peanuts, cocoa powder, sugar, salt, and 1 cup broth until very smooth.",
+      "Strain sauce through a sieve into a pot. Add remaining broth. Simmer 20 min — the sauce should be rich, dark, and complex.",
+      "Season chicken with salt. Sear in a hot pan until browned. Nestle into the mole sauce.",
+      "Cover and simmer 30 min until chicken is cooked through and sauce is thick enough to coat a spoon. Serve over rice with sesame seeds."
+    ]
+  },
+  {
+    name: "Albondigas Soup",
+    emoji: "🍲",
+    time: "45 min",
+    cuisine: "Mexican",
+    difficulty: "Medium",
+    baseServings: 6,
+    ingredients: [
+      { name: "Ground Beef", amount: 1, unit: "lb" },
+      { name: "Rice", amount: 0.25, unit: "cup" },
+      { name: "Egg", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Carrot", amount: 2, unit: "count" },
+      { name: "Potato", amount: 2, unit: "count" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 6, unit: "cups" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Cilantro", amount: 1, unit: "bunch" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Mix ground beef with uncooked rice, egg, half the minced garlic, cumin, and salt. Roll into 1-inch meatballs.",
+      "Sauté diced onion and remaining garlic in a large pot 3 min.",
+      "Add chicken broth, canned tomatoes, diced carrots, and cubed potatoes. Bring to a boil.",
+      "Gently drop meatballs into the simmering broth. Reduce heat to medium-low.",
+      "Simmer 25 min until meatballs are cooked through and potatoes are tender.",
+      "Season with salt. Serve topped with fresh cilantro and a squeeze of lime."
+    ]
+  },
+  {
+    name: "Tostadas",
+    emoji: "🫓",
+    time: "25 min",
+    cuisine: "Mexican",
+    difficulty: "Easy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Tortillas", amount: 8, unit: "count" },
+      { name: "Black Beans", amount: 1, unit: "cup" },
+      { name: "Chicken", amount: 1, unit: "lb" },
+      { name: "Avocado", amount: 1, unit: "count" },
+      { name: "Sour Cream", amount: 0.25, unit: "cup" },
+      { name: "Lime", amount: 1, unit: "count" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Fry tortillas in oil at 350°F until golden and crispy, about 1 min per side. Drain on paper towels and salt immediately.",
+      "Poach or shred leftover chicken. Season with salt and a squeeze of lime.",
+      "Heat black beans with a pinch of cumin. Mash lightly with a fork — some should be whole, some creamy.",
+      "Slice avocado. Mix sour cream with lime juice and salt.",
+      "Build tostadas: spread mashed beans on the crispy tortilla, top with shredded chicken, avocado slices, and lime crema.",
+      "Finish with shredded lettuce and hot sauce if desired. Eat immediately — they lose their crunch fast."
+    ]
+  },
+  // ── ITALIAN (+1) ──
+  {
+    name: "Osso Buco",
+    emoji: "🍖",
+    time: "2.5 hr",
+    cuisine: "Italian",
+    difficulty: "Hard",
+    baseServings: 4,
+    ingredients: [
+      { name: "Beef Flank", amount: 2, unit: "lb" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Carrot", amount: 2, unit: "count" },
+      { name: "Celery", amount: 2, unit: "stalks" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 1.5, unit: "cups" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Flour", amount: 0.25, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Thyme", amount: 2, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Parsley", amount: 1, unit: "bunch" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Season beef generously with salt and pepper. Dredge in flour, shaking off excess.",
+      "Heat olive oil and butter in a Dutch oven over medium-high heat. Sear beef 4 min per side until deeply browned. Remove.",
+      "Sauté diced onion, carrot, and celery in the same pot 5 min. Add garlic, thyme, and bay leaves. Stir 1 min.",
+      "Add canned tomatoes and broth. Return the beef. Bring to a simmer.",
+      "Cover and braise in a 325°F oven for 2 hours until meat is very tender and nearly falling apart.",
+      "Make gremolata: mix minced parsley, lemon zest, and minced garlic. Serve osso buco over risotto or polenta, topped with gremolata."
+    ]
+  },
+  // ── MIDDLE EASTERN (+7) ──
+  {
+    name: "Kibbeh",
+    emoji: "🥩",
+    time: "1 hr",
+    cuisine: "Middle Eastern",
+    difficulty: "Hard",
+    baseServings: 6,
+    ingredients: [
+      { name: "Ground Lamb", amount: 1, unit: "lb" },
+      { name: "Ground Beef", amount: 0.5, unit: "lb" },
+      { name: "Onion", amount: 2, unit: "count" },
+      { name: "Pine Nuts", amount: 0.25, unit: "cup" },
+      { name: "Allspice", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.5, unit: "tsp" },
+      { name: "Cumin", amount: 0.5, unit: "tsp" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Make filling: sauté diced onion in olive oil until softened. Add ground beef, pine nuts, allspice, cinnamon, and salt. Cook until browned. Set aside.",
+      "Make shell: combine ground lamb with grated onion, cumin, salt, and pepper. Knead until very smooth and paste-like — wet your hands to prevent sticking.",
+      "Take a golf-ball sized piece of the lamb shell. Form into an oval and make a hollow in the center with your finger.",
+      "Stuff with a spoonful of the beef and pine nut filling. Seal the shell around it into a football shape.",
+      "Deep fry at 350°F for 5–6 min until golden brown. Or bake at 400°F for 25 min.",
+      "Serve hot with yogurt and a fresh salad."
+    ]
+  },
+  {
+    name: "Manakeesh",
+    emoji: "🫓",
+    time: "40 min",
+    cuisine: "Middle Eastern",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Yeast", amount: 1, unit: "tsp" },
+      { name: "Za'atar", amount: 3, unit: "tbsp" },
+      { name: "Olive Oil", amount: 4, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Mix yeast with warm water and sugar. Let sit 5 min until foamy.",
+      "Combine flour and salt. Add yeast mixture and 1 tbsp olive oil. Knead 8 min until smooth and elastic.",
+      "Cover and let rise 30 min until doubled.",
+      "Divide dough into 4 balls. Roll each into a thin round, about 8 inches across.",
+      "Mix za'atar with remaining olive oil into a paste. Spread generously over each round.",
+      "Bake at 450°F for 8–10 min until edges are golden and bottom is crispy. Serve hot — this is the pizza of the Middle East."
+    ]
+  },
+  {
+    name: "Koshari",
+    emoji: "🍚",
+    time: "45 min",
+    cuisine: "Middle Eastern",
+    difficulty: "Medium",
+    baseServings: 6,
+    ingredients: [
+      { name: "Rice", amount: 1, unit: "cup" },
+      { name: "Lentils", amount: 1, unit: "cup" },
+      { name: "Pasta", amount: 1, unit: "cup" },
+      { name: "Canned Tomatoes", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 3, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Vinegar", amount: 2, unit: "tbsp" },
+      { name: "Oil", amount: 4, unit: "tbsp" },
+      { name: "Chili Flakes", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cook lentils in salted water 20 min until tender but not mushy. Drain.",
+      "Cook rice and small pasta separately according to package directions.",
+      "Make tomato sauce: sauté minced garlic in 1 tbsp oil. Add canned tomatoes, cumin, vinegar, chili flakes, and salt. Simmer 15 min.",
+      "Slice 3 onions into thin rings. Fry in remaining oil over medium heat 15–20 min until deeply golden and crispy. Drain on paper towels.",
+      "Layer in bowls: rice on the bottom, then lentils, then pasta. Ladle tomato sauce generously over everything.",
+      "Top with a generous pile of crispy fried onions. This is Egyptian street food at its best."
+    ]
+  },
+  {
+    name: "Ful Medames",
+    emoji: "🫘",
+    time: "20 min",
+    cuisine: "Middle Eastern",
+    difficulty: "Easy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Black Beans", amount: 2, unit: "cups" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Chili Flakes", amount: 0.5, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Pita Bread", amount: 4, unit: "count" }
+    ],
+    steps: [
+      "Heat beans in a pot with a splash of water over medium heat. Mash roughly — leave about half the beans whole for texture.",
+      "Add minced garlic, cumin, lemon juice, and salt. Stir and simmer 10 min until thick and creamy.",
+      "Hard boil eggs. Peel and halve.",
+      "Spoon beans into shallow bowls. Top with halved eggs, a generous drizzle of olive oil, and chili flakes.",
+      "Squeeze extra lemon over the top.",
+      "Serve with warm pita bread for scooping. This is the national breakfast of Egypt."
+    ]
+  },
+  {
+    name: "Beef Kebabs",
+    emoji: "🍢",
+    time: "30 min",
+    cuisine: "Middle Eastern",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Ground Beef", amount: 1.5, unit: "lb" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Parsley", amount: 1, unit: "bunch" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pita Bread", amount: 4, unit: "count" }
+    ],
+    steps: [
+      "Grate onion and squeeze out excess liquid. Mix with ground beef, minced garlic, chopped parsley, cumin, coriander, paprika, cinnamon, and salt.",
+      "Knead the mixture firmly for 2 min — this helps it hold together on the skewers.",
+      "Shape into long cylinders around metal skewers, pressing firmly.",
+      "Brush with olive oil. Grill over high heat 3–4 min per side until charred and cooked through.",
+      "Alternatively, broil on a baking sheet 4 min per side.",
+      "Serve in warm pita with tahini sauce, pickled turnips, and fresh vegetables."
+    ]
+  },
+  {
+    name: "Stuffed Grape Leaves",
+    emoji: "🍃",
+    time: "1.5 hr",
+    cuisine: "Middle Eastern",
+    difficulty: "Hard",
+    baseServings: 6,
+    ingredients: [
+      { name: "Grape Leaves", amount: 1, unit: "jar" },
+      { name: "Rice", amount: 1, unit: "cup" },
+      { name: "Ground Lamb", amount: 0.5, unit: "lb" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Pine Nuts", amount: 2, unit: "tbsp" },
+      { name: "Lemon", amount: 2, unit: "count" },
+      { name: "Allspice", amount: 1, unit: "tsp" },
+      { name: "Cinnamon", amount: 0.25, unit: "tsp" },
+      { name: "Olive Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Rinse grape leaves and soak in warm water 10 min to remove brine. Pat dry.",
+      "Mix uncooked rice, ground lamb, finely diced onion, toasted pine nuts, allspice, cinnamon, olive oil, and salt.",
+      "Place a grape leaf shiny-side down. Put 1 tbsp filling near the stem end. Fold in the sides, then roll tightly away from you.",
+      "Line the bottom of a pot with extra grape leaves to prevent sticking. Pack rolls seam-side down in tight layers.",
+      "Pour juice of 2 lemons and enough water to just cover. Place a plate on top to keep them submerged. Simmer on low heat 1 hour.",
+      "Serve warm or at room temperature with lemon wedges and yogurt."
+    ]
+  },
+  {
+    name: "Knafeh",
+    emoji: "🧀",
+    time: "45 min",
+    cuisine: "Middle Eastern",
+    difficulty: "Medium",
+    baseServings: 8,
+    ingredients: [
+      { name: "Mozzarella", amount: 2, unit: "cups" },
+      { name: "Butter", amount: 0.5, unit: "cup" },
+      { name: "Sugar", amount: 1.5, unit: "cups" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Oil", amount: 2, unit: "tbsp" }
+    ],
+    steps: [
+      "Make syrup first: dissolve sugar in 1 cup water over medium heat. Add a squeeze of lemon. Simmer 10 min until slightly thick. Cool completely.",
+      "Shred mozzarella and soak in water 2 hours to remove salt. Drain and squeeze dry.",
+      "Rub flour mixture with melted butter until it resembles coarse breadcrumbs.",
+      "Press half the dough into a greased baking pan. Spread cheese evenly over it. Top with remaining dough and press gently.",
+      "Bake at 375°F for 30–35 min until top is deeply golden and crispy.",
+      "Immediately flip onto a platter and pour cold syrup over the hot knafeh. Serve right away — it should be stretchy, crunchy, and sweet."
+    ]
+  },
+  // ── INDIAN (+6) ──
+  {
+    name: "Palak Paneer",
+    emoji: "🟢",
+    time: "30 min",
+    cuisine: "Indian",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Paneer", amount: 1, unit: "pack" },
+      { name: "Spinach", amount: 4, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Garam Masala", amount: 1, unit: "tsp" },
+      { name: "Cream", amount: 2, unit: "tbsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Blanch spinach in boiling water 2 min. Transfer to ice water. Squeeze dry and blend into a smooth purée.",
+      "Cut paneer into cubes. Fry in oil until golden on all sides. Remove and set aside.",
+      "Sauté diced onion until softened. Add minced garlic, ginger, and cumin. Cook 2 min until fragrant.",
+      "Add the spinach purée and garam masala. Simmer 5 min.",
+      "Add fried paneer cubes and cream. Simmer another 3 min until paneer absorbs some of the sauce.",
+      "Serve over basmati rice or with warm naan."
+    ]
+  },
+  {
+    name: "Chana Masala",
+    emoji: "🫘",
+    time: "30 min",
+    cuisine: "Indian",
+    difficulty: "Easy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chickpeas", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Garam Masala", amount: 1, unit: "tsp" },
+      { name: "Chili Powder", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Heat oil in a pan. Sauté diced onion 5 min until golden. Add garlic and ginger, cook 1 min.",
+      "Add cumin, coriander, turmeric, and chili powder. Stir 30 seconds until fragrant.",
+      "Add canned tomatoes. Cook 5 min until sauce thickens.",
+      "Add drained chickpeas. Stir to coat. Add ½ cup water and simmer 15 min until sauce clings to the chickpeas.",
+      "Stir in garam masala. Taste and adjust salt and spice.",
+      "Serve over rice with a squeeze of lemon and fresh cilantro."
+    ]
+  },
+  {
+    name: "Aloo Gobi",
+    emoji: "🥔",
+    time: "30 min",
+    cuisine: "Indian",
+    difficulty: "Easy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Potato", amount: 2, unit: "count" },
+      { name: "Broccoli", amount: 1, unit: "head" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Turmeric", amount: 1, unit: "tsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Garam Masala", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 3, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cut potatoes into 1-inch cubes. Cut broccoli (standing in for cauliflower) into small florets.",
+      "Heat oil in a large pan over medium heat. Add cumin seeds and let them sizzle 30 seconds.",
+      "Add diced onion and cook 4 min. Add garlic and ginger, cook 1 min.",
+      "Add turmeric, coriander, and salt. Stir to coat.",
+      "Add potatoes with a splash of water. Cover and cook 10 min. Add broccoli florets. Cover and cook another 10 min until tender.",
+      "Sprinkle with garam masala and toss. Serve with roti or rice."
+    ]
+  },
+  {
+    name: "Biryani",
+    emoji: "🍚",
+    time: "1.5 hr",
+    cuisine: "Indian",
+    difficulty: "Hard",
+    baseServings: 6,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 1.5, unit: "lb" },
+      { name: "Basmati Rice", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 3, unit: "count" },
+      { name: "Garlic", amount: 6, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Greek Yogurt", amount: 0.5, unit: "cup" },
+      { name: "Garam Masala", amount: 2, unit: "tsp" },
+      { name: "Turmeric", amount: 1, unit: "tsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Saffron", amount: 0.25, unit: "tsp" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Oil", amount: 3, unit: "tbsp" },
+      { name: "Bay Leaf", amount: 3, unit: "leaves" },
+      { name: "Cardamom", amount: 4, unit: "pods" },
+      { name: "Cilantro", amount: 1, unit: "bunch" },
+      { name: "Salt", amount: 1, unit: "tbsp" }
+    ],
+    steps: [
+      "Marinate chicken in yogurt, garam masala, turmeric, cumin, minced garlic, ginger, and salt for at least 30 min.",
+      "Soak saffron in 2 tbsp warm milk. Parboil basmati rice with bay leaves and cardamom until 70% cooked — still firm. Drain.",
+      "Fry sliced onions in oil until deeply golden and crispy, about 15 min. Reserve half for topping.",
+      "In the same pot, cook marinated chicken over medium heat 10 min until partially done.",
+      "Layer parboiled rice over the chicken. Drizzle saffron milk and dot with butter. Scatter remaining fried onions on top. Cover tightly with foil, then lid.",
+      "Cook on very low heat (dum) for 25 min. Do not open the lid. The steam finishes cooking everything. Gently mix before serving."
+    ]
+  },
+  {
+    name: "Samosa",
+    emoji: "🥟",
+    time: "1 hr",
+    cuisine: "Indian",
+    difficulty: "Hard",
+    baseServings: 6,
+    ingredients: [
+      { name: "Potato", amount: 3, unit: "count" },
+      { name: "Flour", amount: 2, unit: "cups" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 2, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Garam Masala", amount: 1, unit: "tsp" },
+      { name: "Chili Powder", amount: 0.5, unit: "tsp" },
+      { name: "Oil", amount: 2, unit: "cups" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Make dough: mix flour, 2 tbsp oil, salt, and water until firm. Knead 5 min. Rest 20 min.",
+      "Boil potatoes until tender. Peel and roughly mash — keep it chunky.",
+      "Sauté diced onion, garlic, and ginger 3 min. Add cumin, coriander, garam masala, and chili powder. Stir 1 min.",
+      "Add mashed potatoes. Mix well and season with salt. Let filling cool.",
+      "Roll dough thin. Cut into semicircles. Form each into a cone, fill with potato mixture, seal edges with water.",
+      "Deep fry at 325°F for 6–8 min until golden and crispy — low temp ensures they cook through. Serve with mint chutney."
+    ]
+  },
+  {
+    name: "Tandoori Chicken",
+    emoji: "🍗",
+    time: "45 min",
+    cuisine: "Indian",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Chicken Thighs", amount: 2, unit: "lb" },
+      { name: "Greek Yogurt", amount: 0.5, unit: "cup" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Ginger", amount: 1, unit: "tbsp" },
+      { name: "Cumin", amount: 1, unit: "tsp" },
+      { name: "Coriander", amount: 1, unit: "tsp" },
+      { name: "Garam Masala", amount: 1, unit: "tsp" },
+      { name: "Turmeric", amount: 0.5, unit: "tsp" },
+      { name: "Cayenne Pepper", amount: 0.5, unit: "tsp" },
+      { name: "Paprika", amount: 1, unit: "tsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Score chicken thighs deeply on both sides — this lets the marinade penetrate.",
+      "Mix yogurt, minced garlic, ginger, cumin, coriander, garam masala, turmeric, cayenne, paprika, lemon juice, oil, and salt.",
+      "Coat chicken thoroughly. Marinate at least 1 hour — overnight is best. The yogurt tenderizes the meat.",
+      "Preheat oven to its highest setting (500°F or broil). Place chicken on a wire rack over a baking sheet.",
+      "Bake 20–25 min until charred at the edges and cooked through. The yogurt marinade creates an incredible crust.",
+      "Squeeze fresh lemon over the top. Serve with rice, naan, and raita."
+    ]
+  },
+  // ── FRENCH (+8) ──
+  {
+    name: "Duck Confit",
+    emoji: "🦆",
+    time: "3 hr",
+    cuisine: "French",
+    difficulty: "Hard",
+    baseServings: 4,
+    ingredients: [
+      { name: "Duck Breast", amount: 4, unit: "count" },
+      { name: "Garlic", amount: 6, unit: "cloves" },
+      { name: "Thyme", amount: 4, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Salt", amount: 2, unit: "tbsp" },
+      { name: "Pepper", amount: 1, unit: "tsp" },
+      { name: "Oil", amount: 3, unit: "cups" }
+    ],
+    steps: [
+      "Season duck generously with salt, pepper, minced garlic, and thyme leaves. Refrigerate uncovered overnight or at least 4 hours.",
+      "Preheat oven to 275°F. Rinse off excess salt and pat duck dry.",
+      "Place duck in a snug oven-safe pot. Cover completely with oil. Add bay leaves and thyme sprigs.",
+      "Cover and cook in the oven 2.5–3 hours until meat is very tender and nearly falling off the bone.",
+      "Remove duck from the oil. To serve, sear skin-side down in a hot pan 3–4 min until the skin is deeply crispy and golden.",
+      "Serve with roasted potatoes or a simple salad. The skin should shatter."
+    ]
+  },
+  {
+    name: "Crème Brûlée",
+    emoji: "🍮",
+    time: "1 hr",
+    cuisine: "French",
+    difficulty: "Medium",
+    baseServings: 4,
+    ingredients: [
+      { name: "Heavy Cream", amount: 2, unit: "cups" },
+      { name: "Egg", amount: 5, unit: "count" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Vanilla Extract", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 325°F. Heat cream in a saucepan until it just starts to simmer. Remove from heat.",
+      "Whisk 5 egg yolks (save whites for another use) with ¼ cup sugar, vanilla, and salt until pale.",
+      "Slowly pour hot cream into the yolk mixture, whisking constantly — go slow or you'll scramble the eggs.",
+      "Strain through a fine sieve into 4 ramekins. Place ramekins in a baking dish. Pour hot water halfway up the sides.",
+      "Bake 40–45 min until edges are set but centers still jiggle slightly.",
+      "Chill at least 2 hours. Before serving, sprinkle remaining sugar on top and torch until caramelized and crackling."
+    ]
+  },
+  {
+    name: "Cheese Soufflé",
+    emoji: "🧀",
+    time: "45 min",
+    cuisine: "French",
+    difficulty: "Hard",
+    baseServings: 4,
+    ingredients: [
+      { name: "Egg", amount: 4, unit: "count" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Flour", amount: 3, unit: "tbsp" },
+      { name: "Milk", amount: 1, unit: "cup" },
+      { name: "Parmesan", amount: 1, unit: "cup" },
+      { name: "Nutmeg", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 0.5, unit: "tsp" },
+      { name: "Pepper", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 375°F. Butter a soufflé dish and dust with parmesan. This helps it rise evenly.",
+      "Melt butter in a saucepan. Whisk in flour and cook 2 min. Gradually add milk, whisking constantly until thick.",
+      "Remove from heat. Stir in most of the parmesan, nutmeg, salt, and pepper. Let cool slightly.",
+      "Separate eggs. Beat yolks into the cheese sauce one at a time.",
+      "Beat egg whites to stiff peaks. Fold gently into the cheese base in 3 additions — do not deflate the whites.",
+      "Pour into the prepared dish. Sprinkle remaining parmesan on top. Bake 25–30 min until puffed and golden. Serve IMMEDIATELY — it waits for no one."
+    ]
+  },
+  {
+    name: "Cassoulet",
+    emoji: "🫘",
+    time: "2.5 hr",
+    cuisine: "French",
+    difficulty: "Hard",
+    baseServings: 6,
+    ingredients: [
+      { name: "Sausage", amount: 1, unit: "lb" },
+      { name: "Pork Shoulder", amount: 1, unit: "lb" },
+      { name: "Bacon", amount: 4, unit: "strips" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 4, unit: "cloves" },
+      { name: "Canned Tomatoes", amount: 1, unit: "cup" },
+      { name: "Chicken Broth", amount: 2, unit: "cups" },
+      { name: "Thyme", amount: 3, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Panko Breadcrumbs", amount: 0.5, unit: "cup" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Cut pork shoulder into 2-inch chunks. Season with salt. Brown in olive oil over high heat. Remove.",
+      "Brown sausage and bacon in the same pot. Remove. Sauté diced onion and garlic 4 min.",
+      "Return all meats. Add canned tomatoes, broth, thyme, and bay leaves. Bring to a simmer.",
+      "Cover and transfer to a 325°F oven for 1.5 hours until pork is very tender.",
+      "Remove lid. Top with breadcrumbs. Increase oven to 400°F and bake uncovered 30 min until a golden crust forms.",
+      "Serve directly from the pot. This is the ultimate French comfort food — rich, hearty, and deeply satisfying."
+    ]
+  },
+  {
+    name: "Crêpes",
+    emoji: "🥞",
+    time: "30 min",
+    cuisine: "French",
+    difficulty: "Easy",
+    baseServings: 4,
+    ingredients: [
+      { name: "Flour", amount: 1, unit: "cup" },
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Milk", amount: 1.5, unit: "cups" },
+      { name: "Butter", amount: 3, unit: "tbsp" },
+      { name: "Sugar", amount: 1, unit: "tbsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" },
+      { name: "Vanilla Extract", amount: 1, unit: "tsp" }
+    ],
+    steps: [
+      "Blend flour, eggs, milk, melted butter (1 tbsp), sugar, salt, and vanilla until perfectly smooth. Rest batter 15 min.",
+      "Heat a non-stick pan over medium heat. Brush with a thin layer of butter.",
+      "Pour about 3 tbsp batter into the pan. Immediately tilt and swirl to cover the entire bottom in a thin, even layer.",
+      "Cook 1–2 min until edges lift and bottom is lightly golden. Flip with a spatula (or toss if you're brave).",
+      "Cook another 30 seconds on the other side.",
+      "Fill with Nutella and bananas, lemon and sugar, or ham and cheese. Fold into quarters and serve."
+    ]
+  },
+  {
+    name: "French Lentil Soup",
+    emoji: "🍲",
+    time: "45 min",
+    cuisine: "French",
+    difficulty: "Easy",
+    baseServings: 6,
+    ingredients: [
+      { name: "Lentils", amount: 1.5, unit: "cups" },
+      { name: "Carrot", amount: 2, unit: "count" },
+      { name: "Celery", amount: 2, unit: "stalks" },
+      { name: "Onion", amount: 1, unit: "count" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Thyme", amount: 3, unit: "sprigs" },
+      { name: "Bay Leaf", amount: 2, unit: "leaves" },
+      { name: "Dijon Mustard", amount: 1, unit: "tbsp" },
+      { name: "Olive Oil", amount: 2, unit: "tbsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Heat olive oil in a large pot. Sauté diced onion, carrot, and celery 5 min until softened.",
+      "Add minced garlic, thyme, and bay leaves. Stir 1 min.",
+      "Add lentils and 6 cups water. Bring to a boil, then reduce to a simmer.",
+      "Cook 30 min until lentils are tender but still hold their shape.",
+      "Stir in Dijon mustard, salt, and pepper. The mustard adds a subtle tang that makes this soup distinctly French.",
+      "Serve with crusty bread. A drizzle of good olive oil on top makes all the difference."
+    ]
+  },
+  {
+    name: "Madeleines",
+    emoji: "🧁",
+    time: "30 min",
+    cuisine: "French",
+    difficulty: "Medium",
+    baseServings: 12,
+    ingredients: [
+      { name: "Egg", amount: 2, unit: "count" },
+      { name: "Sugar", amount: 0.5, unit: "cup" },
+      { name: "Flour", amount: 1, unit: "cup" },
+      { name: "Butter", amount: 0.5, unit: "cup" },
+      { name: "Baking Powder", amount: 1, unit: "tsp" },
+      { name: "Lemon", amount: 1, unit: "count" },
+      { name: "Vanilla Extract", amount: 1, unit: "tsp" },
+      { name: "Salt", amount: 0.25, unit: "tsp" }
+    ],
+    steps: [
+      "Beat eggs and sugar until thick and pale, about 3 min. The ribbon should hold for a few seconds when you lift the whisk.",
+      "Add lemon zest and vanilla. Fold in flour, baking powder, and salt gently — do not overmix.",
+      "Fold in melted and cooled butter in a steady stream. Refrigerate batter 30 min (or overnight — cold batter makes better bumps).",
+      "Preheat oven to 425°F. Butter and flour a madeleine pan generously.",
+      "Spoon batter into each mold — about 1 tbsp each. Do not spread it.",
+      "Bake 8–10 min until puffed with a signature bump and edges are golden. Unmold immediately and dust with powdered sugar."
+    ]
+  },
+  {
+    name: "Potato Dauphinois",
+    emoji: "🥔",
+    time: "1.5 hr",
+    cuisine: "French",
+    difficulty: "Medium",
+    baseServings: 6,
+    ingredients: [
+      { name: "Potato", amount: 4, unit: "count" },
+      { name: "Heavy Cream", amount: 1.5, unit: "cups" },
+      { name: "Milk", amount: 0.5, unit: "cup" },
+      { name: "Garlic", amount: 3, unit: "cloves" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Nutmeg", amount: 0.25, unit: "tsp" },
+      { name: "Salt", amount: 1, unit: "tsp" },
+      { name: "Pepper", amount: 0.5, unit: "tsp" }
+    ],
+    steps: [
+      "Preheat oven to 325°F. Rub a baking dish with a cut garlic clove, then butter it generously.",
+      "Slice potatoes very thinly — a mandoline gives the most even results. Mince the remaining garlic.",
+      "Layer potato slices in the dish, overlapping like fish scales. Season each layer with salt, pepper, nutmeg, and a bit of minced garlic.",
+      "Heat cream and milk together until just simmering. Pour over the potatoes — it should come almost to the top layer.",
+      "Dot with small pieces of butter. Cover with foil.",
+      "Bake covered 45 min, then uncover and bake another 30 min until top is deeply golden and cream has thickened. Rest 10 min before serving."
+    ]
   }
+
 ];
 
 function findCategory(itemName) {
@@ -5851,7 +6753,7 @@ function findCategory(itemName) {
   return "Other";
 }
 
-const PANTRY_VERSION = "v10_birria_kimchi";
+const PANTRY_VERSION = "v11_new_recipes";
 
 const INGREDIENT_CONFIG = {
   // --- PROTEINS (Standardized to 1 lb or Count) ---
@@ -5932,6 +6834,13 @@ const INGREDIENT_CONFIG = {
   "Kimchi":         { unit: "jar",    step: 1,    default: 1 },
   "Apple Cider Vinegar": { unit: "bottle", step: 1, default: 1 },
   "Short Ribs":     { unit: "lb",     step: 0.5,  default: 1 },
+  "Lentils":        { unit: "bag",    step: 1,    default: 1 },
+  "Ground Lamb":    { unit: "lb",     step: 0.5,  default: 1 },
+  "Paneer":         { unit: "pack",   step: 1,    default: 1 },
+  "Saffron":        { unit: "jar",    step: 1,    default: 1 },
+  "Pine Nuts":      { unit: "bag",    step: 1,    default: 1 },
+  "Grape Leaves":   { unit: "jar",    step: 1,    default: 1 },
+  "Masa Harina":    { unit: "bag",    step: 1,    default: 1 },
   "Dijon Mustard":  { unit: "jar",    step: 1,    default: 1 },
   "Worcestershire Sauce": { unit: "bottle", step: 1, default: 1 },
   "BBQ Sauce":      { unit: "bottle", step: 1,    default: 1 },
@@ -5945,6 +6854,10 @@ const INGREDIENT_CONFIG = {
   "Sushi Rice":     { unit: "bag",    step: 1,    default: 1 },
   "Yeast":          { unit: "pack",   step: 1,    default: 1 },
   "Lemongrass":     { unit: "count",  step: 1,    default: 3 },
+  "Spam":           { unit: "can",    step: 1,    default: 1 },
+  "Gochujang":      { unit: "jar",    step: 1,    default: 1 },
+  "Rice Cakes":     { unit: "pack",   step: 1,    default: 1 },
+  "Sumac":          { unit: "jar",    step: 1,    default: 1 },
 };
 
 function getIngredientConfig(item) {

@@ -7442,7 +7442,7 @@ function App() {
                 <div className="section-label">need ingredients — {missingRecipes.length}</div>
                 <div className="recipes-grid">
                   {missingRecipes.map(recipe => (
-                    <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => setSelectedRecipe(recipe)}>
+                    <div key={recipe.name} className={`recipe-card ${selectedRecipe?.name === recipe.name ? "active" : ""}`} onClick={() => { setSelectedRecipe(recipe); setMobileTab("detail"); }}>
                       <span className="card-emoji">{recipe.emoji}</span>
                       <button className={`fav-heart ${favorites.includes(recipe.name) ? "active" : ""}`} onClick={(e) => { e.stopPropagation(); toggleFavorite(recipe.name); }}>
                         {favorites.includes(recipe.name) ? "♥" : "♡"}

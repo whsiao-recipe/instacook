@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">InstaCook</string>
+    <string name="title_activity_main">InstaCook</string>
+    <string name="package_name">com.will.instacook</string>
+    <string name="custom_url_scheme">com.will.instacook</string>
+</resources>

@@ -7310,7 +7310,7 @@ function App() {
             const checkedCount = items.filter(i => pantryState[i]?.checked).length;
             return (
               <div key={cat} className="cat-block">
-                <div className="cat-header" onClick={() => toggleCat(cat)}>
+                <div className="cat-header" onClick={() => setCollapsedCats(prev => ({ ...prev, [cat]: !prev[cat] }))}>
                   <span className="cat-title">{cat}</span>
                   <div className="cat-header-right">
                     <span className="cat-count">{checkedCount}/{items.length}</span>

@@ -7000,7 +7000,7 @@ function App() {
   const [aiSuggestion, setAiSuggestion] = useState(null);
   const [asianSubFilter, setAsianSubFilter] = useState("All Asian");
   const [medSubFilter, setMedSubFilter] = useState("All Mediterranean");
-  const [mobileTab, setMobileTab] = useState("pantry");
+  const [mobileTab, setMobileTab] = useState("recipes");
   const [darkMode, setDarkMode] = useState(false);
   const [aiLoading, setAiLoading] = useState(false);
 

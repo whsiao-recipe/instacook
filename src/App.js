@@ -7274,8 +7274,8 @@ function App() {
       )}
       <header className="topbar">
         <div className="logo">
-          <img src="/icon.png" alt="InstaCook" style={{ width: "52px", height: "52px", objectFit: "contain" }} />
-          <div className="logo-text">
+          <img src="/icon.png" alt="InstaCook" style={{ width: "80px", height: "80px", objectFit: "contain" }} />
+          <div className="logo-text" style={{ display: "none" }}>
             <span className="logo-wordmark">Insta<strong>Cook</strong></span>
             <span className="logo-tagline">From pantry to plate</span>
           </div>

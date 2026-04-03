@@ -3,7 +3,8 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
-  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   GoogleAuthProvider,
   signOut,
   updateProfile,
@@ -18,8 +19,16 @@ export function useAuth() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    getRedirectResult(auth).then((result) => {
+      if (result) console.log("REDIRECT LOGIN RESULT:", result);
+    }).catch((e) => {
+      if (e.code !== 'auth/redirect-cancelled-by-user') {
+        setError(e.message);
+      }
+    });
+
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
-      
+      console.log("AUTH STATE CHANGED:", firebaseUser);
       setUser(firebaseUser);
       setLoading(false);
     });
@@ -50,8 +59,7 @@ export function useAuth() {
   const loginWithGoogle = async () => {
     setError(null);
     try {
-      const result = await signInWithPopup(auth, googleProvider);
-      console.log("GOOGLE LOGIN RESULT:", result);
+      await signInWithRedirect(auth, googleProvider);
     } catch (e) {
       console.log("GOOGLE LOGIN ERROR:", e);
       setError(e.message);

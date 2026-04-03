@@ -10,6 +10,7 @@ import { useGroceryList } from "./hooks/useGroceryList";
 import { useMealPlanner } from "./hooks/useMealPlanner";
 import { useCookMode } from "./hooks/useCookMode";
 import { useRecipes } from "./hooks/useRecipes";
+import { useAuth } from "./hooks/useAuth";
 
 // Components
 import WelcomeModal from "./components/WelcomeModal";
@@ -21,8 +22,13 @@ import GroceryList from "./components/GroceryList";
 import MealPlanner from "./components/MealPlanner";
 import CookMode from "./components/CookMode";
 import MobileNav from "./components/MobileNav";
+import LoginScreen from "./components/LoginScreen";
 
 function App() {
+  // --- Auth ---
+  const authData = useAuth();
+  const [showLogin, setShowLogin] = useState(false);
+
   // --- UI State ---
   const [servings, setServings] = useState(4);
   const [darkMode, setDarkMode] = useState(false);
@@ -73,6 +79,30 @@ function App() {
     grocery.addItemsToGrocery(allMissing);
   };
 
+  // --- Loading state ---
+  if (authData.loading) {
+    return (
+      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Outfit, sans-serif", color: "var(--muted)" }}>
+        Loading...
+      </div>
+    );
+  }
+
+  // --- Show login screen only if user clicked "Log in" ---
+  if (!authData.user && showLogin) {
+    return (
+      <LoginScreen
+        onLogin={authData.login}
+        onSignup={authData.signup}
+        onGoogleLogin={authData.loginWithGoogle}
+        error={authData.error}
+        clearError={authData.clearError}
+        onSkip={() => setShowLogin(false)}
+      />
+    );
+  }
+
+  // --- Main app (works for both guests and logged-in users) ---
   return (
     <div className={`app ${darkMode ? "dark" : ""}`}>
       {showWelcome && (
@@ -93,6 +123,9 @@ function App() {
         plannerTotalMeals={planner.plannerTotalMeals}
         onSurprise={recipes.getSurprise}
         aiLoading={recipes.aiLoading}
+        user={authData.user}
+        onLogout={authData.logout}
+        onShowLogin={() => setShowLogin(true)}
       />
 
       <div className="layout">

@@ -6,7 +6,6 @@ export default function TopBar({
   darkMode, setDarkMode,
   onOpenPlanner, plannerTotalMeals,
   onSurprise, aiLoading,
-  user, onLogout, onShowLogin,
 }) {
   return (
     <header className="topbar">
@@ -31,26 +30,6 @@ export default function TopBar({
         </div>
       </div>
       <div className="topbar-right">
-        {user ? (
-          <div className="user-info" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <span style={{ fontSize: "13px", color: "var(--muted)", maxWidth: "100px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-              {user.displayName || user.email}
-            </span>
-            <button
-              onClick={onLogout}
-              style={{ background: "none", border: "1px solid var(--border2)", borderRadius: "6px", padding: "4px 10px", fontSize: "12px", cursor: "pointer", color: "var(--muted)", fontFamily: "Outfit, sans-serif" }}
-            >
-              Log out
-            </button>
-          </div>
-        ) : (
-          <button
-            onClick={onShowLogin}
-            style={{ background: "none", border: "1px solid var(--border2)", borderRadius: "6px", padding: "6px 14px", fontSize: "13px", cursor: "pointer", color: "var(--accent)", fontWeight: "600", fontFamily: "Outfit, sans-serif" }}
-          >
-            Log in
-          </button>
-        )}
         <button className="btn-darkmode" onClick={() => setDarkMode(d => !d)}>
           {darkMode ? "☀️" : "🌙"}
         </button>

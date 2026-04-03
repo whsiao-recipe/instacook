@@ -1786,3 +1786,9 @@ body {
   border-color: var(--accent);
   color: white;
 }
+@media (max-width: 768px) {
+  .logo img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
